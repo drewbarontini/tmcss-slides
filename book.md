@@ -204,11 +204,11 @@ Our `list` module now remains encapsulated, and the `header` handles how the ele
 
 ### Use Classes
 
-This one seems to be more commonplace these days, but it's still work
-mentioning: **It's best to simply stick with only uses classes rather than
-IDs**. IDs are too specific, and they'll cause you unnecessary headaches.
-Classes flatten the specificity of your elements to make sure your styles are
-applied properly.
+This one seems to be more commonplace these days, but it's still worth
+mentioning: **It's best to stick with only using classes, avoiding IDs altogether**.
+IDs are too specific, and they'll cause you unnecessary headaches. Classes flatten the 
+specificity of your elements to make sure your styles are applied properly without having
+to fuss with specificity.
 
 ### Establish Naming Conventions
 
