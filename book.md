@@ -176,6 +176,34 @@ spacing to those items.
 
 [Example of encapsulation using `header`, `header-item` or `bar` `bar-item`]
 
+Let's say that we have a navigation `list` in a `header`, and we want to vertically align that `list` to the header. Rather than create a modification to our `list` module, we can let the `header` handle how its elements are positioned. The `list` module just handles the text list and associated items.
+
+```css
+.header-item {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+```
+
+Now, in our markup:
+
+```html
+<header class="header">
+  <nav class="header-item">
+    <ul class="list">
+      <li class="list-item"><a href="/">Home</a></li>
+      <li class="list-item"><a href="/about">About</a></li>
+      <li class="list-item"><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+Our `list` module now remains encapsulated, and the `header` handles how the elements within are positioned.
+
+**Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
+
 ### Use Classes
 
 This one seems to be more commonplace these days, but it's still work
