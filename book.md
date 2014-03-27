@@ -17,8 +17,13 @@ CSS architecture.
 
 ## 1. Introduction
 
-- What is this talk about?
-- Why should everyone care?
+### Musings about Dan Denney
+
+### I love this conference
+
+### What is this talk about?
+
+### Why should everyone care?
 
 ### Who am I?
 
@@ -46,7 +51,17 @@ play with my two yellow labs, Maddox and Tank, and spend time with friends and
 family. As you can most likely tell from my last name, I'm Italian. This means
 that my entire family has an opinion on everything, no matter the subject.
 
-### My OCD
+### The Journey
+
+- Band
+- MySpace
+- T-shirts
+- Computer science
+- Front-end
+- It's a specialization
+- CSS is easy to write, hard to write well
+
+### Understanding My Personality
 
 Last year, Nick Walsh, a fantastic front-end developer at Envy Labs, and myself
 put on a workshop at this conference. For that, Dan made cartoons of us. In
@@ -57,17 +72,9 @@ vacuum to keep my house clean. I'll say that one more time: My Mom, for
 Christmas, bought me a professional-grade back-pack vacuum. I hope that
 slightly conveys my insanity.
 
-### How did I get here?
-
-- Band
-- MySpace
-- T-shirts
-- Computer science
-- Front-end
-- It's a specialization
-- CSS is easy to write, hard to write well
-
 ## 2. Front-end is now a specialization
+
+- It's now a "thing," a "craft"
 
 ### "Front-end Developer & Designer"
 
@@ -85,17 +92,13 @@ semantic markup and modular CSS is a craft. Now that the "front-end
 development" field has a more solid footing, developers understand the
 complexity behind the simple HTML and CSS languages.
 
-### The White Whale
+### Easy to Write, Hard to Write Well
 
-Modular CSS is a white whale of sorts. We're always chasing it. I don't think
-it's unattainable, but there will always be parts of your codebase that you
-grimace at, knowing that you can do it better.
+- We're building complex systems now
+- Markup and styles working in unison
+- Ability for styles to flex and work in different situations, environments
 
-Exciting features like Flexbox are the first time that we've had a legitimate
-layout component. Floats and positioning are just a bunch of hacks that we've
-managed to mangle into a useful system for grids and layout.
-
-## 3. Defining "Modular CSS"
+## 3. Define "Modular CSS"
 
 Before we dig into the thinking behind modular CSS, it's important to define
 it, and talk about the tenets of modular CSS.
