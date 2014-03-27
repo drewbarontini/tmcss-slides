@@ -17,6 +17,9 @@ CSS architecture.
 
 ## 1. Introduction
 
+- What is this talk about?
+- Why should everyone care?
+
 ### Who am I?
 
 I'm Drew Barontini.
