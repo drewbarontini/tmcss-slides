@@ -281,7 +281,7 @@ breaking the "Single Responsibility Principle," because our modules are no
 longer encapsulated (they are directly affecting one another), we can use a
 "context" class to handle this for us:
 
-```
+```css
 .has-dropdown {
   position: relative;
 }
