@@ -51,7 +51,7 @@ play with my two yellow labs, Maddox and Tank, and spend time with friends and
 family. As you can most likely tell from my last name, I'm Italian. This means
 that my entire family has an opinion on everything, no matter the subject.
 
-### The Journey
+### The journey
 
 - Band
 - MySpace
@@ -61,7 +61,7 @@ that my entire family has an opinion on everything, no matter the subject.
 - It's a specialization
 - CSS is easy to write, hard to write well
 
-### Understanding My Personality
+### Understanding my personality
 
 Last year, Nick Walsh, a fantastic front-end developer at Envy Labs, and myself
 put on a workshop at this conference. For that, Dan made cartoons of us. In
@@ -83,7 +83,7 @@ bit has slowly faded away because of how happy I am to call myself a "front-end
 developer." It's a specialization that is respected and (mostly) understood by
 the industry.
 
-### Developers Respect Us (Mostly)
+### Developers respect us (mostly)
 
 Developers used to trample over the HTML and CSS, largely qualifying their
 actions as "HTML and CSS is so easy, any of us can write it." Although HTML and
@@ -92,7 +92,9 @@ semantic markup and modular CSS is a craft. Now that the "front-end
 development" field has a more solid footing, developers understand the
 complexity behind the simple HTML and CSS languages.
 
-### Easy to Write, Hard to Write Well
+### Easy to write, hard to write well
+
+HTML & CSS are easy to learn and write, but they are difficult to write *well*.
 
 - We're building complex systems now
 - Markup and styles working in unison
@@ -208,7 +210,7 @@ Our `list` module now remains encapsulated, and the `header` handles how the ele
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
-### Use Classes
+### Classes
 
 This one seems to be more commonplace these days, but it's still worth
 mentioning: **It's best to stick with only using classes, avoiding IDs altogether**.
@@ -216,7 +218,7 @@ IDs are too specific, and they'll cause you unnecessary headaches. Classes flatt
 specificity of your elements to make sure your styles are applied properly without having
 to fuss with specificity.
 
-### Establish Naming Conventions
+### Establish naming conventions
 
 It doesn't matter as much what your naming conventions are, just that you have
 them. Decided with your team (or yourself) what those should be, and make sure
@@ -314,7 +316,7 @@ Make sure you look at all these methodologies, as one might fit your way of
 working the best. They are also great starting points to building your own
 system.
 
-### Avoid Nesting
+### Avoid nesting
 
 This tenet applies specifically to CSS preprocessors, like Sass and LESS, that
 allow you  to nest your selectors. This is important to talk about because of
