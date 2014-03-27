@@ -1,0 +1,86 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+html
+  @extend .tfb
+  @extend .tcb
+  background: $c-background
+  font-size: $b-fontSize
+  line-height: $b-lineHeight
+
+body
+  font-size: 100%
+  overflow: hidden
+  +respond-to(100em)
+    font-size: 150%
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p
+  @extend .mbm
+  @extend .mtf
+
+li
+  @extend .mbs
+  @extend .mtf
+
+pre
+  @extend .tfm
+
+blockquote
+  @extend .mbs
+  @extend .tfl
+  @extend .tsxl
+  margin-left: 0
+
+// ----- Headers ----- //
+
+h1, h2, h3, h4
+  @extend .mbxs
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4
+  @extend .mtf
+  @extend .tfh
+  @extend .twb
+  line-height: 1
+  > b
+    @extend .db
+
+h1, .h1
+  font-size: 450%
+
+h2, .h2
+  font-size: 350%
+
+h3, .h3
+  font-size: 250%
+
+h4, .h4
+  @extend .tfl
+  font-size: 200%
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+  @extend .tch
+  border-bottom: $b-border
+  text-decoration: none
+  &:hover,
+  &:focus
+    @extend .tcs
+    border-bottom-color: $c-highlight
+
+img
+  height: auto
+  max-width: 100%

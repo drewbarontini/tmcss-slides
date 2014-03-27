@@ -1,0 +1,292 @@
+// *************************************
+//
+//   Utilities
+//   -> Global utilities
+//
+// *************************************
+
+// ----- Bottom ----- //
+
+.bottom
+  bottom: 0
+  left: 0
+  position: absolute
+
+// ----- Clearfix ----- //
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Debug ----- //
+
+.debug
+  background-color: pink !important
+
+// ----- Ellipsis ----- //
+
+.ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// ----- Faux Hide ----- //
+
+.fauxHide
+  height: 0
+  opacity: 0
+  overflow: hidden
+  visibility: hidden
+
+// ----- Faux Show ----- //
+
+.fauxShow
+  height: auto
+  opacity: 1
+  overflow: visible
+  visibility: visible
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &:before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
+
+// ----- Middle ----- //
+
+.middle
+  +transform(translate(-50%, -50%))
+  left: 50%
+  position: absolute
+  top: 50%
+  width: 100%
+
+// Auto
+
+.middle.middle--auto
+  width: auto
+
+// Medium
+
+.middle.middle--med
+  width: 60%
+
+// ----- Stretch ----- //
+
+.stretch
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+
+// ----- Valign ----- //
+
+.valign
+  +transform(translateY(-50%))
+  position: absolute
+  top: 50%
+
+// -------------------------------------
+//   Background
+// -------------------------------------
+
+.bcb
+  background: $c-base
+.bce
+  background: $c-error
+.bch
+  background: $c-highlight
+.bci
+  background: $c-invert
+.bcs
+  background: $c-subdue
+.bcu
+  background: $c-success
+.bcw
+  background: $c-warning
+
+// -------------------------------------
+//   Display
+// -------------------------------------
+
+.db
+  display: block
+.di
+  display: inline
+.dib
+  display: inline-block
+.dn
+  display: none
+
+// -------------------------------------
+//   Margins
+// -------------------------------------
+
+// ----- All ----- //
+
+.mas
+  margin: 0.5 * $b-whitespace
+.mam
+  margin: $b-whitespace
+.mal
+  margin: 2 * $b-whitespace
+
+// ----- Bottom ----- //
+
+.mbf
+  margin-bottom: 0
+.mbxs
+  margin-bottom: 0.25 * $b-whitespace
+.mbs
+  margin-bottom: 0.5 * $b-whitespace
+.mbm
+  margin-bottom: $b-whitespace
+.mbl
+  margin-bottom: 2 * $b-whitespace
+
+// ----- Horizontal ----- //
+
+.mhc
+  margin-left: auto
+  margin-right: auto
+
+// ----- Left ----- //
+
+.mlf
+  margin-left: 0
+.mls
+  margin-left: 0.5 * $b-whitespace
+.mlm
+  margin-left: $b-whitespace
+
+// ----- Right ----- //
+
+.mrf
+  margin-right: 0
+.mrs
+  margin-right: 0.5 * $b-whitespace
+.mrm
+  margin-right: $b-whitespace
+
+// ----- Top ----- //
+
+.mtf
+  margin-top: 0
+.mts
+  margin-top: 0.5 * $b-whitespace
+.mtm
+  margin-top: $b-whitespace
+.mtl
+  margin-top: 2 * $b-whitespace
+
+// -------------------------------------
+//   Positioning
+// -------------------------------------
+
+.fl
+  float: left
+.fr
+  float: right
+
+.poa
+  position: absolute
+.pof
+  position: fixed
+.por
+  position: relative
+.pos
+  position: static
+
+// -------------------------------------
+//   Rounding
+// -------------------------------------
+
+.ra
+  border-radius: 50%
+.ram
+  border-radius: $b-borderRadius
+
+// -------------------------------------
+//   Text
+// -------------------------------------
+
+// ----- Alignment ----- //
+
+.tac
+  text-align: center
+.tal
+  text-align: left
+.tar
+  text-align: right
+
+// ----- Color ----- //
+
+.tcb
+  color: $c-base
+.tcg
+  color: $c-background
+.tch
+  color: $c-highlight
+.tci
+  color: $c-invert
+.tce
+  color: $c-error
+.tcs
+  color: $c-subdue
+.tcu
+  color: $c-success
+.tcw
+  color: $c-warning
+
+// ----- Family ----- //
+
+.tfb
+  font-family: $f-base
+.tfh
+  font-family: $f-header
+.tfl
+  font-family: $f-light
+.tfm
+  font-family: $f-mono
+.tfxl
+  font-family: $f-xlight
+
+// ----- Size ----- //
+
+.tsxs
+  font-size: 60%
+.tss
+  font-size: 80%
+.tsm
+  font-size: 100%
+.tsl
+  font-size: 150%
+.tsxl
+  font-size: 200%
+
+// ----- Style ----- //
+
+.tsi
+  font-style: italic
+
+// ----- Transform ----- //
+
+.ttu
+  text-transform: uppercase
+.ttn
+  text-transform: none
+
+// ----- Weight ----- //
+
+.twn
+  font-weight: normal
+.twb
+  font-weight: bold

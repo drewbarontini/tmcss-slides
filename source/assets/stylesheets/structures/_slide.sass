@@ -1,0 +1,153 @@
+// *************************************
+//
+//   Slide
+//   -> Description
+//
+// *************************************
+
+.slide
+  @extend .fauxHide
+  @extend .stretch
+  @extend .tci
+  background-color: $c-highlight
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+  overflow: hidden
+  width: 100%
+  z-index: 10
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Contain ----- //
+
+.slide.slide--contain
+  background-size: contain
+
+// ----- Dark ----- //
+
+.slide.slide--dark
+  @extend .bcb
+
+// ----- Error ----- //
+
+.slide.slide--error
+  @extend .bce
+
+// ----- Fade ----- //
+
+.slide.slide--fade
+  &::after
+    @extend .bch
+    @extend .stretch
+    content: ''
+    opacity: $slide--fade-opacity
+    z-index: 1
+
+// Dark
+
+.slide.slide--fade--dark
+  @extend .tci
+  &::after
+    background: #000
+
+// Error
+
+.slide.slide--fade--error
+  @extend .tci
+  &::after
+    @extend .bce
+
+// Light
+
+.slide.slide--fade--light
+  @extend .tcb
+  &::after
+    @extend .bci
+
+// Subdue
+
+.slide.slide--fade--subdue
+  @extend .tcb
+  &::after
+    @extend .bcs
+
+// Success
+
+.slide.slide--fade--success
+  @extend .tci
+  &::after
+    @extend .bcu
+
+// Warning
+
+.slide.slide--fade--warning
+  @extend .tci
+  &::after
+    @extend .bcw
+
+// ----- Light ----- //
+
+.slide.slide--light
+  @extend .bci
+  @extend .tcb
+
+// ----- Subdue ----- //
+
+.slide.slide--subdue
+  @extend .bcs
+  @extend .tcb
+
+// ----- Success ----- //
+
+.slide.slide--success
+  background: $c-success
+
+// ----- Tile ----- //
+
+.slide.slide--tile
+  background-position: top-left
+  background-repeat: repeat
+  background-size: auto
+
+// ----- Warning ----- //
+
+.slide.slide--warning
+  background: $c-warning
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// ----- Active ----- //
+
+.slide.is-active
+  @extend .fauxShow
+  +transition(all 0.4s ease-in-out)
+
+  .slide-content
+    @extend .fauxShow
+    +transform(scale(1))
+    +transition(all 0.3s 0.2s ease-in-out)
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.slide-content
+  @extend .fauxHide
+  @extend .mal
+  @extend .stretch
+  +transform(scale(0.75))
+  z-index: 10
+
+// ----- Image ----- //
+
+.slide-img
+  @extend .ram
+
