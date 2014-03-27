@@ -174,8 +174,6 @@ Here we have a list module that simply handles text lists. It's only
 responsibility is to take a list of text, stack the items, and provide a little
 spacing to those items.
 
-[Example of encapsulation using `header`, `header-item` or `bar` `bar-item`]
-
 Let's say that we have a navigation `list` in a `header`, and we want to vertically align that `list` to the header. Rather than create a modification to our `list` module, we can let the `header` handle how its elements are positioned. The `list` module just handles the text list and associated items.
 
 ```css
