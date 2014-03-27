@@ -1,6 +1,6 @@
 # Thinking Modular CSS
 
-# Summary
+## Summary
 
 We've talked about the "how" of writing modular CSS, but we haven't truly
 explored the "why." What is the thought process behind modular CSS? How do we
@@ -10,40 +10,40 @@ when something is something? We'll take a practical look at that thought
 process by exploring popular sites and breaking them down into their various
 components.
 
-# Tagline
+## Tagline
 
 Learn the "why" of modular CSS by analyzing the decisions that craft a flexible
 CSS architecture.
 
-# 1. Introduction
+## 1. Introduction
 
-## Who am I?
+### Who am I?
 
 I'm Drew Barontini.
 
-## What do I do?
+### What do I do?
 
 I'm a front-end developer for Code School.
 
-## What is Code School?
+### What is Code School?
 
 Code School is an online platform for teaching web technologies. We have
 interactive courses teaching technologies like Ruby on Rails, Sass, Git,
 Angular, and iOS.
 
-## What am I responsible for?
+### What am I responsible for?
 
 I maintain and lead the front-end for the .com, our course engine, and oversee
 buildout of individual courses and .com features.
 
-## What about personal stuff?
+### What about personal stuff?
 
 When I'm not sitting at the computer, I like to exercise, watch TV and movies,
 play with my two yellow labs, Maddox and Tank, and spend time with friends and
 family. As you can most likely tell from my last name, I'm Italian. This means
 that my entire family has an opinion on everything, no matter the subject.
 
-## My OCD
+### My OCD
 
 Last year, Nick Walsh, a fantastic front-end developer at Envy Labs, and myself
 put on a workshop at this conference. For that, Dan made cartoons of us. In
@@ -54,7 +54,7 @@ vacuum to keep my house clean. I'll say that one more time: My Mom, for
 Christmas, bought me a professional-grade back-pack vacuum. I hope that
 slightly conveys my insanity.
 
-## How did I get here?
+### How did I get here?
 
 - Band
 - MySpace
@@ -64,16 +64,16 @@ slightly conveys my insanity.
 - It's a specialization
 - CSS is easy to write, hard to write well
 
-# 2. Front-end is now a specialization
+## 2. Front-end is now a specialization
 
-## "Front-end Developer & Designer"
+### "Front-end Developer & Designer"
 
 I used to call myself a "front-end developer and designer." The "and designer"
 bit has slowly faded away because of how happy I am to call myself a "front-end
 developer." It's a specialization that is respected and (mostly) understood by
 the industry.
 
-## Developers Respect Us (Mostly)
+### Developers Respect Us (Mostly)
 
 Developers used to trample over the HTML and CSS, largely qualifying their
 actions as "HTML and CSS is so easy, any of us can write it." Although HTML and
@@ -82,7 +82,7 @@ semantic markup and modular CSS is a craft. Now that the "front-end
 development" field has a more solid footing, developers understand the
 complexity behind the simple HTML and CSS languages.
 
-## The White Whale
+### The White Whale
 
 Modular CSS is a white whale of sorts. We're always chasing it. I don't think
 it's unattainable, but there will always be parts of your codebase that you
@@ -92,7 +92,7 @@ Exciting features like Flexbox are the first time that we've had a legitimate
 layout component. Floats and positioning are just a bunch of hacks that we've
 managed to mangle into a useful system for grids and layout.
 
-# 3. Defining "Modular CSS"
+## 3. Defining "Modular CSS"
 
 Before we dig into the thinking behind modular CSS, it's important to define
 it, and talk about the tenets of modular CSS.
@@ -100,8 +100,8 @@ it, and talk about the tenets of modular CSS.
 First off, let's talk about the definition of it:
 
 >  Modular design is an approach that subdivides a system into smaller parts
-   that can be independently created and then used in different systems to
-   drive multiple functionalities.
+    that can be independently created and then used in different systems to
+    drive multiple functionalities.
 
 [Wikipedia](http://en.wikipedia.org/wiki/Modular_design)
 
@@ -113,13 +113,13 @@ I heard three important pieces in that definition:
 
 These three pieces lead into some very important concepts behind modular CSS.
 
-## Separation of Concerns
+### Separation of Concerns
 
 "Smaller parts" is really just talking about a separation of concerns:
 
 > Separation of concerns is a design principle for separating a computer
-  program into distinct sections, such that each section addresses a separate
-  concern.
+   program into distinct sections, such that each section addresses a separate
+   concern.
 
 [Wikipedia](http://en.wikipedia.org/wiki/Separation_of_concerns)
 
@@ -141,12 +141,12 @@ It's a very small file, but it's set up to allow us to create variants, and we
 can use this module in conjunction with other modules to build our CSS
 architecture. We'll look at this more later.
 
-## Single Responsibility Principle
+### Single Responsibility Principle
 
 > The single responsibility principle states that every class should have a
-  single responsibility, and that responsibility should be entirely
-  encapsulated by the class. All its services should be narrowly aligned with
-  that responsibility.
+   single responsibility, and that responsibility should be entirely
+   encapsulated by the class. All its services should be narrowly aligned with
+   that responsibility.
 
 [Wikipedia](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 
@@ -176,7 +176,7 @@ spacing to those items.
 
 [Example of encapsulation using `header`, `header-item` or `bar` `bar-item`]
 
-## Use Classes
+### Use Classes
 
 This one seems to be more commonplace these days, but it's still work
 mentioning: **It's best to simply stick with only uses classes rather than
@@ -184,7 +184,7 @@ IDs**. IDs are too specific, and they'll cause you unnecessary headaches.
 Classes flatten the specificity of your elements to make sure your styles are
 applied properly.
 
-## Establish Naming Conventions
+### Establish Naming Conventions
 
 It doesn't matter as much what your naming conventions are, just that you have
 them. Decided with your team (or yourself) what those should be, and make sure
@@ -193,14 +193,14 @@ to stick with the system, but be open to evolving it over time. At Code School
 created with Nick Walsh, a front-end developer at Envy Labs. To give you a
 sample of some naming conventions, I'll talk about how we do things:
 
-### camelCase & Hyphens
+#### camelCase & Hyphens
 
 - `.list`
 - `.tabList`
 - `.list-item`
 - `.tabList-item`
 
-### Modifiers
+#### Modifiers
 
 We use double-hyphens (`—`) to denote a modifier, which is just like the
 modifier in BEM, if you’re familiar with that system. A modifier is an
@@ -230,14 +230,13 @@ Our base button. And now, our modifier:
 Then, in our markup:
 
 ```html
-<a href=“#” class=“btn”>Button B</a>
-<a href=“#” class=“btn btn—b”>Button B</a>
+<a href="#" class="btn">Button B</a>
+<a href="#" class="btn btn—b">Button B</a>
 ```
 
-### States
+#### States
 
-States are generally used for hooks that are added and removed via JavaScript;
-things like, `is-active`, `is-hidden`, `is-editing`, etc.
+States are generally used for hooks that are added and removed via JavaScript; things like, `is-active`, `is-hidden`, `is-editing`, etc.
 
 ```css
 .dropdown.is-active {
@@ -245,10 +244,10 @@ things like, `is-active`, `is-hidden`, `is-editing`, etc.
 }
 ```
 
-### Context
+#### Context
 
 This is a very important concept that applies to the Single Responsibility
-Principle’s “encapsulation” feature. Let's say that we have a `dropdown`
+Principle’s "encapsulation" feature. Let's say that we have a `dropdown`
 module, and when that `dropdown` is inside of a parent container, it needs to
 have `position: relative` on that parent container to set the positioning
 context. Rather than adding `position: relative` to that parent container, thus
@@ -283,7 +282,7 @@ Make sure you look at all these methodologies, as one might fit your way of
 working the best. They are also great starting points to building your own
 system.
 
-## Avoid Nesting
+### Avoid Nesting
 
 This tenet applies specifically to CSS preprocessors, like Sass and LESS, that
 allow you  to nest your selectors. This is important to talk about because of
@@ -307,7 +306,7 @@ with. We generally only nest things like `:hover`, `:focus`, `::before`,
     background: green
 ```
 
-## Patterns
+### Patterns
 
 The most important part of building a modular CSS architecture is to find the
 patterns in your designs, and make sure that those are what you reuse and build
