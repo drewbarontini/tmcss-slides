@@ -298,7 +298,7 @@ longer encapsulated (they are directly affecting one another), we can use a
 ```html
 <div class="container has-dropdown">
   <div class="dropdown">
-    <! ---- ... ---- >
+    <!-- ... -->
   </div>
 </div>
 ```
