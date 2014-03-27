@@ -328,6 +328,9 @@ Guide to Sass" tutorials out there, it's something you have to be very careful
 with. We generally only nest things like `:hover`, `:focus`, `::before`,
 `::after`, `:last-child`, etc.
 
+- Example of poorly nested Sass
+- Example of proper Sass
+
 ```sass
 .btn
   background: blue
