@@ -202,7 +202,7 @@ sample of some naming conventions, I'll talk about how we do things:
 
 #### Modifiers
 
-We use double-hyphens (`—`) to denote a modifier, which is just like the
+We use double-hyphens (`--`) to denote a modifier, which is just like the
 modifier in BEM, if you’re familiar with that system. A modifier is an
 alternate set of styling on a module. Say, for example, we have a button, and
 that button has its basic styling. A modifier of a button would be an alternate
@@ -221,7 +221,7 @@ styling of that base button. For example:
 Our base button. And now, our modifier:
 
 ```css
-.btn—b {
+.btn--b {
   background: yellow;
   color: black;
 }
@@ -231,7 +231,7 @@ Then, in our markup:
 
 ```html
 <a href="#" class="btn">Button B</a>
-<a href="#" class="btn btn—b">Button B</a>
+<a href="#" class="btn btn--b">Button B</a>
 ```
 
 #### States
