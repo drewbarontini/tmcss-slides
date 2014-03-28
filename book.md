@@ -28,11 +28,11 @@ It's something that we see with new front-end developers that we teach our syste
 
 ### How is this going to work?
 
-So, I want to talk a little about myself, and then we'll define "modular CSS," talk about the process of crafting modular CSS, and then we'll go through a set of popular sites to actually apply this process and knowledge we've all gained.
+We'll define "modular CSS," talk about the process of crafting modular CSS, and then we'll go through a set of popular sites to actually apply this process and knowledge we've all gained.
 
 ### Who am I?
 
-As Mr. Denney said, I'm Drew Barontini.
+But first, I want to give you some information about me. As Mr. Denney said, I'm Drew Barontini.
 
 ### What do I do?
 
@@ -48,11 +48,6 @@ Angular, and iOS.
 
 I maintain and lead the front-end for the .com, our course engine, and oversee
 buildout of individual courses and .com features.
-
-### What about personal stuff?
-
-When I'm not sitting at the computer, I like to exercise, watch TV and movies,
-play with my two yellow labs, Maddox and Tank, and spend time with friends and family. As you can most likely tell from my last name, I'm Italian. This means that my entire family has an opinion on everything, no matter the subject.
 
 ### The journey
 
