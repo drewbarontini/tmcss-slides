@@ -3,12 +3,7 @@
 ## Summary
 
 We've talked about the "how" of writing modular CSS, but we haven't truly
-explored the "why." What is the thought process behind modular CSS? How do we
-make the decisions that craft a flexible CSS architecture? How do we decide
-when to create new components and modules, when to refactor, what goes where,
-when something is something? We'll take a practical look at that thought
-process by exploring popular sites and breaking them down into their various
-components.
+explored the "why." What is the thought process behind modular CSS? How do we make the decisions that craft a flexible CSS architecture? How do we decide when to create new components and modules, when to refactor, what goes where, when something is something? We'll take a practical look at that thought process by exploring popular sites and breaking them down into their various components.
 
 ## Tagline
 
@@ -47,9 +42,7 @@ buildout of individual courses and .com features.
 ### What about personal stuff?
 
 When I'm not sitting at the computer, I like to exercise, watch TV and movies,
-play with my two yellow labs, Maddox and Tank, and spend time with friends and
-family. As you can most likely tell from my last name, I'm Italian. This means
-that my entire family has an opinion on everything, no matter the subject.
+play with my two yellow labs, Maddox and Tank, and spend time with friends and family. As you can most likely tell from my last name, I'm Italian. This means that my entire family has an opinion on everything, no matter the subject.
 
 ### The journey
 
@@ -67,8 +60,7 @@ Last year, Nick Walsh, a fantastic front-end developer at Envy Labs, and myself
 put on a workshop at this conference. For that, Dan made cartoons of us. In
 order to understand how I am (my essence), I'll explain why I look like a
 janitor. Story time: I'm very OCD. I like things very clean and organized. For
-Christmas a few years ago, my Mom bought me a professional-grade back-pack
-vacuum to keep my house clean. I'll say that one more time: My Mom, for
+Christmas a few years ago, my Mom bought me a professional-grade back-pack vacuum to keep my house clean. I'll say that one more time: My Mom, for
 Christmas, bought me a professional-grade back-pack vacuum. I hope that
 slightly conveys my insanity.
 
@@ -79,16 +71,12 @@ slightly conveys my insanity.
 ### "Front-end Developer & Designer"
 
 I used to call myself a "front-end developer and designer." The "and designer"
-bit has slowly faded away because of how happy I am to call myself a "front-end
-developer." It's a specialization that is respected and (mostly) understood by
-the industry.
+bit has slowly faded away because of how happy I am to call myself a "front-end developer." It's a specialization that is respected and (mostly) understood by the industry.
 
 ### Developers respect us (mostly)
 
 Developers used to trample over the HTML and CSS, largely qualifying their
-actions as "HTML and CSS is so easy, any of us can write it." Although HTML and
-CSS are easy to write, they aren't easy to write well. Writing quality,
-semantic markup and modular CSS is a craft. Now that the "front-end
+actions as "HTML and CSS is so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. Writing quality, semantic markup and modular CSS is a craft. Now that the "front-end
 development" field has a more solid footing, developers understand the
 complexity behind the simple HTML and CSS languages.
 
@@ -135,8 +123,7 @@ Essentially, we want to make sure that each of our CSS modules (chunks of
 styles) are only focusing on a single concern, or pattern. Breaking your CSS
 down into smaller chunks will ultimately result in more maintainable code.
 
-Let's say we wanted to manage our media elements throughout the site. We want
-to have circle avatars, so we create a `thumb` module that handles this.
+Let's say we wanted to manage our media elements throughout the site. We want to have circle avatars, so we create a `thumb` module that handles this.
 
 ```css
 .thumb {
@@ -213,19 +200,12 @@ Our `list` module now remains encapsulated, and the `header` handles how the ele
 ### Classes
 
 This one seems to be more commonplace these days, but it's still worth
-mentioning: **It's best to stick with only using classes, avoiding IDs altogether**.
-IDs are too specific, and they'll cause you unnecessary headaches. Classes flatten the 
-specificity of your elements to make sure your styles are applied properly without having
-to fuss with specificity.
+mentioning: **It's best to stick with only using classes, avoiding IDs altogether**. IDs are too specific, and they'll cause you unnecessary headaches. Classes flatten the specificity of your elements to make sure your styles are applied properly without having to fuss with specificity.
 
 ### Establish naming conventions
 
 It doesn't matter as much what your naming conventions are, just that you have
-them. Decided with your team (or yourself) what those should be, and make sure
-to stick with the system, but be open to evolving it over time. At Code School
-(and Envy Labs), we use MVCSS, which is a Sass-based CSS architecture that I
-created with Nick Walsh, a front-end developer at Envy Labs. To give you a
-sample of some naming conventions, I'll talk about how we do things:
+them. Decided with your team (or yourself) what those should be, and make sure to stick with the system, but be open to evolving it over time. At Code School (and Envy Labs), we use MVCSS, which is a Sass-based CSS architecture that I created with Nick Walsh, a front-end developer at Envy Labs. To give you a sample of some naming conventions, I'll talk about how we do things.
 
 #### camelCase & Hyphens
 
@@ -320,8 +300,7 @@ system.
 
 This tenet applies specifically to CSS preprocessors, like Sass and LESS, that
 allow you  to nest your selectors. This is important to talk about because of
-the popularity and widespread use of CSS preprocessors. We use and love Sass,
-but there are other great options out there to pick from.
+the popularity and widespread use of CSS preprocessors. We use and love Sass, but there are other great options out there to pick from.
 
 Although nesting is an attractive feature, and one touted by most "Beginner's
 Guide to Sass" tutorials out there, it's something you have to be very careful
@@ -346,7 +325,5 @@ with. We generally only nest things like `:hover`, `:focus`, `::before`,
 ### Patterns
 
 The most important part of building a modular CSS architecture is to find the
-patterns in your designs, and make sure that those are what you reuse and build
-from to create your system. Think in terms of patterns rather than individual
-elements of a design.
+patterns in your designs, and make sure that those are what you reuse and build from to create your system. Think in terms of patterns rather than individual elements of a design.
 
