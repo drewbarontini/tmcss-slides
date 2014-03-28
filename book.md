@@ -42,7 +42,7 @@ I'm a front-end developer for Code School.
 
 Code School is an online platform for teaching web technologies. We have
 interactive courses teaching technologies like Ruby on Rails, Sass, Git,
-Angular, and iOS.
+Angular, iOS, and a lot of other languages and frameworks.
 
 ### What am I responsible for?
 
