@@ -14,15 +14,25 @@ CSS architecture.
 
 ### Musings about Dan Denney
 
+Firstly, I'd just like to point out that I'm fortunate enough that I get to work with Dan Denney. I'd also like to confirm that he is actually as nice as he seems. We've thrown some tough and annoying projects his way, and he doesn't even flinch. He's a saint, and I'd just like everyone to know that.
+
 ### I love this conference
+
+In all seriousness, I love this conference. I've only missed it once, and I look forward to it every year. The Denney family does a tremendous job, and I'm super pumped to be here, and to be speaking to all of you.
 
 ### What is this talk about?
 
-### Why should everyone care?
+So what am I hear to talk about? This talk is called, "Thinking Modular CSS". I *really* want to explore the thought process behind building modular CSS systems. We've talked a lot about the "how" of things like object-oriented CSS, but we haven't really talked about the process that we take to get there.
+
+It's something that we see with new front-end developers that we teach our system to. They understand how we structure things, what we call certain elements, but how we get there is the tough part.
+
+### How is this going to work?
+
+So, I want to talk a little about myself, and then we'll define "modular CSS," talk about the process of crafting modular CSS, and then we'll go through a set of popular sites to actually apply this process and knowledge we've all gained.
 
 ### Who am I?
 
-I'm Drew Barontini.
+As Mr. Denney said, I'm Drew Barontini.
 
 ### What do I do?
 
