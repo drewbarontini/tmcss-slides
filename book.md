@@ -57,17 +57,6 @@ buildout of individual courses and .com features.
 - Computer science
 - Front-end
 - It's a specialization
-- CSS is easy to write, hard to write well
-
-### Understanding my personality
-
-Last year, Nick Walsh, a fantastic front-end developer at Envy Labs, and myself
-put on a workshop at this conference. For that, Dan made cartoons of us. In
-order to understand how I am (my essence), I'll explain why I look like a
-janitor. Story time: I'm very OCD. I like things very clean and organized. For
-Christmas a few years ago, my Mom bought me a professional-grade back-pack vacuum to keep my house clean. I'll say that one more time: My Mom, for
-Christmas, bought me a professional-grade back-pack vacuum. I hope that
-slightly conveys my insanity.
 
 ## 2. Front-end is now a specialization
 
@@ -75,14 +64,11 @@ slightly conveys my insanity.
 
 ### "Front-end Developer & Designer"
 
-I used to call myself a "front-end developer and designer." The "and designer"
-bit has slowly faded away because of how happy I am to call myself a "front-end developer." It's a specialization that is respected and (mostly) understood by the industry.
+I used to call myself a "front-end developer and designer." The "and designer" bit has slowly faded away because of how happy I am to call myself a "front-end developer." It's a specialization that is respected and (mostly) understood by the industry.
 
 ### Developers respect us (mostly)
 
-Developers used to trample over the HTML and CSS, largely qualifying their
-actions as "HTML and CSS is so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. Writing quality, semantic markup and modular CSS is a craft. Now that the "front-end
-development" field has a more solid footing, developers understand the
+Developers used to trample over the HTML and CSS, largely qualifying their actions as "HTML and CSS is so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. Writing quality, semantic markup and modular CSS is a craft. Now that the "front-end development" field has a more solid footing, developers understand the
 complexity behind the simple HTML and CSS languages.
 
 ### Easy to write, hard to write well
