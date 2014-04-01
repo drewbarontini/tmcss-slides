@@ -319,3 +319,4 @@ with. We generally only nest things like `:hover`, `:focus`, `::before`,
 The most important part of building a modular CSS architecture is to find the
 patterns in your designs, and make sure that those are what you reuse and build from to create your system. Think in terms of patterns rather than individual elements of a design.
 
+## 4. Exploring the "why"
