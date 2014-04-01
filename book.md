@@ -59,7 +59,7 @@ buildout of individual courses and .com features.
 
 ## 2. Front-end is now a specialization
 
-- It's now a "thing," a "craft"
+"Front-end Development" truly is a specialization; it's a craft, and it's not easy. It's not just for designers who code or developers who write HTML & CSS. It's a area of focus for unique individuals. I'm proud to call myself a "front-end developer."
 
 ### "Front-end Developer & Designer"
 
