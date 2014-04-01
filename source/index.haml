@@ -10,49 +10,40 @@
 
   %slide
     .slide-content
-      .middle
-        %p.tsl
+      .middle.tac
+        %h1.h4
           Learn the "why" of modular CSS by analyzing the decisions that craft
           a flexible CSS architecture.
 
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h2 I'm Drew Barontini.
+
   %slide.slide--light
     .slide-content
-      .middle
-        .bucket.bucket--flag
-          .bucket-media
-            = image_tag 'me-v1.svg', alt: 'Drew Barontini Cartoon'
-          .bucket-content
-            %h1.h3.mbf Drew Barontini
-            %p.tcs @drewbarontini
+      .middle.tac
+        = image_tag 'me-v1.svg', alt: 'Drew Barontini Cartoon'
 
   %slide.slide--fade(img="#{image_path('intro-office.jpg')}")
     .slide-content
-      .bottom
-        %p.mbf.ttu Front-end Developer @
-        %h2 Code School
-
-  %slide.slide--fade(img="#{image_path('intro-epcot.jpg')}")
-    .slide-content
       .middle.tac
-        %h1.mbf Events
-        %p.tsl Epcot Food &amp; Wine Festival
-
-  %slide.slide--fade(img="#{image_path('intro-community.jpg')}")
-    .slide-content
-      .middle.tac
-        %h1.mbf Community
-        %p.tsl We love holding events in our space.
+        %p.mbf.tfl.ttu Front-end Developer
+        %h1.h2.mbf Code School
 
   %slide.slide--contain(img="#{image_path('intro-cs.png')}")
 
   %slide
     .slide-content
-      .bottom
-        %p.tsxl
+      .middle.tac
+        %p.mbf.tsxl
           %strong Code School
           is an online platform for teaching web technologies.
 
-  %slide(img="#{image_path('intro-cs-courses.png')}")
+  %slide.slide--fade(img="#{image_path('intro-cs-courses.png')}")
+    .slide-content
+      .middle.tac
+        %h1.h3 Ruby, iOS, Design, JavaScript, Ember, Node, Angular, Dart
 
   %slide
     .slide-content
@@ -62,10 +53,10 @@
   %slide
     .slide-content
       .middle
-        %ul.tsl
+        %ul.mbf.tsxl
           %li Front-end for the .com
           %li Our course engine
-          %li Oversee buildout of individual courses
+          %li Buildout of individual courses
 
   %slide
     .slide-content
@@ -110,9 +101,40 @@
           Front-end Developer
           %span.tds &amp; Designer
 
-  %slide
+  %slide.slide--warning
     .slide-content
       .middle.tac
         %h1.h3.mbf Developers Respect Our CSS
-        %p.tsl (mostly)
+        %p.mbf.tsl (mostly)
 
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h1.h3.mbf
+          HTML/CSS are easy to write,
+          %b but hard to write well.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h3.mbf
+          We're building complex
+          %b systems now.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h3.mbf
+          Markup and styles
+          %b working in unison.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h3.mbf
+          Ability for styles to flex and work in different environments.
+
+  %slide.slide--dark
+    .slide-content
+      .middle.tac
+        %h1.h2 Define "Modular CSS"
