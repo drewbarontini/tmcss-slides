@@ -197,6 +197,8 @@ mentioning: **It's best to stick with only using classes, avoiding IDs altogethe
 It doesn't matter as much what your naming conventions are, just that you have
 them. Decided with your team (or yourself) what those should be, and make sure to stick with the system, but be open to evolving it over time. At Code School (and Envy Labs), we use MVCSS, which is a Sass-based CSS architecture that I created with Nick Walsh, a front-end developer at Envy Labs. To give you a sample of some naming conventions, I'll talk about how we do things.
 
+*This is by no way preaching our method. This is merely an example that can help guide you to establishing your own naming conventions.*
+
 #### camelCase & Hyphens
 
 - `.list`
