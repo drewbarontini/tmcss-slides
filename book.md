@@ -236,7 +236,7 @@ Our base button. And now, our modifier:
 Then, in our markup:
 
 ```html
-<a href="#" class="btn">Button B</a>
+<a href="#" class="btn">Button</a>
 <a href="#" class="btn btn--b">Button B</a>
 ```
 
