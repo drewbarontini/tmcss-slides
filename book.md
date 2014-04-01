@@ -56,7 +56,6 @@ buildout of individual courses and .com features.
 - T-shirts
 - Computer science
 - Front-end
-- It's a specialization
 
 ## 2. Front-end is now a specialization
 
