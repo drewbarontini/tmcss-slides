@@ -346,4 +346,4 @@ In addition to magic numbers, layout and positioning in CSS can cause you a lot 
 }
 ```
 
-This is all well and good until we have a second `.nav` block that needs to be positioned to the left, or  even centered. Ask yourself, why is this navigation block being positioned to the right at `50%`? Is it because it's in a header. Well, you'll want some larger layout module to handle this, like a grid.
+This is all well and good until we have a second `.nav` block that needs to be positioned to the left, or  even centered. Ask yourself, why is this navigation block being positioned to the right at `50%`? Is it because it's in a header. Well, you'll want to use a higher-up layout module to handle this (e.g. a grid).
