@@ -6,19 +6,14 @@
         %h1.mbf
           Thinking
           %b Modular CSS
-        %p.mbf by Drew Barontini
+        %p.mbf by Drew Barontini &mdash; @drewbarontini
 
   %slide
     .slide-content
       .middle.tac
         %h1.h4
           Learn the "why" of modular CSS by analyzing the decisions that craft
-          a flexible CSS architecture.
-
-  %slide
-    .slide-content
-      .middle.tac
-        %h1.h2 I'm Drew Barontini.
+          a flexible architecture.
 
   %slide.slide--light
     .slide-content
@@ -52,16 +47,16 @@
 
   %slide
     .slide-content
-      .middle
-        %ul.mbf.tsxl
+      .middle.tac
+        %ul.lr.mbf.tsxl
           %li Front-end for the .com
           %li Our course engine
           %li Buildout of individual courses
 
-  %slide
+  %slide.slide--fade.slide--fade--light(img="#{image_path('journey-journey.jpg')}")
     .slide-content
       .middle.tac
-        %h1 The Journey
+        %h1.mbf The Journey
 
   %slide.slide--contain.slide--dark(img="#{image_path('journey-band.jpg')}")
 
@@ -101,6 +96,8 @@
           Front-end Developer
           %span.tds &amp; Designer
 
+  %slide(img="#{image_path('journey-excited.gif')}")
+
   %slide.slide--warning
     .slide-content
       .middle.tac
@@ -138,3 +135,126 @@
     .slide-content
       .middle.tac
         %h1.h2 Define "Modular CSS"
+
+  %slide
+    .slide-content
+      .middle
+        %blockquote
+          "Modular design is an approach that subdivides a system into smaller
+          parts that can be independently created and then used in different
+          systems to drive multiple functionalities."
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 tl;dr
+        %ul.lr.tsl
+          %li Smaller parts
+          %li Independently created
+          %li Used in different systems
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbf Separation of Concerns
+
+  %slide
+    .slide-content
+      .middle
+        %blockquote
+          "Separation of concerns is a design principle for separating a
+          computer program into distinct sections, such that each section
+          addresses a separate concern."
+
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h1.h3.mbf
+          Breaking your CSS down into smaller chunks will ultimately result in
+          more maintainable code.
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .thumb {
+              border-radius: 50%;
+              display: block;
+            }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h2.mbf
+          A <em>small</em> set of styles that is easily extendable.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbf Single Responsibility Principle
+
+  %slide
+    .slide-content
+      .middle
+        %blockquote
+          "The single responsibility principle states that every class should
+          have a single responsibility, and that responsibility should be
+          entirely encapsulated by the class."
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto
+        - code('css') do
+          :plain
+            .list {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+
+            .list-item {
+              display: block;
+              margin-bottom: 1em;
+            }
+            .list-item:last-child {
+              margin-bottom: 0;
+            }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h2.mbf
+          A list module that <em>only</em> handles text lists.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.h3.mbf
+          "...<em>encapsulated</em> by the class."
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .header-item {
+              transform: translateY(-50%);
+              position: relative;
+              top: 50%;
+            }
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto
+        - code('html') do
+          :plain
+            <header class="header">
+              <nav class="header-item">
+                <ul class="list">
+                  <li class="list-item"><a href="/">Home</a></li>
+                  <li class="list-item"><a href="/about">About</a></li>
+                  <li class="list-item"><a href="/contact">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
