@@ -325,8 +325,6 @@ What am I talking about?
 }
 ```
 
-*Raise your hand if you've done something like this before. DO NOT be ashamed. It's an unfortunate part of our jobs, but it's inevitable.*
-
 These "magic numbers" are best to avoid, but they are generally hard to completely remove from your code. However, when you do use them, make sure to document it.
 
 
