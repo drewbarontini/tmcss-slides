@@ -337,3 +337,13 @@ These "magic numbers" are best to avoid, but they are generally hard to complete
 
 ### Separate layout and positioning
 
+In addition to magic numbers, layout and positioning in CSS can cause you a lot of headaches when trying to keep your styles flexible. Let's look at an example.
+
+```css
+.nav {
+  float: right;
+  width: 50%;
+}
+```
+
+This is all well and good until we have a second `.nav` block that needs to be positioned to the left, or  even centered. Ask yourself, why is this navigation block being positioned to the right at `50%`? Is it because it's in a header. Well, you'll want some larger layout module to handle this, like a grid.
