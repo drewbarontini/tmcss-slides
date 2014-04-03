@@ -319,11 +319,13 @@ the popularity and widespread use of CSS preprocessors. We use and love Sass, bu
 
 Although nesting is an attractive feature, and one touted by most "Beginner's
 Guide to Sass" tutorials out there, it's something you have to be very careful
-with. We generally only nest things like `:hover`, `:focus`, `::before`,
-`::after`, `:last-child`, etc.
+with.
 
 - Example of poorly nested Sass
 - Example of proper Sass
+
+We generally only nest things like `:hover`, `:focus`, `::before`,
+`::after`, `:last-child`, etc.
 
 ```sass
 .btn
