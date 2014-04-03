@@ -13,7 +13,7 @@
       .middle.tac
         %h1.h4
           Learn the "why" of modular CSS by analyzing the decisions that craft
-          a flexible architecture.
+          a flexible&nbsp;architecture.
 
   %slide.slide--light
     .slide-content
@@ -26,24 +26,17 @@
         %p.mbf.tfl.ttu Front-end Developer
         %h1.h2.mbf Code School
 
-  %slide.slide--contain(img="#{image_path('intro-cs.png')}")
-
   %slide
     .slide-content
       .middle.tac
         %p.mbf.tsxl
           %strong Code School
-          is an online platform for teaching web technologies.
+          is an online platform for learning web technologies.
 
   %slide.slide--fade(img="#{image_path('intro-cs-courses.png')}")
     .slide-content
       .middle.tac
         %h1.h3 Ruby, iOS, Design, JavaScript, Ember, Node, Angular, Dart
-
-  %slide
-    .slide-content
-      .middle.tac
-        %h1 Responsibilities
 
   %slide
     .slide-content
@@ -84,6 +77,8 @@
 
   %slide(img="#{image_path('what-jesse.gif')}")
 
+  %slide.slide--contain(img="#{image_path('css.gif')}")
+
   %slide
     .slide-content
       .middle.tac
@@ -109,14 +104,14 @@
       .middle.tac
         %h1.h3.mbf
           HTML/CSS are easy to write,
-          %b but hard to write well.
+          %b but hard to write <em>well</em>.
 
   %slide
     .slide-content
       .middle.tac
         %h1.h3.mbf
           We're building complex
-          %b systems now.
+          %b <em>systems</em> now.
 
   %slide
     .slide-content
@@ -129,12 +124,12 @@
     .slide-content
       .middle.tac
         %h1.h3.mbf
-          Ability for styles to flex and work in different environments.
+          Ability for styles to flex and work in different <em>environments</em>.
 
-  %slide.slide--dark
+  %slide
     .slide-content
       .middle.tac
-        %h1.h2 Define "Modular CSS"
+        %h1 <em>"</em>Modular CSS<em>"</em>
 
   %slide
     .slide-content
@@ -170,8 +165,8 @@
     .slide-content
       .middle.tac
         %h1.h3.mbf
-          Breaking your CSS down into smaller chunks will ultimately result in
-          more maintainable code.
+          Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
+          more <em>maintainable code</em>.
 
   %slide.slide--light
     .slide-content
@@ -187,7 +182,7 @@
     .slide-content
       .middle.tac
         %h1.h2.mbf
-          A <em>small</em> set of styles that is easily extendable.
+          A <em>small</em> set of styles that are easily extendable.
 
   %slide
     .slide-content
@@ -233,28 +228,50 @@
         %h1.h3.mbf
           "...<em>encapsulated</em> by the class."
 
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'encapsulation-header.png', alt: ''
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('html') do
+          :plain
+            <header class="header">
+              <nav class="nav">
+                <!--- ... --->
+              </nav>
+            </header>
+
   %slide.slide--light
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
           :plain
-            .header-item {
+            .nav {
+              margin-top: 21px;
+            }
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('html') do
+          :plain
+            <header class="header">
+              <nav class="header-nav nav">
+                <!--- ... --->
+              </nav>
+            </header>
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .header-nav {
               transform: translateY(-50%);
               position: relative;
               top: 50%;
             }
 
-  %slide.slide--light
-    .slide-content
-      .middle.middle--auto
-        - code('html') do
-          :plain
-            <header class="header">
-              <nav class="header-item">
-                <ul class="list">
-                  <li class="list-item"><a href="/">Home</a></li>
-                  <li class="list-item"><a href="/about">About</a></li>
-                  <li class="list-item"><a href="/contact">Contact</a></li>
-                </ul>
-              </nav>
-            </header>
