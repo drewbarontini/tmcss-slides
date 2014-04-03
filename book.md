@@ -46,16 +46,35 @@ Angular, iOS, and a lot of other languages and frameworks.
 
 ### What am I responsible for?
 
-I maintain and lead the front-end for the .com, our course engine, and oversee
-buildout of individual courses and .com features.
+- I maintain and lead the front-end for the .com
+- Our course engine
+- Buildout of individual courses
 
 ### The journey
 
-- Band
-- MySpace
-- T-shirts
-- Computer science
-- Front-end
+What has been my journey into front-end development? This is a question that we ask all new hires because it's really interesting to see the various paths people have taken to the field.
+
+#### Band
+
+For me, it all started when I was in a band back in High School and into College. Music is a creative field, obviously, but it was actually the abundance of design and web needs for the band that got me started.
+
+#### MySpace
+
+MySpace was a really big thing for bands back in the day (not sure what it is now?), and we didn't have the money to pay a web designer to create a custom MySpace page, so I took a stab at it. Little did I know, I'd really find a passion in the horrid CSS I wrote for custom MySpace pages.
+
+#### T-shirts
+
+Eventually, that evolved into more traditional illustration and graphic design, primarily for custom t-shirt and apparel designs. This was a really big component in the music world; custom t-shirt designs. There was a great community of designers that I learned a lot from.
+
+However, I continued honing my HTML/CSS and JavaScript skills in college, and ultimately became interested in more advanced, traditional programming.
+
+#### Computer science
+
+I took some computer science classes in college, and I became fascinated with programming.
+
+#### Front-end
+
+The balance and blend of design and programming landed me right where I'm happy to be now, front-end development.
 
 ## 2. Front-end is now a specialization
 
