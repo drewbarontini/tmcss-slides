@@ -82,7 +82,7 @@ The balance and blend of design and programming landed me right where I'm happy 
 
 ### "Front-end Developer & Designer"
 
-I used to call myself a "front-end developer and designer." The "and designer" bit has slowly faded away because of how happy I am to call myself a "front-end developer." It's a specialization that is respected and (mostly) understood by the industry.
+For a long time I called myself a "front-end developer and designer." The "and designer" bit slowly faded away because of how happy I am to call myself a "front-end developer." It's a specialization that is respected and (mostly) understood by the industry.
 
 ### Developers respect us (mostly)
 
