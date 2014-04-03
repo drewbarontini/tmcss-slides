@@ -178,10 +178,18 @@ Here we have a list module that simply handles text lists. It's only
 responsibility is to take a list of text, stack the items, and provide a little
 spacing to those items.
 
-Let's say that we have a navigation `list` in a `header`, and we want to vertically align that `list` to the header. Rather than create a modification to our `list` module, we can let the `header` handle how its elements are positioned. The `list` module just handles the text list and associated items.
+Let's say that we have a navigation (`nav`) in a `header`, and we want to vertically align that `nav` to the header. Instead of:
 
 ```css
-.header-item {
+.nav {
+  margin-top: 21px;
+}
+```
+
+We can let the `header` handle how its elements are positioned:
+
+```css
+.header-nav {
   transform: translateY(-50%);
   position: relative;
   top: 50%;
@@ -192,17 +200,13 @@ Now, in our markup:
 
 ```html
 <header class="header">
-  <nav class="header-item">
-    <ul class="list">
-      <li class="list-item"><a href="/">Home</a></li>
-      <li class="list-item"><a href="/about">About</a></li>
-      <li class="list-item"><a href="/contact">Contact</a></li>
-    </ul>
+  <nav class="header-nav nav">
+    <!--- ... --->
   </nav>
 </header>
 ```
 
-Our `list` module now remains encapsulated, and the `header` handles how the elements within are positioned.
+Our `nav` module now remains encapsulated, and the `header` handles how its elements are positioned.
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
