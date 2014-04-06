@@ -218,7 +218,7 @@ mentioning: **It's best to stick with only using classes, avoiding IDs altogethe
 ### Establish naming conventions
 
 It doesn't matter as much what your naming conventions are, just that you have
-them. Decided with your team (or yourself) what those should be, and make sure to stick with the system, but be open to evolving it over time. At Code School (and Envy Labs), we use MVCSS, which is a Sass-based CSS architecture that I created with Nick Walsh, a front-end developer at Envy Labs. To give you a sample of some naming conventions, I'll talk about how we do things.
+them. Decide with your team (or yourself) what those should be, and make sure to stick with the system, but be open to evolving it over time. At Code School (and Envy Labs), we use MVCSS, which is a Sass-based CSS architecture that I created with Nick Walsh, a front-end developer at Envy Labs. To give you a sample of some naming conventions, I'll talk about how we do things.
 
 *This is by no way preaching our method. This is merely an example that can help guide you to establishing your own naming conventions.*
 
@@ -265,7 +265,7 @@ Then, in our markup:
 
 #### States
 
-States are generally used for hooks that are added and removed via JavaScript; things like, `is-active`, `is-hidden`, `is-editing`, etc.
+States are generally used for hooks that are added conditionally via JavaScript; things like, `is-active`, `is-hidden`, `is-editing`, etc.
 
 ```css
 .dropdown.is-active {
