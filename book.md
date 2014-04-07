@@ -131,6 +131,8 @@ Your CSS should be:
 
 [Wikipedia](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 
+#### Single Responsibility
+
 Firstly, our CSS modules should only have one responsibility.
 
 ```css
@@ -152,6 +154,8 @@ Firstly, our CSS modules should only have one responsibility.
 Here we have a list module that simply handles text lists. It's only
 responsibility is to take a list of text, stack the items, and provide a little
 spacing to those items.
+
+#### Encapsulation
 
 Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another.
 
