@@ -183,7 +183,7 @@ What if we don't want every `.nav` to have this top `margin`?
 }
 ```
 
-The problem here is that our `.header` module is telling our `.nav` module what to do. It's not adhering to the idea of encapsulation. Instad, we can let the `header` handle how its elements are positioned:
+The problem here is that our `.header` module is telling our `.nav` module what to do. It's not adhering to the idea of encapsulation. Instead, we can let the `header` handle how its elements are positioned:
 
 ```css
 .header-nav {
