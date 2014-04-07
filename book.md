@@ -116,34 +116,11 @@ I heard three important pieces in that definition:
 2. Independently created
 3. Used in different systems
 
-These three pieces lead into some very important concepts behind modular CSS.
+Your CSS should be:
 
-### Separation of Concerns
-
-"Smaller parts" is really just talking about a separation of concerns:
-
-> Separation of concerns is a design principle for separating a computer
-   program into distinct sections, such that each section addresses a separate
-   concern.
-
-[Wikipedia](http://en.wikipedia.org/wiki/Separation_of_concerns)
-
-Essentially, we want to make sure that each of our CSS modules (chunks of
-styles) are only focusing on a single concern, or pattern. Breaking your CSS
-down into smaller chunks will ultimately result in more maintainable code.
-
-Let's say we wanted to manage our media elements throughout the site. We want to have circle avatars, so we create a `thumb` module that handles this.
-
-```css
-.thumb {
-  border-radius: 50%;
-  display: block;
-}
-```
-
-It's a very small file, but it's set up to allow us to create variants, and we
-can use this module in conjunction with other modules to build our CSS
-architecture. We'll look at this more later.
+- Broken down into smaller parts, smaller chunks of styles
+- Independently created, so you're modules can be properly encapsulated
+- Have the ability to be ported from system to system with minor modifications
 
 ### Single Responsibility Principle
 
@@ -154,9 +131,7 @@ architecture. We'll look at this more later.
 
 [Wikipedia](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 
-This is very similar to the "separation of concerns" concept, but the important
-part here is that our CSS modules should be encapsulated; meaning, they
-shouldn't directly affect one another.
+Firstly, our CSS modules should only have one responsibility.
 
 ```css
 .list {
@@ -178,21 +153,37 @@ Here we have a list module that simply handles text lists. It's only
 responsibility is to take a list of text, stack the items, and provide a little
 spacing to those items.
 
-Let's say that we have a navigation (`nav`) in a `header`, and we want to vertically align that `nav` to the header. Instead of:
+Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another.
+
+```html
+<header class="header">
+  <nav class="nav">
+    <!--- ... --->
+  </nav>
+</header>
+```
+
+Let's say that we have a navigation (`nav`) in a `header`, and we want to vertically align that `nav` to the header.
 
 ```css
 .nav {
-  margin-top: 21px;
+  margin-top: 20px;
 }
 ```
 
-We can let the `header` handle how its elements are positioned:
+What if we don't want every `.nav` to have this top `margin`?
+
+```css
+.header .nav {
+  margin-top: 20px;
+}
+```
+
+The problem here is that our `.header` module is telling our `.nav` module what to do. It's not adhering to the idea of encapsulation. Instad, we can let the `header` handle how its elements are positioned:
 
 ```css
 .header-nav {
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
+  margin-top: 20px;
 }
 ```
 
@@ -207,6 +198,26 @@ Now, in our markup:
 ```
 
 Our `nav` module now remains encapsulated, and the `header` handles how its elements are positioned.
+
+We can take this further and abstract out a more flexible vertical alignment module.
+
+```css
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+```
+
+```html
+<header class="header">
+  <nav class="nav valign">
+    <!--- ... --->
+  </nav>
+</header>
+```
+
+Now we've abstracted out the vertical alignment (positioning) of the nav, so as to keep things encapsulated.
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
