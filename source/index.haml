@@ -1,6 +1,6 @@
 %slides
 
-  %slide
+  %slide.slide--title
     .slide-content
       .bottom
         %h1.mbf
@@ -8,10 +8,14 @@
           %b Modular CSS
         %p.mbf by Drew Barontini &mdash; @drewbarontini
 
+  %slide.slide--video
+    .middle.tac
+      %iframe.mhc(width="640" height="480" src="//www.youtube.com/embed/7q89tdSjE-0" frameborder="0" allowfullscreen)
+
   %slide
     .slide-content
       .middle.tac
-        %h1.h4
+        %h2.h4
           Learn the "why" of modular CSS by analyzing the decisions that craft
           a flexible&nbsp;architecture.
 
@@ -23,7 +27,7 @@
   %slide.slide--fade(img="#{image_path('intro-office.jpg')}")
     .slide-content
       .middle.tac
-        %p.mbf.tfl.ttu Front-end Developer
+        %p.mbf.ttu.twb Front-end Developer
         %h1.h2.mbf Code School
 
   %slide
@@ -36,7 +40,7 @@
   %slide.slide--fade(img="#{image_path('intro-cs-courses.png')}")
     .slide-content
       .middle.tac
-        %h1.h3 Ruby, iOS, Design, JavaScript, Ember, Node, Angular, Dart
+        %h2.h3 Ruby, iOS, Design, JavaScript, Ember, Node, Angular, Dart
 
   %slide
     .slide-content
@@ -68,7 +72,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h1 Front-end Development
+        %h1.h2 Front-end Development
 
   %slide
     .slide-content
@@ -82,12 +86,12 @@
   %slide
     .slide-content
       .middle.tac
-        %h1.h3 Front-end Developer &amp; Designer
+        %h2.h3 Front-end Developer &amp; Designer
 
   %slide
     .slide-content
       .middle.tac
-        %h1.h3
+        %h2.h3
           Front-end Developer
           %span.tds &amp; Designer
 
@@ -96,37 +100,37 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h1.h3.mbf Developers Respect Our CSS
+        %h2.h3.mbf Developers Respect Our CSS
         %p.mbf.tsl (mostly)
 
-  %slide.slide--success
+  %slide
     .slide-content
       .middle.tac
-        %h1.h3.mbf
-          HTML/CSS are easy to write,
+        %h2.h3.mbf
+          HTML &amp; CSS are easy to write,
           %b but hard to write <em>well</em>.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.h3.mbf
+        %h2.h3.mbf
           We're building complex
           %b <em>systems</em> now.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.h3.mbf
+        %h2.h3.mbf
           Markup and styles
           %b working in unison.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.h3.mbf
+        %h2.h3.mbf
           Ability for styles to flex and work in different <em>environments</em>.
 
-  %slide
+  %slide.slide--title
     .slide-content
       .middle.tac
         %h1 <em>"</em>Modular CSS<em>"</em>
@@ -142,7 +146,7 @@
   %slide
     .slide-content
       .middle.tac
-        %h1 tl;dr
+        %h2 tl;dr
         %ul.lr.tsl
           %li Smaller parts
           %li Independently created
@@ -164,7 +168,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h1.h3.mbf
+        %h2.h3.mbf
           Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
           more <em>maintainable code</em>.
 
@@ -181,7 +185,7 @@
   %slide
     .slide-content
       .middle.tac
-        %h1.h2.mbf
+        %h2.mbf
           A <em>small</em> set of styles that are easily extendable.
 
   %slide
@@ -219,13 +223,13 @@
   %slide
     .slide-content
       .middle.tac
-        %h1.h2.mbf
+        %h2.h2.mbf
           A list module that <em>only</em> handles text lists.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.h3.mbf
+        %h2.h3.mbf
           "...<em>encapsulated</em> by the class."
 
   %slide
@@ -274,4 +278,145 @@
               position: relative;
               top: 50%;
             }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h3.mbf
+          <em>Positioning</em> and <em>layout</em> are constant struggles with
+          %b modular CSS.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbf Classes
+
+  %slide.slide--error
+    .slide-content
+      .middle.tac
+        %h2.h3.mbf
+          IDs are <em>too specific</em>, and they'll cause you headaches.
+
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h2.h3.mbf
+          Classes <em>flatten</em> the specificity.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbf Establish Naming Conventions
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h3 camelCase &amp; Hyphens
+        %ul.lr.tsl
+          %li
+            %code .list
+          %li
+            %code .tabList
+          %li
+            %code .list-item
+          %li
+            %code .tabList-item
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h1 Modifiers
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h3
+          A modifier is an <em>alternate</em> set of styling on a module.
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .btn {
+              background: blue;
+              color: white;
+              display: inline-block;
+              line-height: 2.5;
+              padding: 0 1em;
+            }
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .btn--b {
+              background: yellow;
+              color: black;
+            }
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('html') do
+          :plain
+            <a href="#" class="btn">Button</a>
+            <a href="#" class="btn btn--b">Button B</a>
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h1 States
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h3.mbf
+          Hooks added conditionally
+          %b via JavaScript.
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .dropdown {
+              display: none;
+            }
+
+            .dropdown.is-active {
+              display: block;
+            }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h1 Context
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h3.h2.mbf
+          Prevents modules affecting one another.
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .has-dropdown {
+              position: relative;
+            }
+
+  %slide.slide--light
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('html') do
+          :plain
+            <div class="container has-dropdown">
+              <div class="dropdown">
+                <!-- ... -->
+              </div>
+            </div>
 
