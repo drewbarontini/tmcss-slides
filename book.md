@@ -268,6 +268,10 @@ Then, in our markup:
 States are generally used for hooks that are added conditionally via JavaScript; things like, `is-active`, `is-hidden`, `is-editing`, etc.
 
 ```css
+.dropdown {
+  display: none;
+ }
+ 
 .dropdown.is-active {
   display: block;
 }
