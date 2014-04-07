@@ -221,7 +221,7 @@ We can take this further and abstract out a more flexible vertical alignment mod
 </header>
 ```
 
-Now we've abstracted out the vertical alignment (positioning) of the nav, so as to keep things encapsulated.
+Now we've abstracted out the vertical alignment (positioning) of the `.nav`, so as to keep things encapsulated.
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
