@@ -2,8 +2,8 @@
 
   %slide.slide--title
     .slide-content
-      .bottom
-        %h1.mbf
+      .middle.tac
+        %h1
           Thinking
           %b Modular CSS
         %p.mbf by Drew Barontini &mdash; @drewbarontini
@@ -19,7 +19,16 @@
           Learn the <strong>"why"</strong> of modular CSS by analyzing the
           <em>decisions</em> that craft a flexible&nbsp;architecture.
 
-  %slide.slide--light
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Agenda
+        %ul.lr.tsl
+          %li Define "Modular CSS"
+          %li Explore the thought process
+          %li Examples
+
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'me-v1.svg', alt: 'Drew Barontini Cartoon'
@@ -62,7 +71,10 @@
       .middle.tac
         %h1 MySpace?
 
-  %slide.slide--contain.slide--light(img="#{image_path('journey-tshirt.png')}")
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'journey-tshirt.png', alt: '', class: 'slide-media'
 
   %slide.slide--fade.slide--fade--dark(img="#{image_path('journey-cs.jpg')}")
     .slide-content
@@ -81,7 +93,10 @@
 
   %slide(img="#{image_path('what-jesse.gif')}")
 
-  %slide.slide--contain(img="#{image_path('css.gif')}")
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'css.gif', alt: '', class: 'slide-media'
 
   %slide
     .slide-content
@@ -152,7 +167,7 @@
           Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
           more <em>maintainable code</em>.
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -181,7 +196,7 @@
           have a single responsibility, and that responsibility should be
           entirely encapsulated by the class."
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto
         - code('css') do
@@ -217,7 +232,7 @@
       .middle.tac
         = image_tag 'encapsulation-header.png', alt: ''
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('html') do
@@ -228,7 +243,7 @@
               </nav>
             </header>
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -237,7 +252,7 @@
               margin-top: 21px;
             }
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('html') do
@@ -248,7 +263,7 @@
               </nav>
             </header>
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -313,7 +328,7 @@
         %h2.h3
           A modifier is an <em>alternate</em> set of styling on a module.
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -326,7 +341,7 @@
               padding: 0 1em;
             }
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -336,7 +351,7 @@
               color: black;
             }
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('html') do
@@ -356,7 +371,7 @@
           Hooks added conditionally
           %b via JavaScript.
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -380,7 +395,7 @@
         %h3.h2.mbf
           Prevents modules affecting one another.
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('css') do
@@ -389,7 +404,7 @@
               position: relative;
             }
 
-  %slide.slide--light
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('html') do
