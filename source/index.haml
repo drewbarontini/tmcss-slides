@@ -8,16 +8,13 @@
           %b Modular CSS
         %p.mbf by Drew Barontini &mdash; @drewbarontini
 
-  %slide.slide--video
-    .middle.tac
-      %iframe.slide-media.mhc(width="640" height="480" src="//www.youtube.com/embed/7q89tdSjE-0" frameborder="0" allowfullscreen)
-
   %slide
     .slide-content
       .middle.tac
-        %h2.h4
-          Learn the <strong>"why"</strong> of modular CSS by analyzing the
-          <em>decisions</em> that craft a flexible&nbsp;architecture.
+        .bdrb.bdrt.pbs.pts
+          %h2.h4.mbf
+            Learn the <strong>"why"</strong> of modular CSS by analyzing the
+            <em>decisions</em> that craft a flexible&nbsp;architecture.
 
   %slide
     .slide-content
@@ -33,11 +30,14 @@
       .middle.tac
         = image_tag 'me-v1.svg', alt: 'Drew Barontini Cartoon'
 
-  %slide.slide--fade(img="#{image_path('intro-office.jpg')}")
+  %slide
     .slide-content
       .middle.tac
+        = image_tag 'logo-cs.svg', alt: 'Code School', width: '300', class: 'mbm'
         %p.mbf Front-end Developer
         %h1.h2.mbf Code School
+
+  %slide(img="#{image_path('intro-office.jpg')}")
 
   %slide
     .slide-content
@@ -54,12 +54,13 @@
   %slide
     .slide-content
       .middle.tac
-        %ul.lr.mbf.tsxl
+        %h1 Responsibilities
+        %ul.lr.mbf.tsl
           %li Front-end for the .com
           %li Our course engine
           %li Buildout of individual courses
 
-  %slide.slide--fade.slide--fade--light(img="#{image_path('journey-journey.jpg')}")
+  %slide.slide--fade(img="#{image_path('journey-journey.jpg')}")
     .slide-content
       .middle.tac
         %h1.mbf The Journey
@@ -79,7 +80,9 @@
   %slide.slide--fade.slide--fade--dark(img="#{image_path('journey-cs.jpg')}")
     .slide-content
       .middle.tac
-        %h1 Computer Science
+        %h1.mbf Computer Science
+        %p.tsl
+          %em There is no spoon.
 
   %slide.slide--success
     .slide-content
@@ -93,10 +96,7 @@
 
   %slide(img="#{image_path('what-jesse.gif')}")
 
-  %slide
-    .slide-content
-      .middle.tac
-        = image_tag 'css.gif', alt: '', class: 'slide-media'
+  %slide.slide--contain.slide--dark(img="#{image_path('css.gif')}")
 
   %slide
     .slide-content
@@ -147,7 +147,7 @@
     .slide-content
       .middle
         %blockquote
-          "Modular design is an approach that subdivides a system into smaller
+          "<strong>Modular design</strong> is an approach that subdivides a system into smaller
           parts that can be independently created and then used in different
           systems to drive multiple functionalities."
 
@@ -192,7 +192,7 @@
     .slide-content
       .middle
         %blockquote
-          "The single responsibility principle states that every class should
+          "The <strong>single responsibility principle</strong> states that every class should
           have a single responsibility, and that responsibility should be
           entirely encapsulated by the class."
 
@@ -249,7 +249,23 @@
         - code('css') do
           :plain
             .nav {
-              margin-top: 21px;
+              margin-top: 20px;
+            }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h4
+          What if we want every <code>.nav</code> to have this top
+          <code>margin</code>?
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .header .nav {
+              margin-top: 20px;
             }
 
   %slide
@@ -353,7 +369,7 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsl
+      .middle.middle--auto
         - code('html') do
           :plain
             <a href="#" class="btn">Button</a>
@@ -368,7 +384,7 @@
     .slide-content
       .middle.tac
         %h3.mbf
-          Hooks added conditionally
+          Hooks added <em>conditionally</em>
           %b via JavaScript.
 
   %slide
@@ -393,7 +409,7 @@
     .slide-content
       .middle.tac
         %h3.h2.mbf
-          Prevents modules affecting one another.
+          Upholds <em>encapsulation</em>.
 
   %slide
     .slide-content
