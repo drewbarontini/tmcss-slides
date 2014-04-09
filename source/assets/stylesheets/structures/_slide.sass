@@ -35,8 +35,8 @@
 // ----- Error ----- //
 
 .slide.slide--error
-  @extend .bce
   @extend .tci
+  @extend .bce
 
 // ----- Fade ----- //
 
@@ -94,7 +94,7 @@
 // ----- Light ----- //
 
 .slide.slide--light
-  @extend .bcl
+  @extend .bci
   @extend .tcb
 
 // ----- Subdue ----- //
@@ -125,6 +125,7 @@
 // ----- Video ----- //
 
 .slide.slide--video
+  @extend .tci
   background: black
 
 // ----- Warning ----- //
@@ -141,10 +142,11 @@
 
 .slide.is-active
   @extend .fauxShow
-  +transition(all 0.4s ease-in-out)
 
   .slide-content
     @extend .fauxShow
+    +transform(scale(1))
+    +transition-transform(0.4s ease-in-out)
 
 // -------------------------------------
 //   Scaffolding
@@ -156,6 +158,7 @@
   @extend .fauxHide
   @extend .mal
   @extend .stretch
+  +transform(scale(0.5))
   z-index: 10
 
 // ----- Image ----- //
