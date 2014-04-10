@@ -293,9 +293,7 @@
         - code('css') do
           :plain
             .header-nav {
-              transform: translateY(-50%);
-              position: relative;
-              top: 50%;
+              margin-top: 20px;
             }
 
   %slide
@@ -413,6 +411,13 @@
       .middle.middle--auto.tsl
         - code('css') do
           :plain
+            .element--modifier {}
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
             .btn--b {
               background: #9b9b9b;
               color: black;
@@ -443,6 +448,13 @@
       .middle.middle--auto.tsl
         - code('css') do
           :plain
+            .is-state {}
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
             .dropdown {
               display: none;
             }
@@ -461,6 +473,13 @@
       .middle.tac
         %h3.h2.mbf
           Upholds <em>encapsulation</em>.
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .has-context {}
 
   %slide
     .slide-content
