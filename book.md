@@ -379,7 +379,7 @@ These "magic numbers" are best to avoid, but they are generally hard to complete
 }
 ```
 
-### Separate layout and positioning
+### Abstract layout and positioning
 
 In addition to magic numbers, layout and positioning in CSS can cause you a lot of headaches when trying to keep your styles flexible. Let's look at an example.
 
