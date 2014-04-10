@@ -65,7 +65,10 @@
       .middle.tac
         %h1.mbf The Journey
 
-  %slide.slide--contain.slide--dark(img="#{image_path('journey-band.jpg')}")
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'journey-band.jpg', alt: 'Band', class: 'slide-media'
 
   %slide.slide--fade.slide--fade--light(img="#{image_path('journey-jt.png')}")
     .slide-content
@@ -290,7 +293,7 @@
               top: 50%;
             }
 
-  %slide
+  %slide.slide--warning
     .slide-content
       .middle.tac
         %h2.tsh4.mbf
