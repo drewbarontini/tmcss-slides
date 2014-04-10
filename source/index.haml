@@ -107,11 +107,11 @@
         %h2.h3 Front-end Developer &amp; Designer
 
   %slide
-    .slide-content
+    .slide-content.noTransition
       .middle.tac
         %h2.h3
           Front-end Developer
-          %span.tds &amp; Designer
+          %span.tcs.tds &amp; Designer
 
   %slide(img="#{image_path('journey-excited.gif')}")
 
@@ -236,6 +236,11 @@
         = image_tag 'encapsulation-header.png', alt: ''
 
   %slide
+    .slide-content.noTransition
+      .middle.tac
+        = image_tag 'encapsulation-header-valign.png', alt: ''
+
+  %slide
     .slide-content
       .middle.middle--auto.tsl
         - code('html') do
@@ -293,12 +298,41 @@
               top: 50%;
             }
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .valign {
+              transform: translateY(-50%);
+              position: relative;
+              top: 50%;
+            }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('html') do
+          :plain
+            <header class="header">
+              <nav class="nav valign">
+                <!--- ... --->
+              </nav>
+            </header>
+
   %slide.slide--warning
     .slide-content
       .middle.tac
         %h2.tsh4.mbf
           <em>Positioning</em> and <em>layout</em> are constant struggles with
           modular CSS.
+
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h2.tsh3.mbf
+          Abstract <em>positioning</em> and <em>layout</em> from your modules
+          to increase their flexibility.
 
   %slide
     .slide-content
@@ -316,6 +350,15 @@
       .middle.tac
         %h2.h3.mbf
           Classes <em>flatten</em> the specificity.
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('html') do
+          :plain
+            <header class="header">
+              <!--- ... --->
+            </header>
 
   %slide
     .slide-content
@@ -349,11 +392,16 @@
 
   %slide
     .slide-content
+      .middle.tac
+        = image_tag 'conventions-modifier.png', alt: 'Buttons'
+
+  %slide
+    .slide-content
       .middle.middle--auto.tsl
         - code('css') do
           :plain
             .btn {
-              background: blue;
+              background: #292b2f;
               color: white;
               display: inline-block;
               line-height: 2.5;
@@ -366,7 +414,7 @@
         - code('css') do
           :plain
             .btn--b {
-              background: yellow;
+              background: #9b9b9b;
               color: black;
             }
 
@@ -434,3 +482,71 @@
               </div>
             </div>
 
+  %slide
+    .slide-content
+      %h1.h2
+        Inspiration from:
+      %ul.tsl
+        %li OOCSS
+        %li BEM
+        %li Suit
+        %li SMACSS
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Avoid Nesting
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %p.tsh4
+          This tenet applies specifically to CSS preprocessors, like
+          <strong>Sass</strong> and <strong>LESS</strong>, that allow you to
+          nest your selectors.
+
+  %slide.slide--error
+    .slide-content
+      .middle.tac
+        %p.tsh3
+          Although nesting is an attractive feature, be careful when using it.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.tsh2 Avoid "Magic Numbers"
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .element {
+              position: relative;
+              top: -2px;
+            }
+
+  %slide
+    .slide-content
+      .middle.middle--auto
+        - code('css') do
+          :plain
+            .element {
+              position: relative;
+              top: -2px; /* FIXME: Magic number! */
+            }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Abstract Layout &amp; Positioning
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        - code('css') do
+          :plain
+            .nav {
+              float: right;
+              width: 50%;
+            }
