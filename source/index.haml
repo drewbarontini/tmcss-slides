@@ -1,5 +1,41 @@
 %slides
 
+  %slide.slide--contain.slide--dark(img="http://gificiency.com/m/buffering-elephant.jpg")
+
+  %slide.slide--title
+    .slide-content
+      .middle.tac
+        %h1
+          Thinking
+          %b Modular CSS
+        %p.mbf by <strong>Drew Barontini</strong> &mdash; @drewbarontini
+
+  %slide.slide--fade(img="#{image_path('intro-danDenney.jpg')}")
+    .slide-content
+      .middle.tac
+        %h2.h3 Dan Denney is a <em class="bdrbi">saint</em>.
+      .bottom.right
+        %p.oph.tss
+          Photo Credit:
+          %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
+
+  %slide.slide--fade(img="#{image_path('intro-2013.jpg')}")
+    .slide-content
+      .middle.tac
+        %h2.h3 I <em class="bdrbi">love</em> this conference.
+      .bottom.right
+        %p.oph.tss
+          Photo Credit:
+          %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
+
+  %slide.slide--dark(img="#{image_path('intro-unimpressed.jpg')}")
+    .slide-content
+      .bottom
+        %h2.h3 Drew is "<em class="bdrbi">unimpressed</em>".
+        %p.oph.tss
+          Photo Credit:
+          %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
+
   %slide.slide--title
     .slide-content
       .middle.tac
@@ -78,7 +114,7 @@
   %slide
     .slide-content
       .middle.tac
-        = image_tag 'journey-tshirt.png', alt: '', class: 'slide-media'
+        = image_tag 'journey-tshirt.png', alt: '', class: 'slide-media', width: '800'
 
   %slide.slide--fade.slide--fade--dark(img="#{image_path('journey-cs.jpg')}")
     .slide-content
@@ -106,8 +142,8 @@
       .middle.tac
         %h2.h3 Front-end Developer &amp; Designer
 
-  %slide
-    .slide-content.noTransition
+  %slide.noTransition
+    .slide-content
       .middle.tac
         %h2.h3
           Front-end Developer
@@ -235,8 +271,8 @@
       .middle.tac
         = image_tag 'encapsulation-header.png', alt: ''
 
-  %slide
-    .slide-content.noTransition
+  %slide.noTransition
+    .slide-content
       .middle.tac
         = image_tag 'encapsulation-header-valign.png', alt: ''
 
@@ -558,7 +594,8 @@
   %slide
     .slide-content
       .middle.tac
-        %h1 Abstract Layout &amp; Positioning
+        %h1 Abstract Structure
+        %p Layout, Positioning
 
   %slide
     .slide-content
@@ -569,3 +606,44 @@
               float: right;
               width: 50%;
             }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h3.tsh4
+          <em>Why</em> is this navigation block being positioned to the right
+          at <code>50%</code>?
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h3.tsh4
+          \... because it's in <em>another module</em>?
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h1 Abstract Up
+
+  %slide
+    .slide-content
+      .middle.middle--auto
+        - code('html') do
+          :plain
+            <div class="grid">
+              <div class="grid-box grid-box--1of2">
+                <!--- ... --->
+              </div>
+              <div class="grid-box grid-box--1of2">
+                <nav class="nav">
+                  <!--- ... --->
+                </nav>
+              </div>
+            </div>
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h3
+          A <em>higher-level module</em> now handles the structure.
+
