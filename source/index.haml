@@ -126,12 +126,12 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h1.h2 Front-end Development
+        %h1.h3 Front-end Development
 
   %slide
     .slide-content
       .middle.tac
-        %h2 It's a specialization.
+        %h2.h3 It's a <span class="bdrb">specialization</span>.
 
   %slide(img="#{image_path('what-jesse.gif')}")
 
@@ -140,12 +140,12 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3 Front-end Developer &amp; Designer
+        %h2.tsh4 Front-end Developer &amp; Designer
 
   %slide.noTransition
     .slide-content
       .middle.tac
-        %h2.h3
+        %h2.tsh4
           Front-end Developer
           %span.tcs.tds &amp; Designer
 
@@ -160,9 +160,8 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3.mbf
-          HTML &amp; CSS are easy to write,
-          %b but hard to write <em>well</em>.
+        %h2.tsh4.mbf
+          HTML &amp; CSS are easy to write, but hard to write <em>well</em>.
 
   %slide
     .slide-content
@@ -174,7 +173,7 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3.mbf
+        %h2.tsh4.mbf
           Ability for styles to flex and work in different <em>environments</em>.
 
   %slide.slide--title
@@ -185,7 +184,7 @@
   %slide
     .slide-content
       .middle
-        %blockquote
+        %blockquote.tsl
           "<strong>Modular design</strong> is an approach that subdivides a system into smaller
           parts that can be independently created and then used in different
           systems to drive multiple functionalities."
@@ -202,19 +201,20 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.h3.mbf
+        %h2.tsh4.mbf
           Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
           more <em>maintainable code</em>.
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .thumb {
-              border-radius: 50%;
-              display: block;
-            }
+        :code
+          # lang: css
+
+          .thumb {
+            border-radius: 50%;
+            display: block;
+          }
 
   %slide
     .slide-content
@@ -230,7 +230,7 @@
   %slide
     .slide-content
       .middle
-        %blockquote
+        %blockquote.tsl
           "The <strong>single responsibility principle</strong> states that every class should
           have a single responsibility, and that responsibility should be
           entirely encapsulated by the class."
@@ -238,32 +238,33 @@
   %slide
     .slide-content
       .middle.middle--auto
-        - code('css') do
-          :plain
-            .list {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-            }
+        :code
+          # lang: css
 
-            .list-item {
-              display: block;
-              margin-bottom: 1em;
-            }
-            .list-item:last-child {
-              margin-bottom: 0;
-            }
+          .list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
 
-  %slide
-    .slide-content
-      .middle.tac
-        %h2.h2.mbf
-          A list module that <em>only</em> handles text lists.
+          .list-item {
+            display: block;
+            margin-bottom: 1em;
+          }
+          .list-item:last-child {
+            margin-bottom: 0;
+          }
 
   %slide
     .slide-content
       .middle.tac
         %h2.h3.mbf
+          A list module that <em>only</em> handles text lists.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.tsh4.mbf
           "...<em>encapsulated</em> by the class."
 
   %slide
@@ -279,80 +280,87 @@
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('html') do
-          :plain
-            <header class="header">
-              <nav class="nav">
-                <!--- ... --->
-              </nav>
-            </header>
+        :code
+          # lang: html
+
+          <header class="header">
+            <nav class="nav">
+              <!--- ... --->
+            </nav>
+          </header>
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .nav {
-              margin-top: 20px;
-            }
+        :code
+          # lang: css
+
+          .nav {
+            margin-top: 20px;
+          }
 
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh3
+        %h2.tsh4
           What if we want don't every <code class="twn">.nav</code> to have
           this <code class="twn">margin-top</code>?
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .header .nav {
-              margin-top: 20px;
-            }
+        :code
+          # lang: css
+
+          .header .nav {
+            margin-top: 20px;
+          }
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('html') do
-          :plain
-            <header class="header">
-              <nav class="header-nav nav">
-                <!--- ... --->
-              </nav>
-            </header>
+        :code
+          # lang: html
+
+          <header class="header">
+            <nav class="header-nav nav">
+              <!--- ... --->
+            </nav>
+          </header>
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .header-nav {
-              margin-top: 20px;
-            }
+        :code
+          # lang: css
+
+          .header-nav {
+            margin-top: 20px;
+          }
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .valign {
-              transform: translateY(-50%);
-              position: relative;
-              top: 50%;
-            }
+        :code
+          # lang: css
+
+          .valign {
+            transform: translateY(-50%);
+            position: relative;
+            top: 50%;
+          }
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('html') do
-          :plain
-            <header class="header">
-              <nav class="nav valign">
-                <!--- ... --->
-              </nav>
-            </header>
+        :code
+          # lang: html
+
+          <header class="header">
+            <nav class="nav valign">
+              <!--- ... --->
+            </nav>
+          </header>
 
   %slide.slide--warning
     .slide-content
@@ -364,7 +372,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh3.mbf
+        %h2.tsh4.mbf
           Abstract <em>positioning</em> and <em>layout</em> from your modules
           to increase their flexibility.
 
@@ -376,23 +384,24 @@
   %slide.slide--error
     .slide-content
       .middle.tac
-        %h2.h3.mbf
+        %h2.tsh4.mbf
           IDs are <em>too specific</em>, and they'll cause you headaches.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.h3.mbf
-          Classes <em>flatten</em> the specificity.
+        %h2.tsh4.mbf
+          Classes <span class="bdrbi">flatten</span> the specificity.
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('html') do
-          :plain
-            <header class="header">
-              <!--- ... --->
-            </header>
+        :code
+          # lang: html
+
+          <header class="header">
+            <!--- ... --->
+          </header>
 
   %slide
     .slide-content
@@ -432,40 +441,44 @@
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .btn {
-              background: #292b2f;
-              color: white;
-              display: inline-block;
-              line-height: 2.5;
-              padding: 0 1em;
-            }
+        :code
+          # lang: css
+
+          .btn {
+            background: #292b2f;
+            color: white;
+            display: inline-block;
+            line-height: 2.5;
+            padding: 0 1em;
+          }
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .element--modifier {}
+        :code
+          # lang: css
+
+          .element--modifier {}
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .btn--b {
-              background: #9b9b9b;
-              color: black;
-            }
+        :code
+          # lang: css
+
+          .btn--b {
+            background: #9b9b9b;
+            color: black;
+          }
 
   %slide
     .slide-content
       .middle.middle--auto
-        - code('html') do
-          :plain
-            <a href="#" class="btn">Button</a>
-            <a href="#" class="btn btn--b">Button B</a>
+        :code
+          # lang: html
+
+          <a href="#" class="btn">Button</a>
+          <a href="#" class="btn btn--b">Button B</a>
 
   %slide
     .slide-content
@@ -482,22 +495,24 @@
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .is-state {}
+        :code
+          # lang: css
+
+          .is-state {}
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .dropdown {
-              display: none;
-            }
+        :code
+          # lang: css
 
-            .dropdown.is-active {
-              display: block;
-            }
+          .dropdown {
+            display: none;
+          }
+
+          .dropdown.is-active {
+            display: block;
+          }
 
   %slide
     .slide-content
@@ -507,35 +522,38 @@
   %slide
     .slide-content
       .middle.tac
-        %h3.h2.mbf
+        %h3.mbf
           Upholds <em>encapsulation</em>.
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .has-context {}
+        :code
+          # lang: css
+
+          .has-context {}
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .has-dropdown {
-              position: relative;
-            }
+        :code
+          # lang: css
+
+          .has-dropdown {
+            position: relative;
+          }
 
   %slide
     .slide-content
-      .middle.middle--auto.tsl
-        - code('html') do
-          :plain
-            <div class="container has-dropdown">
-              <div class="dropdown">
-                <!-- ... -->
-              </div>
+      .middle.middle--auto
+        :code
+          # lang: html
+
+          <div class="container has-dropdown">
+            <div class="dropdown">
+              <!-- ... -->
             </div>
+          </div>
 
   %slide
     .slide-content
@@ -555,7 +573,7 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %p.tsh4
+        %p.tsl
           This tenet applies specifically to CSS preprocessors, like
           <strong>Sass</strong> and <strong>LESS</strong>, that allow you to
           nest your selectors.
@@ -563,49 +581,52 @@
   %slide.slide--error
     .slide-content
       .middle.tac
-        %p.tsh3
+        %p.tsh4
           Although nesting is an attractive feature, be careful when using it.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.tsh2 Avoid "Magic Numbers"
+        %h1.tsh3 Avoid "Magic Numbers"
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .element {
-              position: relative;
-              top: -2px;
-            }
+        :code
+          # lang: css
+
+          .element {
+            position: relative;
+            top: -2px;
+          }
 
   %slide
     .slide-content
       .middle.middle--auto
-        - code('css') do
-          :plain
-            .element {
-              position: relative;
-              top: -2px; /* FIXME: Magic number! */
-            }
+        :code
+          # lang: css
+
+          .element {
+            position: relative;
+            top: -2px; /* FIXME: Magic number! */
+          }
 
   %slide
     .slide-content
       .middle.tac
         %h1 Abstract Structure
-        %p Layout, Positioning
+        %p.tcs Layout, Positioning
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
-        - code('css') do
-          :plain
-            .nav {
-              float: right;
-              width: 50%;
-            }
+        :code
+          # lang: css
+
+          .nav {
+            float: right;
+            width: 50%;
+          }
 
   %slide
     .slide-content
@@ -628,18 +649,19 @@
   %slide
     .slide-content
       .middle.middle--auto
-        - code('html') do
-          :plain
-            <div class="grid">
-              <div class="grid-box grid-box--1of2">
-                <!--- ... --->
-              </div>
-              <div class="grid-box grid-box--1of2">
-                <nav class="nav">
-                  <!--- ... --->
-                </nav>
-              </div>
+        :code
+          # lang: html
+
+          <div class="grid">
+            <div class="grid-box grid-box--1of2">
+              <!--- ... --->
             </div>
+            <div class="grid-box grid-box--1of2">
+              <nav class="nav">
+                <!--- ... --->
+              </nav>
+            </div>
+          </div>
 
   %slide
     .slide-content
