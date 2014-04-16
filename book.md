@@ -133,7 +133,18 @@ Your CSS should be:
 
 #### Single Responsibility
 
-Firstly, our CSS modules should only have one responsibility.
+Firstly, our CSS modules should only have one responsibility. It's helpful, when creating your modules, to add a comment block at the top of the file that explains, in one sentence, what that module does; what is its responsibility.
+
+```sass
+// *************************************
+//
+//   List
+//   -> Text lists
+//
+// *************************************
+```
+
+This comment block is using Sass, but the same idea applies to vanilla CSS. Now, we know what our module is responsible for, so we can go ahead and build it.
 
 ```css
 .list {
@@ -151,8 +162,7 @@ Firstly, our CSS modules should only have one responsibility.
 }
 ```
 
-Here we have a list module that simply handles text lists. It's only
-responsibility is to take a list of text, stack the items, and provide a little
+Here we have the list module that handles text lists as its single responsibility. Its only responsibility is to take a list of text, stack the items, and provide a little
 spacing to those items.
 
 #### Encapsulation
