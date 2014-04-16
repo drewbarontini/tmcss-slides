@@ -423,10 +423,23 @@ To make sense of the "why," the thought process behind building a modular CSS ar
 
 ### 1. Identify
 
+- Structure, layout (highest level)
+- Common patterns (known)
+- Unique patterns (unknown)
+
 ### 2. Define
+
+- Responsibility
+- Name
 
 ### 3. Build
 
+- Write the module
+
 ### 4. Combine
 
+- Separate, encapsulated modules working together
+
 ### 5. Refine
+
+- Refactor
