@@ -3,15 +3,15 @@
   %slide(img="#{image_path('loading.gif')}")
     .slide-content
       .middle.tac
-        %p.mbf.tci Loading...
+        %p.tci Loading...
 
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1
+        %h1.mbxs
           Thinking
           %b Modular CSS
-        %p.mbf by <strong>Drew Barontini</strong> &mdash; @drewbarontini
+        %p by <strong>Drew Barontini</strong> &mdash; @drewbarontini
 
   %slide.slide--fade(img="#{image_path('intro-danDenney.jpg')}")
     .slide-content
@@ -42,23 +42,23 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1
+        %h1.mbxs
           Thinking
           %b Modular CSS
-        %p.mbf by <strong>Drew Barontini</strong> &mdash; @drewbarontini
+        %p by <strong>Drew Barontini</strong> &mdash; @drewbarontini
 
   %slide
     .slide-content
       .middle.tac
         .bdrb.bdrt.pbs.pts
-          %h2.h4.mbf
+          %h2.h4
             Learn the <strong>"why"</strong> of modular CSS by analyzing the
             <em>decisions</em> that craft a flexible&nbsp;architecture.
 
   %slide
     .slide-content
       .middle.tac
-        %h1 Agenda
+        %h1.mbxs Agenda
         %ul.lr.tsl
           %li Define "Modular CSS"
           %li Explore the thought process
@@ -73,15 +73,15 @@
     .slide-content
       .middle.tac
         = image_tag 'logo-cs.svg', alt: 'Code School', width: '300', class: 'mbm'
-        %p.mbf Front-end Developer
-        %h1.h2.mbf Code School
+        %p Front-end Developer
+        %h1.h2 Code School
 
   %slide(img="#{image_path('intro-office.jpg')}")
 
   %slide
     .slide-content
       .middle.tac
-        %p.mbf.tsxl
+        %p.tsxl
           %strong Code School
           is an online platform for learning web technologies.
 
@@ -93,8 +93,8 @@
   %slide
     .slide-content
       .middle.tac
-        %h1 Responsibilities
-        %ul.lr.mbf.tsl
+        %h1.mbxs Responsibilities
+        %ul.lr.tsl
           %li Front-end for the .com
           %li Our course engine
           %li Buildout of individual courses
@@ -102,7 +102,7 @@
   %slide.slide--fade(img="#{image_path('journey-journey.jpg')}")
     .slide-content
       .middle.tac
-        %h1.mbf The Journey
+        %h1 The Journey
 
   %slide
     .slide-content
@@ -114,27 +114,28 @@
       .middle.tac
         %h1 MySpace?
 
-  %slide
+  %slide.slide--light
     .slide-content
       .middle.tac
-        = image_tag 'journey-tshirt.png', alt: '', class: 'slide-media', width: '800'
+        = image_tag 'journey-tshirt.png', alt: '', width: '800'
 
   %slide.slide--fade.slide--fade--dark(img="#{image_path('journey-cs.jpg')}")
     .slide-content
       .middle.tac
-        %h1.mbf.tsh2 Computer Science
+        %h1.tsh2 Computer Science
         %p.tsl
           %em There is no spoon.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h1.h3 Front-end Development
+        %h1 Front-end Development
 
-  %slide
+  %slide.slide--subdue
     .slide-content
       .middle.tac
-        %h2.h3 It's a <span class="bdrb">specialization</span>.
+        %p.tch.tsl.twb Front-end Development is a
+        %h2.h1.shadowed.tci Specialization
 
   %slide(img="#{image_path('what-jesse.gif')}")
 
@@ -157,27 +158,29 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.h3.mbf Developers Respect Our CSS
-        %p.mbf.tsl (mostly)
+        %h2.h3 Developers Respect Our CSS
+        %p.tsl (mostly)
 
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
-          HTML &amp; CSS are easy to write, but hard to write <em>well</em>.
+        %h2.tsh4
+          HTML &amp; CSS are easy to write,
+          %b but hard to write <em>well</em>.
 
   %slide
     .slide-content
       .middle.tac
-        %h2.h3.mbf
+        %h2.h3
           We're building complex
           %b <em>systems</em> now.
 
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
-          Ability for styles to flex and work in different <em>environments</em>.
+        %h2.tsh4
+          Ability for styles to flex and
+          %b work in different <em>environments</em>.
 
   %slide.slide--title
     .slide-content
@@ -195,7 +198,7 @@
   %slide
     .slide-content
       .middle.tac
-        %h2 tl;dr
+        %h2.mbxs tl;dr
         %ul.lr.tsl
           %li Smaller parts
           %li Independently created
@@ -204,7 +207,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
+        %h2.tsh4
           Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
           more <em>maintainable code</em>.
 
@@ -219,16 +222,17 @@
             display: block;
           }
 
-  %slide
+  %slide.slide--subdue
     .slide-content
       .middle.tac
-        %h2.mbf
-          A <em>small</em> set of extendable styles.
+        %p.tch.tsl.twb A small set of
+        %h2.h1.shadowed.tci Extendable
+        %p.tch.tsl.twb styles
 
   %slide
     .slide-content
       .middle.tac
-        %h1.mbf Single Responsibility Principle
+        %h1 Single Responsibility Principle
 
   %slide
     .slide-content
@@ -261,13 +265,13 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3.mbf
+        %h2.h3
           A list module that <em>only</em> handles text lists.
 
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
+        %h2.tsh4
           "...<em>encapsulated</em> by the class."
 
   %slide
@@ -306,8 +310,10 @@
     .slide-content
       .middle.tac
         %h2.tsh4
-          What if we want don't every <code class="twn">.nav</code> to have
-          this <code class="twn">margin-top</code>?
+          What if we want don't every
+          %b
+            <code class="twn">.nav</code> to have this
+            <code class="twn">margin-top</code>?
 
   %slide
     .slide-content
@@ -348,9 +354,9 @@
           # lang: css
 
           .valign {
-            transform: translateY(-50%);
             position: relative;
             top: 50%;
+            transform: translateY(-50%);
           }
 
   %slide
@@ -368,32 +374,32 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
-          <em>Positioning</em> and <em>layout</em> are constant struggles with
-          modular CSS.
+        %h2.tsh4
+          <em>Positioning</em> and <em>layout</em> are constant
+          %b struggles with modular CSS.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
-          Abstract <em>positioning</em> and <em>layout</em> from your modules
-          to increase their flexibility.
+        %h2.tsh4
+          Abstract <em>positioning</em> and <em>layout</em>
+          %b from your modules to increase their flexibility.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.mbf Classes
+        %h1 Classes
 
   %slide.slide--error
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
+        %h2.tsh4
           IDs are <em>too specific</em>, and they'll cause you headaches.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh4.mbf
+        %h2.tsh4
           Classes <span class="bdrbi">flatten</span> the specificity.
 
   %slide
@@ -409,12 +415,12 @@
   %slide
     .slide-content
       .middle.tac
-        %h1.mbf Establish Naming Conventions
+        %h1 Establish Naming Conventions
 
   %slide
     .slide-content
       .middle.tac
-        %h2.h3 camelCase &amp; Hyphens
+        %h2.h3.mbxs camelCase &amp; Hyphens
         %ul.lr.tsl
           %li
             %code .list
@@ -434,7 +440,8 @@
     .slide-content
       .middle.tac
         %h2.h3
-          A modifier is an <em>alternate</em> set of styling on a module.
+          A modifier is an <em>alternate</em>
+          %b set of styling on a module.
 
   %slide
     .slide-content
@@ -491,7 +498,7 @@
   %slide
     .slide-content
       .middle.tac
-        %h3.mbf
+        %h3
           Hooks added <em>conditionally</em>
           %b via JavaScript.
 
@@ -522,11 +529,11 @@
       .middle.tac
         %h2.h1 Context
 
-  %slide
+  %slide.slide--subdue
     .slide-content
       .middle.tac
-        %h3.mbf
-          Upholds <em>encapsulation</em>.
+        %p.tch.tsl.twb Upholds
+        %h3.h1.shadowed.tci Encapsulation
 
   %slide
     .slide-content
@@ -560,8 +567,7 @@
 
   %slide
     .slide-content
-      %h1.h2
-        Inspiration from:
+      %h1.h2.mbxs Inspiration from:
       %ul.tsl
         %li OOCSS
         %li BEM
@@ -585,12 +591,14 @@
     .slide-content
       .middle.tac
         %p.tsh4
-          Although nesting is an attractive feature, be careful when using it.
+          Although nesting is an attractive
+          %b.twn feature, be careful when using it.
 
   %slide
     .slide-content
       .middle.tac
-        %h1.tsh3 Avoid "Magic Numbers"
+        %p.tfh.tsxl.ttu.twb Avoid
+        %h1.tsh2 "Magic Numbers"
 
   %slide
     .slide-content
@@ -618,7 +626,6 @@
     .slide-content
       .middle.tac
         %h1 Abstract Structure
-        %p.tcs Layout, Positioning
 
   %slide
     .slide-content
@@ -635,8 +642,8 @@
     .slide-content
       .middle.tac
         %h3.tsh4
-          <em>Why</em> is this navigation block being positioned to the right
-          at <code>50%</code>?
+          <em>Why</em> is this navigation block being
+          %b positioned to the right at <code>50%</code>?
 
   %slide
     .slide-content
@@ -644,10 +651,10 @@
         %h3.tsh4
           \... because it's in <em>another module</em>?
 
-  %slide
+  %slide.slide--subdue
     .slide-content
       .middle.tac
-        %h2.h1 Abstract Up
+        %h2.h1.shadowed.tci Abstract Up
 
   %slide
     .slide-content
@@ -670,5 +677,46 @@
     .slide-content
       .middle.tac
         %h2.h3
-          A <em>higher-level module</em> now handles the structure.
+          A <em>higher-level module</em> now
+          %b handles the structure.
+
+  %slide.slide--title
+    .slide-content
+      .middle.tac
+        %h1.tsh2 Exploring Why
+
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Process
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 5 Steps
+
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci 1. Identify
+
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci 2. Define
+
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci 3. Build
+
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci 4. Combine
+
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci 5. Refactor
 
