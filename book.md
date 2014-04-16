@@ -416,3 +416,17 @@ This is all well and good until we have a second `.nav` block that needs to be p
 ```
 
 A higher-level module now handles the structure. The individual module doesn't need to control its layout; it should flex and fit in any container.
+
+## 4. Exploring the "why"
+
+To make sense of the "why," the thought process behind building a modular CSS architecture, it's important to establish a process by which you can craft your styles, and constantly evaluate the system. I like to break it down into five simple steps.
+
+### 1. Identify
+
+### 2. Define
+
+### 3. Build
+
+### 4. Combine
+
+### 5. Refine
