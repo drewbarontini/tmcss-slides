@@ -415,4 +415,4 @@ This is all well and good until we have a second `.nav` block that needs to be p
 </div>
 ```
 
-A higher-level module now handles the structure.
+A higher-level module now handles the structure. The individual module doesn't need to control its layout; it should flex and fit in any container.
