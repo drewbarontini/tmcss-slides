@@ -86,8 +86,9 @@ For a long time I called myself a "front-end developer and designer." The "and d
 
 ### Developers respect us (mostly)
 
-Developers used to trample over the HTML and CSS, largely qualifying their actions as "HTML and CSS is so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. Writing quality, semantic markup and modular CSS is a craft. Now that the "front-end development" field has a more solid footing, developers understand the
-complexity behind the simple HTML and CSS languages.
+Developers used to trample over the HTML and CSS, largely qualifying their actions as "HTML and CSS is so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. Writing quality, semantic markup and modular CSS is a craft. Preprocessors like Sass and LESS now add a more programmatic layer of abstraction to our CSS, which is more easily understood by developers.
+
+Now that the "front-end development" field has a more solid footing, developers understand the complexity behind the simple HTML and CSS languages.
 
 ### Easy to write, hard to write well
 
