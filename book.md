@@ -345,11 +345,15 @@ system.
 
 This tenet applies specifically to CSS preprocessors, like Sass and LESS, that
 allow you  to nest your selectors. This is important to talk about because of
-the popularity and widespread use of CSS preprocessors. We use and love Sass, but there are other great options out there to pick from.
+the popularity and widespread use of CSS preprocessors. We use and love Sass, 
+but there are other great options out there to pick from.
 
 Although nesting is an attractive feature, and one touted by most "Beginner's
 Guide to Sass" tutorials out there, it's something you have to be very careful
 with.
+
+When I used Sass for the first time on a project, I nested *everything* inside
+of `section.content`.
 
 - Example of poorly nested Sass
 - Example of proper Sass
