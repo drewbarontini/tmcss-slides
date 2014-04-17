@@ -26,7 +26,9 @@ In all seriousness, I love this conference. I've only missed it once, and I look
 
 ### What is this talk about?
 
-So what am I hear to talk about? This talk is called, "Thinking Modular CSS". I *really* want to explore the thought process behind building modular CSS systems. We've talked a lot about the "how" of things like object-oriented CSS, but we haven't really talked about the process that we take to get there.
+So what am I hear to talk about? This talk is called, "Thinking Modular CSS". What does that mean?
+
+I *really* want to explore the thought process behind building modular CSS systems. We've talked a lot about the "how" of things like object-oriented CSS, but we haven't really talked about the process that we take to get there.
 
 It's something that we see with new front-end developers that we teach our system to. They understand how we structure things, what we call certain elements, but how we get there, the thought process, is the tough part.
 
