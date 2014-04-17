@@ -1,16 +1,20 @@
-# Thinking Modular CSS
+Thinking Modular CSS
+====================
 
-## Summary
+Summary
+-------
 
 We've talked about the "how" of writing modular CSS, but we haven't truly
 explored the "why." What is the thought process behind modular CSS? How do we make the decisions that craft a flexible CSS architecture? How do we decide when to create new components and modules, when to refactor, what goes where, when something is something? We'll take a practical look at that thought process by exploring popular sites and breaking them down into their various components.
 
-## Tagline
+Tagline
+-------
 
 Learn the "why" of modular CSS by analyzing the decisions that craft a flexible
 CSS architecture.
 
-## 1. Introduction
+1. Introduction
+---------------
 
 ### Musings about Dan Denney
 
@@ -76,7 +80,8 @@ I took some computer science classes in college, and I became fascinated with pr
 
 The balance and blend of design and programming landed me right where I'm happy to be now, front-end development.
 
-## 2. Front-end is now a specialization
+2. Front-end is now a specialization
+------------------------------------
 
 "Front-end Development" truly is a specialization; it's a craft, and it's not easy. It's not just for designers who code or developers who write HTML & CSS. It's a area of focus for unique individuals. I'm proud to call myself a "front-end developer."
 
@@ -422,7 +427,8 @@ This is all well and good until we have a second `.nav` block that needs to be p
 
 A higher-level module now handles the structure. The individual module doesn't need to control its layout; it should flex and fit in any container.
 
-## 4. Exploring the "why"
+4. Exploring the "why"
+----------------------
 
 To make sense of the "why," the thought process behind building a modular CSS architecture, it's important to establish a process by which you can craft your styles, and constantly evaluate the system. I like to break it down into five simple steps.
 
@@ -448,3 +454,8 @@ To make sense of the "why," the thought process behind building a modular CSS ar
 ### 5. Refine
 
 - Refactor
+
+### Front-end Audit
+
+5. Examples
+-----------
