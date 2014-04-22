@@ -473,16 +473,28 @@ This is an example of the grid we use, but the concept of a grid handing the str
 
 To make sense of the "why," the thought process behind building a modular CSS architecture, it's important to establish a process by which you can craft your styles, and constantly evaluate the system. I like to break it down into five simple steps.
 
+1. Identify
+2. Define
+3. Build
+4. Combine
+5. Refine
+
 ### 1. Identify
 
-- Structure, layout (highest level)
-- Common patterns (known)
-- Unique patterns (unknown)
+Obviously the first step is to identify the patterns that you'll start with when building your modules.
+
+#### Structure, layout (highest level)
+
+#### Common patterns (known)
+
+#### Unique patterns (unknown)
+
+#### Examples
 
 ### 2. Define
 
-- Responsibility
-- Name
+#### Responsibility
+#### Name
 
 ### 3. Build
 
@@ -500,3 +512,7 @@ To make sense of the "why," the thought process behind building a modular CSS ar
 
 5. Examples
 -----------
+
+### Dribbble
+### Instagram
+### GitHub
