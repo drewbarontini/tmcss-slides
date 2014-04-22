@@ -292,6 +292,8 @@ At Code School (and Envy Labs), we use MVCSS, which is a Sass-based CSS architec
 
 We use camelCase for multiple words, and we use a hyphen to separate a module from a submodule.
 
+**Note**: For filenames, use the same naming convention: (e.g. `_list.sass`, `.tabList.sass`)
+
 #### Modifiers
 
 > A modifier is an alternate set of styling on a module.
