@@ -489,13 +489,13 @@ Obviously the first step is to identify the patterns that you'll start with when
 
 I like to start at the highest level: the structure and layout elements. These tend to be the most reusable elements project to project.
 
-**Example**
+**Example**: (`.bucket`, `.cell`, `.grid`, `.row`)
 
 #### Common patterns (known)
 
-Next, look for the common patterns that you continually encounter and build for each project. Things like lists, cards, navigation, dropdowns, etc.
+Next, look for the common patterns that you continually encounter and build for each project.
 
-**Example**
+**Example**: (`.card`, `.dropdown`, `.list`, `.nav`)
 
 #### Unique patterns (unknown)
 
