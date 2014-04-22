@@ -485,15 +485,42 @@ Obviously the first step is to identify the patterns that you'll start with when
 
 #### Structure, layout (highest level)
 
+I like to start at the highest level: the structure and layout elements. These tend to be the most reusable elements project to project.
+
+**Example**
+
 #### Common patterns (known)
+
+Next, look for the common patterns that you continually encounter and build for each project. Things like lists, cards, navigation, dropdowns, etc.
+
+**Example**
 
 #### Unique patterns (unknown)
 
-#### Examples
+Finally, find the more unique patterns. Do you notice very specific style pattterns?
+
+**Example**
+
+#### Front-end Audit 
+
+[https://github.com/drewbarontini/front-end-audit/](https://github.com/drewbarontini/front-end-audit/)
+
+To help you document these, you can use what I call the "Front-end Audit." It's simply a document that you can use to outline and explain all of the components of your front-end architecture.
+
+- Info
+- Browser Support
+- Features
+- Tools
+- Icons
+- CSS Architecture
+- Notes & Ideas
+- Issues
+- Log
 
 ### 2. Define
 
 #### Responsibility
+
 #### Name
 
 ### 3. Build
@@ -507,8 +534,6 @@ Obviously the first step is to identify the patterns that you'll start with when
 ### 5. Refine
 
 - Refactor
-
-### Front-end Audit
 
 5. Examples
 -----------
