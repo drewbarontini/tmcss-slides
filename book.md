@@ -539,5 +539,13 @@ To help you document these, you can use what I call the "Front-end Audit." It's 
 -----------
 
 ### Dribbble
+
+[http://dribbble.com/](http://dribbble.com/)
+
 ### Instagram
+
+[http://instagram.com/](http://instagram.com/)
+
 ### GitHub
+
+[http://github.com/](http://github.com/)
