@@ -202,27 +202,27 @@ Secondly, our CSS modules should be encapsulated; meaning, they shouldn't direct
 </header>
 ```
 
-Let's say that we have a navigation (`nav`) in a `header`, and we want to vertically align that `nav` to the header.
+Let's say that we have a navigation (`nav`) in a `header`, and we want to float the `nav` to the right.
 
 ```css
 .nav {
-  margin-top: 20px;
+  float: right;
 }
 ```
 
-What if we don't want every `.nav` to have this top `margin`?
+What if we don't want every `.nav` to be floated to the right? What if we have a sub-navigation that is going to be on the left side?
 
 ```css
 .header .nav {
-  margin-top: 20px;
+  float: right;
 }
 ```
 
-The problem here is that our `.header` module is telling our `.nav` module what to do. It's not adhering to the idea of encapsulation. Instead, we can let the `header` handle how its elements are positioned:
+This works, but the problem here is that our `.header` module is telling our `.nav` module what to do. It's not adhering to the idea of encapsulation. Instead, we can let the `header` handle how its elements are positioned:
 
 ```css
 .header-nav {
-  margin-top: 20px;
+  float: right;
 }
 ```
 
@@ -238,25 +238,23 @@ Now, in our markup:
 
 Our `nav` module now remains encapsulated, and the `header` handles how its elements are positioned without talking to another module.
 
-We can take this further and abstract out a more flexible vertical alignment module, which is a good practice when it comes to layout and positioning.
+We can make this better by abstracting out a float utility class.
 
 ```css
-.valign {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.fr {
+  float: right;
 }
 ```
 
 ```html
 <header class="header">
-  <nav class="nav valign">
+  <nav class="nav fr">
     <!--- ... --->
   </nav>
 </header>
 ```
 
-Now we've abstracted out the vertical alignment (positioning) of the `.nav`, so as to keep things encapsulated.
+Now we've abstracted out the positioning of the `.nav`, so as to keep things encapsulated. Ultimately, you should have a grid module that handles the layout, but this illustrates the idea of encapsulation.
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
@@ -344,14 +342,7 @@ So, for example, we have this `.dropdown` that is hidden by default, and is show
 
 #### Context
 
-This is a very important concept that applies to the Single Responsibility
-Principle’s "encapsulation" idea. Let's say that we have a `dropdown`
-module, and when that `dropdown` is inside of a parent container, it needs to
-have `position: relative` on that parent container to set the positioning
-context. Rather than adding `position: relative` to that parent container, thus
-breaking the "Single Responsibility Principle," because our modules are no
-longer encapsulated (they are directly affecting one another), we can use a
-"context" class to handle this for us:
+This is a very important concept that applies to the Single Responsibility Principle’s "encapsulation" idea. Let's say that we have a `dropdown` module, and when that `dropdown` is inside of a parent container, it needs to have `position: relative` on that parent container to set the positioning context. Rather than adding `position: relative` to that parent container, thus breaking the "Single Responsibility Principle," because our modules are no longer encapsulated (they are directly affecting one another), we can use a "context" class to handle this for us:
 
 ```css
 .has-dropdown {
@@ -371,42 +362,44 @@ We define a context class using `.has-` as the prefix. Then, in our markup:
 
 The `.container` doesn't need to know what's in it by altering its styles to accommodate the `.dropdown`. Instead, the `.dropdown` says, "Hey! I'm here, deal with it."
 
-That's a brief look at the naming conventions and structure that our team uses,
-and hopefully it's a useful example that you can work off of. We borrowed a lot
-of ideas from great methodologies created by insanely smart people. Things like:
+That's a brief look at the naming conventions and structure that our team uses, and hopefully it's a useful example that you can work off of. We borrowed a lot of ideas from great methodologies created by insanely smart people. Things like:
 
 - OOCSS
 - BEM
 - Suit
 - SMACSS
 
-Make sure you look at all these methodologies, as one might fit your way of
-working the best. They are also great starting points to building your own
-system.
+Make sure you look at all these methodologies, as one might fit your way of working the best. They are also great starting points to building your own system.
 
 ### Avoid nesting
 
-This tenet applies specifically to CSS preprocessors, like Sass and LESS, that
-allow you  to nest your selectors. This is important to talk about because of
-the popularity and widespread use of CSS preprocessors.
+This tenet applies specifically to CSS preprocessors, like Sass and LESS, that allow you  to nest your selectors. This is important to talk about because of the popularity and widespread use of CSS preprocessors.
 
 *We use and love Sass,  but there are other great options out there to pick from.*
 
-Although nesting is an attractive feature, and one touted by most "Beginner's
-Guide to Sass" tutorials out there, it's something you have to be very careful
-with.
+Although nesting is an attractive feature, and one touted by most "Beginner's Guide to Sass" tutorials out there, it's something you have to be very careful with.
 
-When I used Sass for the first time on a project, I nested *everything* inside
-of `section.content`. It was an absolute nightmare.
+When I used Sass for the first time on a project, I nested *everything* inside of `section.content`. It was an absolute nightmare.
 
-- Example of poorly nested Sass
+```scss
+section.content {
+  .header {
+    // ...
+  }
+  .main {
+    // ...
+  }
+  .footer {
+    // ...
+  }
+}
+```
 
 Now, we don't nest much, and when we do, it's not many levels deep.
 
 - Example of proper Sass
 
-We generally only nest things like `:hover`, `:focus`, `::before`,
-`::after`, `:last-child`, etc.
+We generally only nest things like `:hover`, `:focus`, `::before`, `::after`, `:last-child`, etc.
 
 ```sass
 .btn
