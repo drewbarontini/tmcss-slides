@@ -373,7 +373,7 @@ That's a brief look at the naming conventions and structure that our team uses, 
 
 Make sure you look at all these methodologies, as one might fit your way of working the best. They are also great starting points to building your own system.
 
-### Avoid nesting
+### Limit nesting
 
 This tenet applies specifically to CSS preprocessors, like Sass and LESS, that allow you  to nest your selectors. This is important to talk about because of the popularity and widespread use of CSS preprocessors.
 
