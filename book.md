@@ -238,7 +238,7 @@ Now, in our markup:
 
 Our `nav` module now remains encapsulated, and the `header` handles how its elements are positioned without talking to another module.
 
-We can make this better by abstracting out a float utility class.
+We can make this better by abstracting out a `float` utility class.
 
 ```css
 .fr {
@@ -254,7 +254,9 @@ We can make this better by abstracting out a float utility class.
 </header>
 ```
 
-Now we've abstracted out the positioning of the `.nav`, so as to keep things encapsulated. Ultimately, you should have a grid module that handles the layout, but this illustrates the idea of encapsulation.
+Now we've abstracted out the positioning of the `.nav`, so as to keep things encapsulated. 
+
+*Ultimately, you should have a `grid` module that handles the layout, but this illustrates the idea of encapsulation.*
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
