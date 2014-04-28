@@ -1,5 +1,5 @@
-Define "Modular CSS"
-====================
+Define
+======
 
 Before we dig into the thinking behind modular CSS, it's important to define
 it, and talk about the tenets of modular CSS.
