@@ -1,5 +1,5 @@
-Exploring the "why"
-===================
+Process
+=======
 
 To make sense of the "why," the thought process behind building a modular CSS architecture, it's important to establish a process by which you can craft your styles, and constantly evaluate the system. I like to break it down into five simple steps.
 
