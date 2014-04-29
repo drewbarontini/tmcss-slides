@@ -50,6 +50,8 @@ To help you document these, you can use what I call the "Front-end Audit." It's 
 - Issues
 - Log
 
+---
+
 2. Define
 ---------
 
