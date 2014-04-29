@@ -9,6 +9,8 @@ To make sense of the "why," the thought process behind building a modular CSS ar
 4. Combine
 5. Refine
 
+---
+
 1. Identify
 -----------
 
