@@ -1,238 +1,813 @@
 <!DOCTYPE html>
 <html lang='en' ng-app='Presenter'>
-<head>
-<meta charset='utf-8'>
-<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-<title>Presenter</title>
-<link href="assets/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-</head>
-<body class='index'>
-<progress></progress>
-<script id='index' type='text/ng-template'>
-<slides>
-<slide>
-<div class='slide-content'>
-<div class='middle'>
-<div class='bucket bucket--flag'>
-<div class='bucket-media'>
-<img alt="Drew Barontini" width="200" height="290" src="http://drewb.io/me.svg" />
-</div>
-<div class='bucket-content'>
-<h1 class='mbf'>Presenter</h1>
-<p class='mbf'>by Drew Barontini</p>
-</div>
-</div>
-</div>
-</div>
-</slide>
-<slide>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide>
-<div class='slide-content'>
-<div class='middle middle--lrg tac'>
-<h1 class='mbf'>Another Title</h1>
-<p>This is a subtitle.</p>
-</div>
-</div>
-</slide>
-<slide class='slide--light'>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Light</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--dark'>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Dark</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--subdue'>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Subdued</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--success'>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Success</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--error'>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Error</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--warning'>
-<div class='slide-content'>
-<div class='middle tac'>
-<h1>Warning</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--light'>
-<div class='slide-content'>
-<h1 class='mbs'>List of Things</h1>
-<ul>
-<li>One thing</li>
-<li>Here's another thing</li>
-<li>And another</li>
-</ul>
-</div>
-</slide>
-<slide class='slide--light'>
-<div class='slide-content'>
-<h1 class='mbs'>List of Things</h1>
-<div class='grid'>
-<div class='grid-box grid-box--1of2'>
-<ul>
-<li>One thing</li>
-<li>Here's another thing</li>
-<li>And another</li>
-</ul>
-</div>
-<div class='grid-box grid-box--1of2'>
-<ul>
-<li>Oh man! Another thing</li>
-<li>Here's another thing</li>
-<li>And, finally, another</li>
-</ul>
-</div>
-</div>
-</div>
-</slide>
-<slide>
-<div class='slide-content'>
-<div class='middle middle--lrg tac'>
-<img alt="Placeholder" class="slide-img" src="http://placehold.it/800x400" />
-</div>
-</div>
-</slide>
-<slide class='slide--light'>
-<div class='slide-content'>
-<div class='middle middle--med'>
-<pre class="highlight sass"><span class="c1">// *************************************
-//
-//   Card
-//   -&gt; Individual style containers
-//
-// *************************************
-</span>
-<span class="nc">.card</span>
-  <span class="k">@extend</span> <span class="nc">.bci</span>
-  <span class="k">@extend</span> <span class="nc">.por</span>
-  <span class="k">@extend</span> <span class="nc">.ram</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$b-whitespace</span>
-</pre>
-</div>
-</div>
-</slide>
-<slide>
-<div class='slide-content'>
-<div class='middle middle--lrg'>
-<blockquote>
-"What would happen if I put some longer, more thought-provoking
-text here that fills up more space?"
-</blockquote>
-<p class='mbf'>&mdash; Drew Barontini</p>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--dark' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--light' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--highlight' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--subdue' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--success' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--error' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--warning' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
-<div class='slide-content'>
-<div class='middle tac'>
-<p class='h4 mbf'>Subtitle</p>
-<h1>Slide Title</h1>
-</div>
-</div>
-</slide>
-<slide img='http://gificiency.com/m/angry-batman.gif'>
-<div class='slide-content'>
-<div class='bottom'>
-<h1 class='tsh'>WHURZRACHEL!?</h1>
-</div>
-</div>
-</slide>
-<slide class='slide--fade slide--fade--light' img='http://gificiency.com/m/dance-abed.gif'>
-<div class='slide-content'>
-<div class='middle middle--med tac'>
-<h1>GIF</h1>
-<p>This is some more description text.</p>
-</div>
-</div>
-</slide>
-<slide class='slide--tile' img='http://gificiency.com/m/what-bored.gif'></slide>
-<slide class='slide--fade slide--fade--dark' img='http://gificiency.com/m/happy-hulk.gif'>
-<div class='slide-content'>
-<h1>GIF</h1>
-<p>This is some more description text.</p>
-</div>
-</slide>
-<slide img='http://gificiency.com/m/excited-parks.gif'></slide>
-</slides>
-
-</script>
-<div ui-view></div>
-<script src="assets/javascripts/application.js" type="text/javascript"></script>
-</body>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <title>Presenter</title>
+    <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='index'>
+    <progress></progress>
+    <script id='index' type='text/ng-template'>
+      <slides>
+        <slide img='assets/images/loading.gif'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tci'>Loading...</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--contain slide--position--bottom slide--title' img='assets/images/clouds.svg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>
+                Thinking
+                <b>Modular CSS</b>
+              </h1>
+              <p>by <strong>Drew Barontini</strong> &mdash; @drewbarontini</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade' img='assets/images/intro-danDenney.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>Dan Denney is a <em class="bdrbi">saint</em>.</h2>
+            </div>
+            <div class='bottom right'>
+              <p class='oph tss'>
+                Photo Credit:
+                <strong><a class="bdrbi tci" href="https://www.flickr.com/photos/natecroft/">Nate Croft</a></strong>
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade' img='assets/images/intro-2013.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>I <em class="bdrbi">love</em> this conference.</h2>
+            </div>
+            <div class='bottom right'>
+              <p class='oph tss'>
+                Photo Credit:
+                <strong><a class="bdrbi tci" href="https://www.flickr.com/photos/natecroft/">Nate Croft</a></strong>
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--dark' img='assets/images/intro-unimpressed.jpg'>
+          <div class='slide-content'>
+            <div class='bottom'>
+              <h2 class='h3'>Drew is "<em class="bdrbi">unimpressed</em>".</h2>
+              <p class='oph tss'>
+                Photo Credit:
+                <strong><a class="bdrbi tci" href="https://www.flickr.com/photos/natecroft/">Nate Croft</a></strong>
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--contain slide--position--bottom slide--title' img='assets/images/clouds.svg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>
+                Thinking
+                <b>Modular CSS</b>
+              </h1>
+              <p>by <strong>Drew Barontini</strong> &mdash; @drewbarontini</p>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <div class='bdrb bdrt pbs pts'>
+                <h2 class='h4'>
+                  Learn the <strong>"why"</strong> of modular CSS by analyzing the
+                  <em>decisions</em> that craft a flexible&nbsp;architecture.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Agenda</h1>
+              <ul class='lr tsl'>
+                <li>Define "Modular CSS"</li>
+                <li>Explore the thought process</li>
+                <li>Examples</li>
+              </ul>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="Drew Barontini Cartoon" width="50%" class="mbs" src="assets/images/me-v1.svg" />
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="Code School" width="300" class="mbm" src="assets/images/logo-cs.svg" />
+              <p>Front-end Developer</p>
+              <h1 class='h2'>Code School</h1>
+            </div>
+          </div>
+        </slide>
+        <slide img='assets/images/intro-office.jpg'></slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tsxl'>
+                <strong>Code School</strong>
+                is an online platform for learning web technologies.
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade' img='assets/images/intro-cs-courses.png'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>Ruby, iOS, Design, JavaScript, Ember, Node, Angular, Dart</h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Responsibilities</h1>
+              <ul class='lr tsl'>
+                <li>Front-end for the .com</li>
+                <li>Our course engine</li>
+                <li>Buildout of individual courses</li>
+              </ul>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade' img='assets/images/journey-journey.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>The Journey</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="Band" class="slide-media" width="423" height="564" src="assets/images/journey-band.jpg" />
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--light' img='assets/images/journey-jt.png'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>MySpace?</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--light'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="" width="800" src="assets/images/journey-tshirt.png" />
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--dark' img='assets/images/journey-cs.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='tsh2'>Computer Science</h1>
+              <p class='tsl'>
+                <em>There is no spoon.</em>
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--success'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Front-end Development</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tch tsl twb'>Front-end Development is a</p>
+              <h2 class='h1 shadowed tci'>Specialization</h2>
+            </div>
+          </div>
+        </slide>
+        <slide img='assets/images/what-jesse.gif'></slide>
+        <slide class='slide--contain slide--dark' img='assets/images/css.gif'></slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>Front-end Developer &amp; Designer</h2>
+            </div>
+          </div>
+        </slide>
+        <slide class='noTransition'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                Front-end Developer
+                <span class='tcs tds'>&amp; Designer</span>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide img='assets/images/journey-excited.gif'></slide>
+        <slide class='slide--warning'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>Developers Respect Our CSS</h2>
+              <p class='tsl'>(mostly)</p>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                HTML &amp; CSS are easy to write,
+                <b>but hard to write <em>well</em>.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>
+                We're building complex
+                <b><em>systems</em> now.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                Ability for styles to flex and
+                <b>work in different <em>environments</em>.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--title'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Modular CSS</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle'>
+              <blockquote class='tsl'>
+                "<strong>Modular design</strong> is an approach that subdivides a system into smaller
+                parts that can be independently created and then used in different
+                systems to drive multiple functionalities."
+              </blockquote>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='mbxs'>tl;dr</h2>
+              <ul class='lr tsl'>
+                <li>Smaller parts</li>
+                <li>Independently created</li>
+                <li>Used in different systems</li>
+              </ul>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--success'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
+                more <em>maintainable code</em>.
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.thumb</span> <span class="p">{</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50</span><span class="err">%</span><span class="p">;</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tch tsl twb'>A small set of</p>
+              <h2 class='h1 shadowed tci'>Extendable</h2>
+              <p class='tch tsl twb'>styles</p>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Single Responsibility Principle</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle'>
+              <blockquote class='tsl'>
+                "The <strong>single responsibility principle</strong> states that every class should
+                have a single responsibility, and that responsibility should be
+                entirely encapsulated by the class."
+              </blockquote>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto'>
+              <pre class="highlight css">&#x000A;<span class="nc">.list</span> <span class="p">{</span>&#x000A;  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>&#x000A;  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.list-item</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.list-item</span><span class="nd">:last-child</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>
+                A list module that <em>only</em> handles text lists.
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                "...<em>encapsulated</em> by the class."
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="" width="1024" height="125" src="assets/images/encapsulation-header.png" />
+            </div>
+          </div>
+        </slide>
+        <slide class='noTransition'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="" width="1024" height="125" src="assets/images/encapsulation-header-valign.png" />
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>&#x000A;    <span class="c">&lt;!--- ... ---&gt;</span>&#x000A;  <span class="nt">&lt;/nav&gt;</span>&#x000A;<span class="nt">&lt;/header&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.nav</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                What if we want don't every
+                <b>
+                  <code class="twn">.nav</code> to have this
+                  <code class="twn">margin-top</code>?
+                </b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.header</span> <span class="nc">.nav</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"header-nav nav"</span><span class="nt">&gt;</span>&#x000A;    <span class="c">&lt;!--- ... ---&gt;</span>&#x000A;  <span class="nt">&lt;/nav&gt;</span>&#x000A;<span class="nt">&lt;/header&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.header-nav</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.valign</span> <span class="p">{</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;  <span class="nl">top</span><span class="p">:</span> <span class="m">50</span><span class="err">%</span><span class="p">;</span>&#x000A;  <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-50</span><span class="err">%</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav valign"</span><span class="nt">&gt;</span>&#x000A;    <span class="c">&lt;!--- ... ---&gt;</span>&#x000A;  <span class="nt">&lt;/nav&gt;</span>&#x000A;<span class="nt">&lt;/header&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--warning'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                <em>Positioning</em> and <em>layout</em> are constant
+                <b>struggles with modular CSS.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--success'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                Abstract <em>positioning</em> and <em>layout</em>
+                <b>from your modules to increase their flexibility.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Classes</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--error'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                IDs are <em>too specific</em>, and they'll cause you headaches.
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--success'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='tsh4'>
+                Classes <span class="bdrbi">flatten</span> the specificity.
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>&#x000A;  <span class="c">&lt;!--- ... ---&gt;</span>&#x000A;<span class="nt">&lt;/header&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Establish Naming Conventions</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3 mbxs'>camelCase &amp; Hyphens</h2>
+              <ul class='lr tsl'>
+                <li>
+                  <code>.list</code>
+                </li>
+                <li>
+                  <code>.tabList</code>
+                </li>
+                <li>
+                  <code>.list-item</code>
+                </li>
+                <li>
+                  <code>.tabList-item</code>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h1'>Modifiers</h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>
+                A modifier is an <em>alternate</em>
+                <b>set of styling on a module.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <img alt="Buttons" width="639" height="75" src="assets/images/conventions-modifier.png" />
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.btn</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#292b2f</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">2.5</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">1em</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.element--modifier</span> <span class="p">{}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.btn--b</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#9b9b9b</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>&#x000A;<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn--b"</span><span class="nt">&gt;</span>Button B<span class="nt">&lt;/a&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h1'>States</h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h3>
+                Hooks added <em>conditionally</em>
+                <b>via JavaScript.</b>
+              </h3>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.is-state</span> <span class="p">{}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.dropdown</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.dropdown.is-active</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h1'>Context</h2>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tch tsl twb'>Upholds</p>
+              <h3 class='h1 shadowed tci'>Encapsulation</h3>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.has-context</span> <span class="p">{}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.has-dropdown</span> <span class="p">{</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container has-dropdown"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>&#x000A;    <span class="c">&lt;!-- ... --&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <h1 class='h2 mbxs'>Inspiration from:</h1>
+            <ul class='tsl'>
+              <li>OOCSS</li>
+              <li>BEM</li>
+              <li>Suit</li>
+              <li>SMACSS</li>
+            </ul>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Avoid Nesting</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--warning'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tsl'>
+                This tenet applies specifically to CSS preprocessors, like
+                <strong>Sass</strong> and <strong>LESS</strong>, that allow you to
+                nest your selectors.
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--error'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tsh4'>
+                Although nesting is an attractive
+                <b class='twn'>feature, be careful when using it.</b>
+              </p>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <p class='tfh tsxl ttu twb'>Avoid</p>
+              <h1 class='tsh2'>"Magic Numbers"</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.element</span> <span class="p">{</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;  <span class="nl">top</span><span class="p">:</span> <span class="m">-2px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto'>
+              <pre class="highlight css">&#x000A;<span class="nc">.element</span> <span class="p">{</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;  <span class="nl">top</span><span class="p">:</span> <span class="m">-2px</span><span class="p">;</span> <span class="c">/* FIXME: Magic number! */</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>Abstract Structure</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto tsl'>
+              <pre class="highlight css">&#x000A;<span class="nc">.nav</span> <span class="p">{</span>&#x000A;  <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">50</span><span class="err">%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h3 class='tsh4'>
+                <em>Why</em> is this navigation block being
+                <b>positioned to the right at <code>50%</code>?</b>
+              </h3>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h3 class='tsh4'>
+                ... because it's in <em>another module</em>?
+              </h3>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h1 shadowed tci'>Abstract Up</h2>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle middle--auto'>
+              <pre class="highlight html">&#x000A;<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-box grid-box--1of2"</span><span class="nt">&gt;</span>&#x000A;    <span class="c">&lt;!--- ... ---&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-box grid-box--1of2"</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>&#x000A;      <span class="c">&lt;!--- ... ---&gt;</span>&#x000A;    <span class="nt">&lt;/nav&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h2 class='h3'>
+                A <em>higher-level module</em> now
+                <b>handles the structure.</b>
+              </h2>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--title'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='tsh2'>Exploring Why</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='shadowed tci'>Process</h1>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1>5 Steps</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='shadowed tci'>1. Identify</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='shadowed tci'>2. Define</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='shadowed tci'>3. Build</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='shadowed tci'>4. Combine</h1>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='shadowed tci'>5. Refactor</h1>
+            </div>
+          </div>
+        </slide>
+      </slides>
+    </script>
+    <div ui-view></div>
+    <script src="assets/javascripts/application.js" type="text/javascript"></script>
+  </body>
 </html>
