@@ -1,14 +1,11 @@
+require 'uglifier'
+
 activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
 activate :syntax
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+set :page_title, 'Thinking Modular CSS'
 
 ready do
   sprockets.append_path File.join root, 'bower_components'
@@ -22,6 +19,6 @@ set :fonts_dir, 'assets/fonts'
 # Build-specific configuration
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  activate :minify_javascript, :compressor => ::Uglifier.new(:mangle => false)
   activate :relative_assets
 end
