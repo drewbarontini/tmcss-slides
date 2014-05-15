@@ -29,7 +29,7 @@
   %slide.slide--dark(img="#{image_path('intro-unimpressed.jpg')}")
     .slide-content
       .bottom
-        %h2.h3 Drew is "<em class="bdrbi">unimpressed</em>".
+        %h2.h3 Drew is "<em class="bdrbi">unimpressed</em>"
         %p.oph.tss
           Photo Credit:
           %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
@@ -55,11 +55,12 @@
       .middle.tac
         %h1.mbxs Agenda
         %ul.lr.tsl
+          %li Introduction
           %li Define "Modular CSS"
           %li Explore the thought process
           %li Examples
 
-  %slide
+  %slide.slide--translateX
     .slide-content
       .middle.tac
         = image_tag 'me-v1.svg', alt: 'Drew Barontini Cartoon', width: '50%', class: 'mbs'
@@ -72,11 +73,15 @@
         %h1.h2 Code School
 
   %slide(img="#{image_path('intro-office.jpg')}")
+  %slide(img="#{image_path('intro-epcot-01.jpg')}")
+  %slide(img="#{image_path('intro-epcot-02.jpg')}")
+  %slide(img="#{image_path('intro-whirlyball.jpg')}")
+  %slide(img="#{image_path('intro-magic.jpg')}")
 
   %slide
     .slide-content
       .middle.tac
-        %p.tsxl
+        %p.tsl
           %strong Code School
           is an online platform for learning web&nbsp;technologies.
 
@@ -99,17 +104,17 @@
       .middle.tac
         %h1 The Journey
 
-  %slide
+  %slide.slide--video.slide--translateX
     .slide-content
       .middle.tac
-        = image_tag 'journey-band.jpg', alt: 'Band', class: 'slide-media'
+        = image_tag 'journey-band.jpg', alt: 'Band', class: 'ram'
 
-  %slide.slide--fade.slide--fade--light(img="#{image_path('journey-jt.png')}")
+  %slide.slide--fade.slide--translateY(img="#{image_path('journey-myspace.jpg')}")
     .slide-content
-      .middle.tac
+      .bottom
         %h1 MySpace
 
-  %slide.slide--light
+  %slide.slide--light.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'journey-tshirt.png', alt: '', width: '800'
@@ -174,10 +179,20 @@
           Ability for styles to flex and
           %b work in different <em>environments</em>.
 
-  %slide.slide--title
+  %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
         %h1 Modular CSS
+
+  %slide.slide--error.slide--translateX
+    .slide-content
+      .middle.tac
+        = image_tag 'define-pages.svg', alt: 'Pages', class: 'db mhc', width: '40%'
+
+  %slide.slide--success.slide--translateX
+    .slide-content
+      .middle.tac
+        = image_tag 'define-components.svg', alt: 'Components', class: 'db mhc', width: '40%'
 
   %slide
     .slide-content
@@ -221,9 +236,9 @@
         %h2.h1.shadowed.tci Extendable
         %p.tsl.twb styles
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.h1.shadowed.tci Single Responsibility Principle
 
   %slide
@@ -302,7 +317,7 @@
     .slide-content
       .middle.tac
         %h2.tsh4
-          What if we want don't every
+          What if we don't want every
           %b
             <code class="twn">.nav</code> to have this
             <code class="twn">margin-top</code>?
@@ -377,9 +392,9 @@
           Abstract <em>positioning</em> and <em>layout</em>
           %b from your modules to increase their flexibility.
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.shadowed.tci Classes
 
   %slide.slide--error
@@ -404,9 +419,9 @@
             <!--- ... --->
           </header>
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.shadowed.tci Establish Naming Conventions
 
   %slide
@@ -423,9 +438,9 @@
           %li
             %code .tabList-item
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h2.h1.shadowed.tci Modifiers
 
   %slide
@@ -435,7 +450,7 @@
           A modifier is an <em>alternate</em>
           %b set of styling on a module.
 
-  %slide
+  %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'conventions-modifier.png', alt: 'Buttons'
@@ -482,9 +497,9 @@
           <a href="#" class="btn">Button</a>
           <a href="#" class="btn btn--b">Button B</a>
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h2.h1.shadowed.tci States
 
   %slide
@@ -516,9 +531,9 @@
             display: block;
           }
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h2.h1.shadowed.tci Context
 
   %slide.slide--subdue
@@ -566,9 +581,9 @@
         %li Suit
         %li SMACSS
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.shadowed.tci Limit Nesting
 
   %slide.slide--warning
@@ -586,9 +601,9 @@
           Although nesting is an attractive
           %b.twn feature, <span class="bdrbi">be careful</span> when using it.
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.shadowed.tci Magic Numbers
 
   %slide
@@ -613,9 +628,9 @@
             top: -2px; /* FIXME: Magic number! */
           }
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.shadowed.tci Abstract Structure
 
   %slide
@@ -671,43 +686,48 @@
           A <em>higher-level module</em> now
           %b handles the structure.
 
-  %slide.slide--title
+  %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.tsh2 Exploring Why
+        %h1 Exploring Why
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
-      .middle.tac
+      .bottom
         %h1.shadowed.tci Process
 
-  %slide.slide--subdue
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci 5 Steps
+        %h1 5 Steps
 
-  %slide.slide--subdue
+  %slide.slide--scale.slide--subdue
     .slide-content
       .middle.tac
-        %h1.shadowed.tci 1. Identify
+        = image_tag 'process-identify.svg', alt: 'Identify', class: 'db mbm mhc', width: '20%'
+        %h1.tsh2 1. Identify
 
-  %slide.slide--subdue
+  %slide.slide--scale.slide--subdue
     .slide-content
       .middle.tac
-        %h1.shadowed.tci 2. Define
+        = image_tag 'process-define.svg', alt: 'Define', class: 'db mbm mhc', width: '20%'
+        %h1.tsh2 2. Define
 
-  %slide.slide--subdue
+  %slide.slide--scale.slide--subdue
     .slide-content
       .middle.tac
-        %h1.shadowed.tci 3. Build
+        = image_tag 'process-build.svg', alt: 'Build', class: 'db mbm mhc', width: '20%'
+        %h1.tsh2 3. Build
 
-  %slide.slide--subdue
+  %slide.slide--scale.slide--subdue
     .slide-content
       .middle.tac
-        %h1.shadowed.tci 4. Combine
+        = image_tag 'process-combine.svg', alt: 'Combine', class: 'db mbm mhc', width: '20%'
+        %h1.tsh2 4. Combine
 
-  %slide.slide--subdue
+  %slide.slide--scale.slide--subdue
     .slide-content
       .middle.tac
-        %h1.shadowed.tci 5. Refine
+        = image_tag 'process-refine.svg', alt: 'Refine', class: 'db mbm mhc', width: '20%'
+        %h1.tsh2 5. Refine
 
