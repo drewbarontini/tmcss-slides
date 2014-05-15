@@ -277,27 +277,31 @@
     .slide-content
       .middle.middle--auto
         :code
+          # lang: sass
+
+          // *************************************
+          //
+          //   Cell
+          //   -> Width-limiting blocks
+          //
+          // *************************************
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
           # lang: css
 
-          .list {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-          }
-
-          .list-item {
-            display: block;
-            margin-bottom: 1em;
-          }
-          .list-item:last-child {
-            margin-bottom: 0;
+          .cell {
+            margin: 0 auto;
+            max-width: 900px;
           }
 
   %slide
     .slide-content
       .middle.tac
         %h2.h3
-          A list module that <em>only</em> handles text lists.
+          A module that <em>only</em> handles width limiting.
 
   %slide
     .slide-content
@@ -309,11 +313,6 @@
     .slide-content
       .middle.tac
         = image_tag 'encapsulation-header.png', alt: ''
-
-  %slide.noTransition
-    .slide-content
-      .middle.tac
-        = image_tag 'encapsulation-header-valign.png', alt: ''
 
   %slide
     .slide-content
@@ -334,7 +333,7 @@
           # lang: css
 
           .nav {
-            margin-top: 20px;
+            float: right;
           }
 
   %slide
@@ -343,8 +342,7 @@
         %h2.tsh4
           What if we don't want every
           %b
-            <code class="twn">.nav</code> to have this
-            <code class="twn">margin-top</code>?
+            <code class="twn">.nav</code> to be floated right?
 
   %slide
     .slide-content
@@ -353,7 +351,17 @@
           # lang: css
 
           .header .nav {
-            margin-top: 20px;
+            float: right;
+          }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .header-nav {
+            float: right;
           }
 
   %slide
@@ -374,20 +382,8 @@
         :code
           # lang: css
 
-          .header-nav {
-            margin-top: 20px;
-          }
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: css
-
-          .valign {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+          .fr {
+            float: right;
           }
 
   %slide
@@ -397,7 +393,7 @@
           # lang: html
 
           <header class="header">
-            <nav class="nav valign">
+            <nav class="nav fr">
               <!--- ... --->
             </nav>
           </header>
@@ -447,6 +443,21 @@
     .slide-content
       .bottom
         %h1.shadowed.tci Establish Naming Conventions
+
+  %slide.slide--fade(img="#{image_path('define-nick.jpg')}")
+    .slide-content
+      .bottom
+        %blockquote.mbxs.tsxl
+          "This is how it is now,
+          %span.db until we change it."
+        %p.twb &mdash; Nick Walsh
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %p.tsxl.tsi
+          * This is by no way
+          %span.db preaching our method.
 
   %slide
     .slide-content
@@ -625,6 +636,24 @@
           Although nesting is an attractive
           %b.twn feature, <span class="bdrbi">be careful</span> when using it.
 
+  %slide
+    .slide-content
+      .middle.middle--auto
+        :code
+          # lang: scss
+
+          section.content {
+            .header {
+              // ...
+            }
+            .main {
+              // ...
+            }
+            .footer {
+              // ...
+            }
+          }
+
   %slide.slide--subdue.slide--translateY
     .slide-content
       .bottom
@@ -723,13 +752,34 @@
   %slide
     .slide-content
       .middle.tac
-        %h1 5 Steps
+        %h1
+          %span{ style: 'font-size: 200%' } 5
+          %b.tss Steps
 
   %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-identify.svg', alt: 'Identify', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 1. Identify
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h4
+          In order to <em>write</em> the pattern,
+          %span.db we need to <strong class="bdrb">find</strong> the pattern.
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci
+          Structure
+          %span.db &amp; Layout
+
+  %slide= image_tag 'process-twitter-01.png', alt: 'About Twitter', width: '100%', height: '100%'
+  %slide= image_tag 'process-twitter-02.png', alt: 'About Twitter', width: '100%', height: '100%'
+  %slide= image_tag 'process-twitter-03.png', alt: 'About Twitter', width: '100%', height: '100%'
+  %slide= image_tag 'process-twitter-04.png', alt: 'About Twitter', width: '100%', height: '100%'
 
   %slide.slide--scale
     .slide-content
