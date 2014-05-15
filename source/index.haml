@@ -58,7 +58,7 @@
           %li Explore the thought process
           %li Examples
 
-  %slide.slide--dark
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'me.jpg', alt: 'Drew Barontini', class: 'slide-img mbm'
@@ -85,6 +85,7 @@
           %p.tci Epcot Food &amp; Wine Festival
 
   %slide(img="#{image_path('intro-epcot-02.jpg')}")
+  %slide(img="#{image_path('intro-epcot-03.jpg')}")
 
   %slide.slide--translateY(img="#{image_path('intro-whirlyball.jpg')}")
     .slide-content
@@ -97,6 +98,11 @@
       .bottom
         .card.card--dark
           %p.tci Orlando Magic Game
+
+  %slide.slide--scale
+    .slide-content
+      .middle.tac
+        = image_tag 'logo-cs.svg', alt: 'Code School', width: '300', class: 'mbm'
 
   %slide
     .slide-content
@@ -202,7 +208,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1 Modular CSS
+        %h1.mbm Modular CSS
 
   %slide.slide--error.slide--translateX
     .slide-content
@@ -721,31 +727,31 @@
       .middle.tac
         %h1 5 Steps
 
-  %slide.slide--scale.slide--subdue
+  %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-identify.svg', alt: 'Identify', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 1. Identify
 
-  %slide.slide--scale.slide--subdue
+  %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-define.svg', alt: 'Define', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 2. Define
 
-  %slide.slide--scale.slide--subdue
+  %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-build.svg', alt: 'Build', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 3. Build
 
-  %slide.slide--scale.slide--subdue
+  %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-combine.svg', alt: 'Combine', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 4. Combine
 
-  %slide.slide--scale.slide--subdue
+  %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-refine.svg', alt: 'Refine', class: 'db mbm mhc', width: '20%'
