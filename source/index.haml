@@ -4,7 +4,7 @@
     .slide-content
       .middle.tac
         %h1.mbm
-          Thinking
+          %span.oph.tss Thinking
           %b Modular CSS
 
   %slide.slide--fade(img="#{image_path('intro-danDenney.jpg')}")
@@ -25,7 +25,7 @@
           Photo Credit:
           %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
 
-  %slide.slide--dark(img="#{image_path('intro-unimpressed.jpg')}")
+  %slide.slide--fade(img="#{image_path('intro-unimpressed.jpg')}")
     .slide-content
       .bottom
         %h2.h3 Drew is "<em class="bdrbi">unimpressed</em>"
@@ -37,7 +37,7 @@
     .slide-content
       .middle.tac
         %h1.mbm
-          Thinking
+          %span.oph.tss Thinking
           %b Modular CSS
 
   %slide
@@ -130,10 +130,8 @@
       .middle.tac
         %h1 The Journey
 
-  %slide.slide--video.slide--translateX
+  %slide.slide--contain.slide--video(img="#{image_path('journey-band.jpg')}")
     .slide-content
-      .middle.tac
-        = image_tag 'journey-band.jpg', alt: 'Band', class: 'ram'
 
   %slide.slide--fade.slide--translateY(img="#{image_path('journey-myspace.jpg')}")
     .slide-content
@@ -715,7 +713,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1 Exploring Why
+        %h1.mbm Exploring Why
 
   %slide.slide--subdue.slide--translateY
     .slide-content
