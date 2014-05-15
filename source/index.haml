@@ -3,10 +3,9 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbxs
+        %h1.mbm
           Thinking
           %b Modular CSS
-        %p by <strong>Drew Barontini</strong> &mdash; @drewbarontini
 
   %slide.slide--fade(img="#{image_path('intro-danDenney.jpg')}")
     .slide-content
@@ -37,10 +36,9 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbxs
+        %h1.mbm
           Thinking
           %b Modular CSS
-        %p by <strong>Drew Barontini</strong> &mdash; @drewbarontini
 
   %slide
     .slide-content
@@ -60,10 +58,12 @@
           %li Explore the thought process
           %li Examples
 
-  %slide.slide--translateX
+  %slide.slide--dark
     .slide-content
       .middle.tac
-        = image_tag 'me-v1.svg', alt: 'Drew Barontini Cartoon', width: '50%', class: 'mbs'
+        = image_tag 'me.jpg', alt: 'Drew Barontini', class: 'slide-img mbm'
+        %h2.tsl Drew Barontini
+        %p @drewbarontini
 
   %slide
     .slide-content
@@ -72,11 +72,31 @@
         %p Front-end Developer
         %h1.h2 Code School
 
-  %slide(img="#{image_path('intro-office.jpg')}")
-  %slide(img="#{image_path('intro-epcot-01.jpg')}")
+  %slide.slide--translateY(img="#{image_path('intro-office.jpg')}")
+    .slide-content
+      .bottom
+        .card.card--dark
+          %p.tci GAI Building &mdash; Orlando, FL
+
+  %slide.slide--translateY(img="#{image_path('intro-epcot-01.jpg')}")
+    .slide-content
+      .bottom
+        .card.card--dark
+          %p.tci Epcot Food &amp; Wine Festival
+
   %slide(img="#{image_path('intro-epcot-02.jpg')}")
-  %slide(img="#{image_path('intro-whirlyball.jpg')}")
-  %slide(img="#{image_path('intro-magic.jpg')}")
+
+  %slide.slide--translateY(img="#{image_path('intro-whirlyball.jpg')}")
+    .slide-content
+      .bottom
+        .card.card--dark
+          %p.tci WhirlyBall
+
+  %slide.slide--translateY(img="#{image_path('intro-magic.jpg')}")
+    .slide-content
+      .bottom
+        .card.card--dark
+          %p.tci Orlando Magic Game
 
   %slide
     .slide-content
