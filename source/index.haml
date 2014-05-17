@@ -72,11 +72,13 @@
         %p Front-end Developer
         %h1.h2 Code School
 
-  %slide.slide--translateY(img="#{image_path('intro-office.jpg')}")
+  %slide.slide--translateY(img="#{image_path('intro-office-01.jpg')}")
     .slide-content
       .bottom
         .card.card--dark
           %p.tci GAI Building &mdash; Orlando, FL
+
+  %slide(img="#{image_path('intro-office-02.jpg')}")
 
   %slide.slide--translateY(img="#{image_path('intro-epcot-01.jpg')}")
     .slide-content
@@ -107,11 +109,12 @@
   %slide
     .slide-content
       .middle.tac
-        %p.tsl
+        %p.tsl.twl
           %strong Code School
-          is an online platform for learning web&nbsp;technologies.
+          is an online platform
+          %span.db for learning web technologies.
 
-  %slide.slide--fade(img="#{image_path('intro-cs-courses.png')}")
+  %slide.slide--fade(img="#{image_path('intro-csCourses.png')}")
     .slide-content
       .middle.tac
         %h2.h3 Ruby, iOS, Design, JavaScript, Ember, Node, Angular, Dart
@@ -186,9 +189,9 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4
-          HTML &amp; CSS are easy to write,
-          %b but hard to write <em>well</em>.
+        %h2.h4
+          <strong>HTML &amp; CSS</strong> are easy to write,
+          %span.db but hard to write <em>well</em>.
 
   %slide.slide--subdue
     .slide-content
@@ -199,9 +202,9 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4
-          Ability for styles to flex and
-          %b work in different <em>environments</em>.
+        %h2.h4
+          Ability for styles to <strong>flex</strong> and
+          %span.db work in different <em>environments</em>.
 
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
@@ -213,7 +216,7 @@
       .middle.tac
         = image_tag 'define-pages.svg', alt: 'Pages', class: 'db mhc', width: '40%'
 
-  %slide.slide--success.slide--translateX
+  %slide.slide--success.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'define-components.svg', alt: 'Components', class: 'db mhc', width: '40%'
@@ -238,7 +241,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh4
+        %h2.h4
           Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
           more <em>maintainable code</em>.
 
@@ -300,13 +303,14 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3
-          A module that <em>only</em> handles width limiting.
+        %h2.twl.tsh3
+          A module that <em>only</em>
+          %span.db handles width limiting.
 
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4
+        %h2.h4
           "...<em>encapsulated</em> by the class."
 
   %slide
@@ -339,9 +343,9 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.tsh4
-          What if we don't want every
-          %b
+        %h2.h4
+          What if we don't want <em>every</em>
+          %span.db
             <code class="twn">.nav</code> to be floated right?
 
   %slide
@@ -401,16 +405,16 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.tsh4
+        %h2.h4
           <em>Positioning</em> and <em>layout</em> are constant
-          %b struggles with modular CSS.
+          %span.db struggles with modular CSS.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh4
+        %h2.tsxl.twl
           Abstract <em>positioning</em> and <em>layout</em>
-          %b from your modules to increase their flexibility.
+          %span.db from your modules to increase their flexibility.
 
   %slide.slide--subdue.slide--translateY
     .slide-content
@@ -420,14 +424,15 @@
   %slide.slide--error
     .slide-content
       .middle.tac
-        %h2.tsh4
-          IDs are <em>too specific</em>, and they'll cause you headaches.
+        %h2.tsh3.twl
+          IDs are <em>too specific</em>, and
+          %span.db they'll cause you headaches.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsh4
-          Classes <span class="bdrbi">flatten</span> the specificity.
+        %h2.h4
+          Classes <strong class="bdrbi">flatten</strong> the specificity.
 
   %slide
     .slide-content
@@ -481,9 +486,9 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3
+        %h2.tsh3.twl
           A modifier is an <em>alternate</em>
-          %b set of styling on a module.
+          %span.db set of styling on a module.
 
   %slide.slide--scale
     .slide-content
@@ -540,9 +545,9 @@
   %slide
     .slide-content
       .middle.tac
-        %h3
+        %h3.twl
           Hooks added <em>conditionally</em>
-          %b via JavaScript.
+          %span.db via JavaScript.
 
   %slide
     .slide-content
@@ -624,7 +629,7 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %p.tsl
+        %p.tsl.twl
           This tenet applies specifically to CSS preprocessors, like
           <strong>Sass</strong> and <strong>LESS</strong>, that allow you to
           nest your selectors.
@@ -632,9 +637,9 @@
   %slide.slide--error
     .slide-content
       .middle.tac
-        %p.tsh4
+        %p.tsh4.twl
           Although nesting is an attractive
-          %b.twn feature, <span class="bdrbi">be careful</span> when using it.
+          %span.db feature, <strong class="bdrbi">be careful</strong> when using it.
 
   %slide
     .slide-content
@@ -700,14 +705,14 @@
   %slide
     .slide-content
       .middle.tac
-        %h3.tsh4
+        %h3.h4
           <em>Why</em> is this navigation block being
-          %b positioned to the right at <code>50%</code>?
+          %span.db positioned to the right at <code>50%</code>?
 
   %slide
     .slide-content
       .middle.tac
-        %h3.tsh4
+        %h3.h4
           \... because it's in <em>another module</em>?
 
   %slide.slide--subdue
@@ -735,9 +740,9 @@
   %slide
     .slide-content
       .middle.tac
-        %h2.h3
+        %h2.tsh3.twl
           A <em>higher-level module</em> now
-          %b handles the structure.
+          %span.db handles the structure.
 
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
