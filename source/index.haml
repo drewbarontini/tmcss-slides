@@ -116,7 +116,7 @@
   %slide.slide--fade(img="#{image_path('intro-csCourses.png')}")
     .slide-content
       .middle.tac
-        %h2.h3 Ruby, Rails, iOS, JavaScript, Angular, HTML, Sass, Design
+        %h2.h3 Ruby, Rails, Sass, Git, Angular, iOS, jQuery
 
   %slide
     .slide-content
@@ -140,6 +140,8 @@
       .bottom
         %h1 MySpace
 
+  %slide(img="#{image_path('sad-sansa.gif')}")
+
   %slide.slide--light
     .slide-content
       .middle.tac
@@ -149,6 +151,11 @@
     .slide-content
       .middle.tac
         %h1 Computer Science
+
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'intro-circles.png', alt: ''
 
   %slide.slide--success
     .slide-content
@@ -160,6 +167,13 @@
       .middle.tac
         %p.tsl.twb Front-end Development is a
         %h2.h1.shadowed.tci Specialization
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h3.h4
+          It’s an area of focus for <strong>unique</strong>
+          %span.db <strong>individuals</strong> with <em>particular</em> skills.
 
   %slide(img="#{image_path('what-jesse.gif')}")
 
@@ -184,6 +198,16 @@
       .middle.tac
         %h2.h3 Developers Respect Our CSS
         %p.tsl (mostly)
+
+  %slide
+    .slide-content
+      .bottom
+        %blockquote.mbs
+          "<strong>HTML</strong> and <strong>CSS</strong> are so easy, any of us
+          can write it."
+        %p
+          &mdash; <strong>Joe Developer</strong>,
+          %em Sweeping Generalist
 
   %slide
     .slide-content
@@ -215,10 +239,30 @@
       .middle.tac
         = image_tag 'define-pages.svg', alt: 'Pages', class: 'db mhc', width: '40%'
 
-  %slide.slide--success.slide--scale
+  %slide.slide--success.slide--translateX
     .slide-content
       .middle.tac
         = image_tag 'define-components.svg', alt: 'Components', class: 'db mhc', width: '40%'
+
+  %slide
+    .slide-content
+      .bottom
+        %blockquote.mbxs.tsl
+          "Focusing on creating healthy front-end modules instead of complete
+          pages can help break complex page layouts into <strong>reusable
+          solutions</strong>."
+        %p
+          &mdash;
+          %strong Dave Rupert
+
+  %slide
+    .slide-content
+      .middle.tac
+        %blockquote.mbxs.tsl
+          "Tiny Bootstraps, for Every Client"
+        %p
+          &mdash;
+          %strong Dave Rupert
 
   %slide
     .slide-content
@@ -271,9 +315,10 @@
     .slide-content
       .middle
         %blockquote.tsl
-          "The <strong>single responsibility principle</strong> states that every class should
-          have a single responsibility, and that responsibility should be
-          entirely encapsulated by the class."
+          "The <strong>single responsibility principle</strong> states that
+          every class should have a <em>single responsibility</em>, and that
+          responsibility should be entirely <em>encapsulated</em> by the
+          class."
 
   %slide
     .slide-content
@@ -439,20 +484,20 @@
         :code
           # lang: html
 
-          <header class="header">
+          <table class="table">
             <!--- ... --->
-          </header>
+          </table>
 
   %slide.slide--subdue.slide--translateY
     .slide-content
       .bottom
         %h1.shadowed.tci Establish Naming Conventions
 
-  %slide.slide--fade(img="#{image_path('define-nick.jpg')}")
+  %slide
     .slide-content
-      .bottom
+      .middle.tac
         %blockquote.mbxs.tsxl
-          "This is how it is now,
+          "This is how it is <em>now</em>,
           %span.db until we change it."
         %p.twb &mdash; Nick Walsh
 
@@ -462,6 +507,11 @@
         %p.tsxl.tsi
           * This is by no way
           %span.db preaching our method.
+
+  %slide
+    .slide-content
+      .middle
+        = image_tag 'logo-mvcss.svg', alt: 'MVCSS', width: '40%', height: '40%', class: 'db mhc'
 
   %slide
     .slide-content
@@ -614,11 +664,16 @@
   %slide
     .slide-content
       %h1.h2.mbxs Inspiration from:
-      %ul.tsl
-        %li OOCSS
-        %li BEM
-        %li Suit
-        %li SMACSS
+      .grid
+        .grid-box.grid-box--1of3
+          %ul.tsl
+            %li OOCSS
+            %li BEM
+            %li Suit
+        .grid-box.grid-box--1of3
+          %ul.tsl
+            %li SMACSS
+            %li inuit.css
 
   %slide.slide--subdue.slide--translateY
     .slide-content
@@ -743,15 +798,250 @@
           A <em>higher-level module</em> now
           %span.db handles the structure.
 
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbs
+          %span.tfb.tsxs.ttn.twn Evolution <em>of</em>
+          %span.db Modular CSS
+
+  %slide.slide--dark
+    .slide-content
+      .middle.tac
+        = image_tag 'define-shot.png', alt: 'Dribbble Shot'
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxs
+        :code
+          # lang: html
+
+          <div class="shot">
+            <div>
+              <a href="#">
+                <img src="image.jpg" alt="" />
+              </a>
+              <ul>
+                <li>3</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </div>
+            <h2>
+              <a href="#">
+                <img src="user.jpg" alt="User Name" />
+                User Name
+              </a>
+            </h2>
+          </div>
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .shot          { }
+          .shot div      { }
+          .shot img      { }
+          .shot ul       { }
+          .shot ul li    { }
+          .shot h2       { }
+          /* ... */
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %h2.h4
+          What happens when that <code>&lt;h2&gt;</code>
+          %span.db turns into an <code>&lt;h3&gt;</code>?
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %ul.lr.tsxl
+          %li Change the HTML
+          %li Change the CSS
+
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h2 Scope it!
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxs
+        :code
+          # lang: html
+
+          <div class="shot">
+            <div class="shot-preview">
+              <a href="#">
+                <img class="shot-img" src="image.jpg" alt="" />
+              </a>
+              <ul class="shot-list">
+                <li>3</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </div>
+            <h2 class="shot-user">
+              <a href="#">
+                <img src="user.jpg" alt="User Name" />
+                User Name
+              </a>
+            </h2>
+          </div>
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .shot         { }
+          .shot-preview { }
+          .shot-img     { }
+          .shot-list    { }
+          .shot-title   { }
+          .shot-user    { }
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %h2.h4
+          What if we use this <em>same pattern</em>
+          %span.db for another element?
+
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h2.h3 Abstract the name!
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxs
+        :code
+          # lang: html
+
+          <div class="card">
+            <div class="card-preview">
+              <a href="#">
+                <img class="card-img" src="image.jpg" alt="" />
+              </a>
+              <ul class="card-list">
+                <li>3</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </div>
+            <h2 class="card-user">
+              <a href="#">
+                <img src="user.jpg" alt="User Name" />
+                User Name
+              </a>
+            </h2>
+          </div>
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .card         { }
+          .card-preview { }
+          .card-img     { }
+          .card-list    { }
+          .card-title   { }
+          .card-user    { }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .card-list { }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxs
+        :code
+          # lang: html
+
+          <div class="card">
+            <div class="card-preview">
+              <a href="#">
+                <img class="card-img" src="image.jpg" alt="" />
+              </a>
+              <ul class="list">
+                <li>3</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </div>
+            <h2 class="card-user">
+              <a href="#">
+                <img src="user.jpg" alt="User Name" />
+                User Name
+              </a>
+            </h2>
+          </div>
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .card { }
+          /* ... */
+
+          .list { }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxs
+        :code
+          # lang: html
+
+          <div class="card">
+            <a href="#">
+              <img class="thumb thumb--m" src="image.jpg" alt="" />
+            </a>
+            <ul class="list">
+              <li class="list-item">3</li>
+              <li class="list-item"><a href="#">1</a></li>
+              <li class="list-item"><a href="#">2</a></li>
+            </ul>
+          </div>
+          <div class="bucket bucket--flag">
+            <div class="bucket-media">
+              <img class="thumb" src="user.jpg" alt="User Name" />
+            </div>
+            <div class="bucket-content">
+              <h2><a href="#">User Name</a></h2>
+            </div>
+          </div>
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsl
+          A collection of <em>independently created</em> modules that can be
+          mixed and matched to create <em>multiple</em> style patterns.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h4
+          How do we find these <em>patterns</em>?
+
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbm Exploring Why
-
-  %slide.slide--subdue.slide--translateY
-    .slide-content
-      .bottom
-        %h1.shadowed.tci Process
+        %h1.mbm Process
 
   %slide
     .slide-content
