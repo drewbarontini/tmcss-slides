@@ -147,7 +147,7 @@
       .middle.tac
         = image_tag 'journey-tshirt.png', alt: '', width: '800'
 
-  %slide.slide--fade.slide--fade--dark(img="#{image_path('journey-cs.jpg')}")
+  %slide.slide--dark(img="#{image_path('hacker.gif')}")
     .slide-content
       .middle.tac
         %h1 Computer Science
@@ -176,8 +176,6 @@
           %span.db <strong>individuals</strong> with <em>particular</em> skills.
 
   %slide(img="#{image_path('what-jesse.gif')}")
-
-  %slide.slide--contain.slide--dark(img="#{image_path('css.gif')}")
 
   %slide
     .slide-content
@@ -214,7 +212,7 @@
       .middle.tac
         %h2.h4
           <strong>HTML &amp; CSS</strong> are easy to write,
-          %span.db but hard to write <em>well</em>.
+          %span.db but hard to write <em class="bdrb">well</em>.
 
   %slide.slide--subdue
     .slide-content
@@ -233,6 +231,12 @@
     .slide-content
       .middle.tac
         %h1.mbm Modular CSS
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %h2.h3.mbxs Module, Pattern, Component, etc.
+        %p.tsi Self-contained set of styles
 
   %slide.slide--error.slide--translateX
     .slide-content
@@ -255,14 +259,12 @@
           &mdash;
           %strong Dave Rupert
 
-  %slide
+  %slide.slide--contain.slide--video(img="#{image_path('define-ted-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('define-ted-02.png')}")
+  %slide.slide--contain.slide--video.slide--fade.slide--fade--dark(img="#{image_path('define-ted-02.png')}")
     .slide-content
       .middle.tac
-        %blockquote.mbxs.tsl
-          "Tiny Bootstraps, for Every Client"
-        %p
-          &mdash;
-          %strong Dave Rupert
+        %p.tsl A collection of <em>reusable</em> style patterns.
 
   %slide
     .slide-content
@@ -501,17 +503,17 @@
           %span.db until we change it."
         %p.twb &mdash; Nick Walsh
 
+  %slide
+    .slide-content
+      .middle
+        = image_tag 'logo-mvcss.svg', alt: 'MVCSS', width: '40%', height: '40%', class: 'db mhc'
+
   %slide.slide--warning
     .slide-content
       .middle.tac
         %p.tsxl.tsi
           * This is by no way
           %span.db preaching our method.
-
-  %slide
-    .slide-content
-      .middle
-        = image_tag 'logo-mvcss.svg', alt: 'MVCSS', width: '40%', height: '40%', class: 'db mhc'
 
   %slide
     .slide-content
@@ -863,9 +865,9 @@
           %li Change the HTML
           %li Change the CSS
 
-  %slide.slide--success
+  %slide.slide--success(img="#{image_path('yes-cage.gif')}")
     .slide-content
-      .middle.tac
+      .bottom
         %h2 Scope it!
 
   %slide
@@ -913,9 +915,9 @@
           What if we use this <em>same pattern</em>
           %span.db for another element?
 
-  %slide.slide--success
+  %slide.slide--success(img="#{image_path('yes-cage.gif')}")
     .slide-content
-      .middle.tac
+      .bottom
         %h2.h3 Abstract the name!
 
   %slide
@@ -1032,6 +1034,8 @@
           A collection of <em>independently created</em> modules that can be
           mixed and matched to create <em>multiple</em> style patterns.
 
+  %slide(img="#{image_path('happy-frodo.gif')}")
+
   %slide
     .slide-content
       .middle.tac
@@ -1042,6 +1046,8 @@
     .slide-content
       .middle.tac
         %h1.mbm Process
+
+  %slide.slide--contain.slide--video(img="#{image_path('css.gif')}")
 
   %slide
     .slide-content
@@ -1070,10 +1076,70 @@
           Structure
           %span.db &amp; Layout
 
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Row
+        %p.tsl Full-width bars
+
   %slide= image_tag 'process-twitter-01.png', alt: 'About Twitter', width: '100%', height: '100%'
   %slide= image_tag 'process-twitter-02.png', alt: 'About Twitter', width: '100%', height: '100%'
   %slide= image_tag 'process-twitter-03.png', alt: 'About Twitter', width: '100%', height: '100%'
   %slide= image_tag 'process-twitter-04.png', alt: 'About Twitter', width: '100%', height: '100%'
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Cell
+        %p.tsl Width-limiting
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Well
+        %p.tsl Vertical spacing
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Grid
+        %p.tsl Grid-based element arrangement
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Bucket
+        %p.tsl <strong>OOCSS</strong> cornerstone
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci Common Patterns
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Card
+        %p.tsl Stylistic container
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs List
+        %p.tsl Enumeration of elements
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci
+          Unique
+          %span.db Patterns
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.mbxs Front-end Audit
+        %p.tsl Outline your front-end architecture
 
   %slide
     .slide-content
@@ -1092,11 +1158,53 @@
             %li Notes &amp; Ideas
             %li Issues &amp; Log
 
+  %slide
+    .slide-content
+      .middle.tac
+        %p= link_to 'https://github.com/drewbarontini/front-end-audit', 'https://github.com/drewbarontini/front-end-audit'
+
   %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-define.svg', alt: 'Define', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 2. Define
+
+  %slide
+    .slide-content
+      %h1.mbxs Define
+      %ul.tsxl
+        %li Responsibility
+        %li Name
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsl.tsi This module handles the video player.
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .video { }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .video--center { }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .video-play     { }
+          .video-progress { }
 
   %slide.slide--scale
     .slide-content
@@ -1104,11 +1212,64 @@
         = image_tag 'process-build.svg', alt: 'Build', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 3. Build
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tss
+        :code
+          # lang: css
+
+          .video {
+            max-width: 960px;
+          }
+
+          .video--center {
+            margin: 0 auto;
+          }
+
+          .video-play {
+            /* Styles! */
+          }
+
+          .video-progress {
+            /* Styles! */
+          }
+
   %slide.slide--scale
     .slide-content
       .middle.tac
         = image_tag 'process-combine.svg', alt: 'Combine', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 4. Combine
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsl
+          <strong>Encapsulated</strong> modules that can work together to
+          create various style <em>patterns</em>.
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: html
+
+          <div class="row">
+            <div class="cell well">
+              <div class="grid">
+                <!-- ... -->
+              </div>
+            </div>
+          </div>
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: html
+
+          <div class="video card">
+            <!-- .. -->
+          </div>
 
   %slide.slide--scale
     .slide-content
@@ -1116,3 +1277,78 @@
         = image_tag 'process-refine.svg', alt: 'Refine', class: 'db mbm mhc', width: '20%'
         %h1.tsh2 5. Refine
 
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsl
+          You’re <em>rarely</em> going to write something perfect the first
+          time.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsxl
+          <strong>Constantly</strong> evaluate and <em>refactor</em> your CSS.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsl
+          Don’t be afraid to write something <em>specifically</em>, and abstract as you
+          %span.db build out the site.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h4 Find <strong>weaknesses</strong> in your code.
+
+  %slide
+    .slide-content
+      .middle.middle--auto
+        :code
+          # lang: css
+
+          .element {
+            position: relative;
+            top: -2px; /* FIXME: Magic number! */
+          }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .element {
+            width: 50%;
+          }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .element {
+            background: none;
+            border: 0;
+            box-shadow: none;
+          }
+
+  %slide
+    .slide-content
+      %h1.h2.mbxs Style Repetition
+      %ul.tsl
+        %li= link_to 'csscss', '#'
+        %li= link_to 'csslint', '#'
+        %li= link_to 'Style Stats', '#'
+
+  %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
+    .slide-content
+      .middle.tac
+        %h1.mbm Examples
+
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'logo-dribbble.png', alt: 'Dribbble'
