@@ -359,72 +359,29 @@
         %h2.h4
           "...<em>encapsulated</em> by the class."
 
-  %slide
+  %slide.slide--contain.slide--video(img="#{image_path('define-campus-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('define-campus-02.png')}")
+
+  %slide.slide--video
     .slide-content
       .middle.tac
-        = image_tag 'encapsulation-header.png', alt: ''
+        = image_tag 'define-campus-03.png', alt: ''
 
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: html
-
-          <header class="header">
-            <nav class="nav">
-              <!--- ... --->
-            </nav>
-          </header>
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: css
-
-          .nav {
-            float: right;
-          }
-
-  %slide
+  %slide.slide--video.noTransition
     .slide-content
       .middle.tac
-        %h2.h4
-          What if we don't want <em>every</em>
-          %span.db
-            <code class="twn">.nav</code> to be floated right?
+        = image_tag 'define-campus-04.png', alt: ''
 
   %slide
     .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: css
-
-          .header .nav {
-            float: right;
-          }
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: css
-
-          .header-nav {
-            float: right;
-          }
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
+      .middle.middle--auto
         :code
           # lang: html
 
-          <header class="header">
-            <nav class="header-nav nav">
-              <!--- ... --->
-            </nav>
-          </header>
+          <div class="omnibar">
+            <!-- ... -->
+            <a href="#" class="btn">Check My Work</a>
+          </div>
 
   %slide
     .slide-content
@@ -432,21 +389,40 @@
         :code
           # lang: css
 
-          .fr {
-            float: right;
+          .btn {
+            /* ... */
           }
 
   %slide
     .slide-content
       .middle.middle--auto.tsl
         :code
+          # lang: css
+
+          .omnibar .btn {
+            /* ... */
+          }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .omnibar-btn {
+            /* ... */
+          }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tss
+        :code
           # lang: html
 
-          <header class="header">
-            <nav class="nav fr">
-              <!--- ... --->
-            </nav>
-          </header>
+          <div class="omnibar">
+            <!-- ... -->
+            <a href="#" class="omnibar-btn btn">Check My Work</a>
+          </div>
 
   %slide.slide--warning
     .slide-content
@@ -490,6 +466,22 @@
             <!--- ... --->
           </table>
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          table { }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .table { }
+
   %slide.slide--subdue.slide--translateY
     .slide-content
       .bottom
@@ -529,10 +521,10 @@
           %li
             %code .tabList-item
 
-  %slide.slide--subdue.slide--translateY
+  %slide
     .slide-content
-      .bottom
-        %h2.h1.shadowed.tci Modifiers
+      .middle.tac
+        %h2.h1 Modifiers
 
   %slide
     .slide-content
@@ -588,10 +580,10 @@
           <a href="#" class="btn">Button</a>
           <a href="#" class="btn btn--b">Button B</a>
 
-  %slide.slide--subdue.slide--translateY
+  %slide
     .slide-content
-      .bottom
-        %h2.h1.shadowed.tci States
+      .middle.tac
+        %h2.h1 States
 
   %slide
     .slide-content
@@ -622,10 +614,10 @@
             display: block;
           }
 
-  %slide.slide--subdue.slide--translateY
+  %slide
     .slide-content
-      .bottom
-        %h2.h1.shadowed.tci Context
+      .middle.tac
+        %h2.h1 Context
 
   %slide.slide--subdue
     .slide-content
@@ -718,7 +710,10 @@
   %slide.slide--subdue.slide--translateY
     .slide-content
       .bottom
-        %h1.shadowed.tci Magic Numbers
+        %h1.shadowed.tci
+          %span.db Avoid
+          %span.db Magic
+          Numbers
 
   %slide
     .slide-content
@@ -800,12 +795,12 @@
           A <em>higher-level module</em> now
           %span.db handles the structure.
 
-  %slide
+  %slide.slide--subdue
     .slide-content
       .middle.tac
         %h1.mbs
           %span.tfb.tsxs.ttn.twn Evolution <em>of</em>
-          %span.db Modular CSS
+          %span.db.shadowed.tci Modular CSS
 
   %slide.slide--dark
     .slide-content
@@ -1093,11 +1088,37 @@
         %h1.mbxs Cell
         %p.tsl Width-limiting
 
+  %slide= image_tag 'process-owltastic-01.png', alt: 'Owltastic', width: '100%', height: '100%'
+  %slide= image_tag 'process-owltastic-02.png', alt: 'Owltastic', width: '100%', height: '100%'
+
   %slide
     .slide-content
       .middle.tac
         %h1.mbxs Well
         %p.tsl Vertical spacing
+
+  %slide= image_tag 'process-owltastic-01.png', alt: 'Owltastic', width: '100%', height: '100%'
+  %slide= image_tag 'process-owltastic-03.png', alt: 'Owltastic', width: '100%', height: '100%'
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: html
+
+          <div class="cell well">
+            <!-- ... -->
+          </div>
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: html
+
+          <div class="cell well--l">
+            <!-- ... -->
+          </div>
 
   %slide
     .slide-content
@@ -1105,11 +1126,36 @@
         %h1.mbxs Grid
         %p.tsl Grid-based element arrangement
 
+  %slide= image_tag 'process-github-01.png', alt: 'GitHub', width: '100%', height: '100%'
+  %slide= image_tag 'process-github-02.png', alt: 'GitHub', width: '100%', height: '100%'
+  %slide= image_tag 'process-github-03.png', alt: 'GitHub', width: '100%', height: '100%'
+  %slide= image_tag 'process-github-04.png', alt: 'GitHub', width: '100%', height: '100%'
+
   %slide
     .slide-content
       .middle.tac
         %h1.mbxs Bucket
         %p.tsl <strong>OOCSS</strong> cornerstone
+
+  %slide.slide--dark
+    .slide-content
+      .middle.tac
+        = image_tag 'process-dribbble-01.png', alt: 'Dribbble'
+
+  %slide.slide--video.noTransition
+    .slide-content
+      .middle.tac
+        = image_tag 'process-dribbble-02.png', alt: 'Dribbble'
+
+  %slide.slide--dark
+    .slide-content
+      .middle.tac
+        = image_tag 'process-dribbble-03.png', alt: 'Dribbble'
+
+  %slide.slide--dark.noTransition
+    .slide-content
+      .middle.tac
+        = image_tag 'process-dribbble-04.png', alt: 'Dribbble'
 
   %slide.slide--subdue.slide--translateY
     .slide-content
@@ -1122,11 +1168,17 @@
         %h1.mbxs Card
         %p.tsl Stylistic container
 
+  %slide= image_tag 'process-dribbble-05.png', alt: 'Dribbble', width: '100%', height: '100%'
+  %slide= image_tag 'process-dribbble-06.png', alt: 'Dribbble', width: '100%', height: '100%'
+
   %slide
     .slide-content
       .middle.tac
         %h1.mbxs List
         %p.tsl Enumeration of elements
+
+  %slide= image_tag 'process-dn-01.png', alt: 'Designer News', width: '100%', height: '100%'
+  %slide= image_tag 'process-dn-02.png', alt: 'Designer News', width: '100%', height: '100%'
 
   %slide.slide--subdue.slide--translateY
     .slide-content
@@ -1171,10 +1223,11 @@
 
   %slide
     .slide-content
-      %h1.mbxs Define
-      %ul.tsxl
-        %li Responsibility
-        %li Name
+      .middle.tac
+        %h1.mbxs Define
+        %ul.lr.tsxl
+          %li Responsibility
+          %li Name
 
   %slide
     .slide-content
