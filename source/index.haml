@@ -3,7 +3,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbm
+        %h1.mbm.shadowed
           %span.oph.tss Thinking
           %b Modular CSS
 
@@ -28,7 +28,7 @@
   %slide.slide--dark(img="#{image_path('intro-unimpressed.jpg')}")
     .slide-content
       .bottom
-        %h2.tsh4 Drew is "<em class="bdrbi">unimpressed</em>"
+        %h2.tsh4 Drew is "<em>unimpressed</em>"
         %p.oph.tss
           Photo Credit:
           %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
@@ -36,7 +36,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbm
+        %h1.mbm.shadowed
           %span.oph.tss Thinking
           %b Modular CSS
 
@@ -60,9 +60,8 @@
   %slide
     .slide-content
       .middle.tac
-        = image_tag 'me.jpg', alt: 'Drew Barontini', class: 'slide-img mbm'
-        %h2.tsl Drew Barontini
-        %p @drewbarontini
+        %h1.tsh2.mbxs Drew Barontini
+        %p.tsl @drewbarontini
 
   %slide
     .slide-content
@@ -130,7 +129,7 @@
   %slide.slide--fade(img="#{image_path('journey-journey.jpg')}")
     .slide-content
       .middle.tac
-        %h1 The Journey
+        %h1.shadowed The Journey
 
   %slide.slide--contain.slide--video(img="#{image_path('journey-band.jpg')}")
     .slide-content
@@ -138,7 +137,7 @@
   %slide.slide--fade.slide--translateY(img="#{image_path('journey-myspace.jpg')}")
     .slide-content
       .bottom
-        %h1 MySpace
+        %h1.shadowed MySpace
 
   %slide(img="#{image_path('sad-sansa.gif')}")
 
@@ -149,8 +148,8 @@
 
   %slide.slide--dark(img="#{image_path('hacker.gif')}")
     .slide-content
-      .middle.tac
-        %h1 Computer Science
+      .bottom
+        %h1.shadowed Computer Science
 
   %slide
     .slide-content
@@ -160,7 +159,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h1 Front-end Development
+        %h1.shadowed Front-end Development
 
   %slide.slide--subdue
     .slide-content
@@ -175,7 +174,11 @@
           It’s an area of focus for <strong>unique</strong>
           %span.db <strong>individuals</strong> with <em>particular</em> skills.
 
-  %slide(img="#{image_path('what-jesse.gif')}")
+  %slide.slide--contain.slide--dark
+    .slide-content
+      .middle.tac
+        = image_tag 'intro-neeson.jpg', alt: 'Liam Neeson', class: 'db mbs mhc ram'
+        %h3.h4 <strong>Particular</strong> skills.
 
   %slide
     .slide-content
@@ -230,7 +233,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbm Modular CSS
+        %h1.mbm.shadowed Modular CSS
 
   %slide.slide--warning
     .slide-content
@@ -619,12 +622,6 @@
       .middle.tac
         %h2.h1 Context
 
-  %slide.slide--subdue
-    .slide-content
-      .middle.tac
-        %p.tsl.twb Upholds
-        %h3.h1.shadowed.tci Encapsulation
-
   %slide
     .slide-content
       .middle.middle--auto.tsl
@@ -672,7 +669,9 @@
   %slide.slide--subdue.slide--translateY
     .slide-content
       .bottom
-        %h1.shadowed.tci Limit Nesting
+        %h1.shadowed.tci
+          Limit
+          %span.db Nesting
 
   %slide.slide--warning
     .slide-content
@@ -766,10 +765,10 @@
         %h3.h4
           \... because it's in <em>another module</em>?
 
-  %slide.slide--subdue
+  %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.h1.shadowed.tci Abstract Up
+        %h2.h1.shadowed Abstract Up
 
   %slide
     .slide-content
@@ -860,7 +859,7 @@
           %li Change the HTML
           %li Change the CSS
 
-  %slide.slide--success(img="#{image_path('yes-cage.gif')}")
+  %slide.slide--fade.slide--fade--success(img="#{image_path('yes-dunphy.gif')}")
     .slide-content
       .bottom
         %h2 Scope it!
@@ -910,7 +909,7 @@
           What if we use this <em>same pattern</em>
           %span.db for another element?
 
-  %slide.slide--success(img="#{image_path('yes-cage.gif')}")
+  %slide.slide--fade.slide--fade--success(img="#{image_path('yes-dunphy.gif')}")
     .slide-content
       .bottom
         %h2.h3 Abstract the name!
@@ -1022,9 +1021,9 @@
             </div>
           </div>
 
-  %slide(img="#{image_path('happy-frodo.gif')}")
+  %slide(img="#{image_path('yes-cage.gif')}")
 
-  %slide.slide--fade.slide--fade--success(img="#{image_path('happy-frodo.gif')}")
+  %slide.slide--fade.slide--fade--success(img="#{image_path('yes-cage.gif')}")
     .slide-content
       .middle.tac
         %p.tsl.twl
@@ -1041,7 +1040,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbm Process
+        %h1.mbm.shadowed Process
 
   %slide.slide--contain.slide--video(img="#{image_path('css.gif')}")
 
@@ -1052,7 +1051,7 @@
           %span{ style: 'font-size: 200%' } 5
           %b.tss Steps
 
-  %slide.slide--scale
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'process-identify.svg', alt: 'Identify', class: 'db mbm mhc', width: '20%'
@@ -1143,7 +1142,7 @@
       .middle.tac
         = image_tag 'process-dribbble-01.png', alt: 'Dribbble'
 
-  %slide.slide--video.noTransition
+  %slide.slide--dark.noTransition
     .slide-content
       .middle.tac
         = image_tag 'process-dribbble-02.png', alt: 'Dribbble'
@@ -1216,7 +1215,7 @@
       .middle.tac
         %p= link_to 'https://github.com/drewbarontini/front-end-audit', 'https://github.com/drewbarontini/front-end-audit'
 
-  %slide.slide--scale
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'process-define.svg', alt: 'Define', class: 'db mbm mhc', width: '20%'
@@ -1259,7 +1258,7 @@
           .video-play     { }
           .video-progress { }
 
-  %slide.slide--scale
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'process-build.svg', alt: 'Build', class: 'db mbm mhc', width: '20%'
@@ -1287,7 +1286,7 @@
             /* Styles! */
           }
 
-  %slide.slide--scale
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'process-combine.svg', alt: 'Combine', class: 'db mbm mhc', width: '20%'
@@ -1324,7 +1323,7 @@
             <!-- .. -->
           </div>
 
-  %slide.slide--scale
+  %slide
     .slide-content
       .middle.tac
         = image_tag 'process-refine.svg', alt: 'Refine', class: 'db mbm mhc', width: '20%'
@@ -1399,7 +1398,7 @@
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
       .middle.tac
-        %h1.mbm Examples
+        %h1.mbm.shadowed Examples
 
   %slide
     .slide-content
