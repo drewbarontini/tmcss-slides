@@ -25,10 +25,10 @@
           Photo Credit:
           %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
 
-  %slide.slide--fade(img="#{image_path('intro-unimpressed.jpg')}")
+  %slide.slide--dark(img="#{image_path('intro-unimpressed.jpg')}")
     .slide-content
       .bottom
-        %h2.h3 Drew is "<em class="bdrbi">unimpressed</em>"
+        %h2.tsh4 Drew is "<em class="bdrbi">unimpressed</em>"
         %p.oph.tss
           Photo Credit:
           %strong= link_to 'Nate Croft', 'https://www.flickr.com/photos/natecroft/', class: 'bdrbi tci'
@@ -286,7 +286,7 @@
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.h4
+        %h2.tsh4
           Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
           more <em>maintainable code</em>.
 
@@ -427,14 +427,14 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.h4
+        %h2.tsh4
           <em>Positioning</em> and <em>layout</em> are constant
           %span.db struggles with modular CSS.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.tsxl.twl
+        %h2.tsxl
           Abstract <em>positioning</em> and <em>layout</em>
           %span.db from your modules to increase their flexibility.
 
@@ -446,14 +446,14 @@
   %slide.slide--error
     .slide-content
       .middle.tac
-        %h2.tsh3.twl
+        %h2.tsh4
           IDs are <em>too specific</em>, and
           %span.db they'll cause you headaches.
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h2.h4
+        %h2.tsh4
           Classes <strong class="bdrbi">flatten</strong> the specificity.
 
   %slide
@@ -504,7 +504,7 @@
     .slide-content
       .middle.tac
         %p.tsxl.tsi
-          * This is by no way
+          * This is by no means
           %span.db preaching our method.
 
   %slide
@@ -657,7 +657,7 @@
 
   %slide
     .slide-content
-      %h1.h2.mbxs Inspiration from:
+      %h1.mbxs Inspiration
       .grid
         .grid-box.grid-box--1of3
           %ul.tsl
@@ -677,7 +677,7 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %p.tsl.twl
+        %p.tsl
           This tenet applies specifically to CSS preprocessors, like
           <strong>Sass</strong> and <strong>LESS</strong>, that allow you to
           nest your selectors.
@@ -685,7 +685,7 @@
   %slide.slide--error
     .slide-content
       .middle.tac
-        %p.tsh4.twl
+        %p.tsh4
           Although nesting is an attractive
           %span.db feature, <strong class="bdrbi">be careful</strong> when using it.
 
@@ -849,9 +849,9 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.h4
-          What happens when that <code>&lt;h2&gt;</code>
-          %span.db turns into an <code>&lt;h3&gt;</code>?
+        %h2.tsh4
+          What happens when that <code class="twn">&lt;h2&gt;</code>
+          %span.db turns into an <code class="twn">&lt;h3&gt;</code>?
 
   %slide.slide--warning
     .slide-content
@@ -906,7 +906,7 @@
   %slide.slide--warning
     .slide-content
       .middle.tac
-        %h2.h4
+        %h2.tsh4
           What if we use this <em>same pattern</em>
           %span.db for another element?
 
@@ -1022,14 +1022,15 @@
             </div>
           </div>
 
-  %slide
+  %slide(img="#{image_path('happy-frodo.gif')}")
+
+  %slide.slide--fade.slide--fade--success(img="#{image_path('happy-frodo.gif')}")
     .slide-content
       .middle.tac
-        %p.tsl
+        %p.tsl.twl
           A collection of <em>independently created</em> modules that can be
           mixed and matched to create <em>multiple</em> style patterns.
 
-  %slide(img="#{image_path('happy-frodo.gif')}")
 
   %slide
     .slide-content
@@ -1224,7 +1225,6 @@
   %slide
     .slide-content
       .middle.tac
-        %h1.mbxs Define
         %ul.lr.tsxl
           %li Responsibility
           %li Name
@@ -1296,7 +1296,7 @@
   %slide
     .slide-content
       .middle.tac
-        %p.tsl
+        %p.tsl.twl
           <strong>Encapsulated</strong> modules that can work together to
           create various style <em>patterns</em>.
 
@@ -1333,20 +1333,20 @@
   %slide
     .slide-content
       .middle.tac
-        %p.tsl
+        %p.tsl.twl
           You’re <em>rarely</em> going to write something perfect the first
           time.
 
   %slide
     .slide-content
       .middle.tac
-        %p.tsxl
+        %p.tsxl.twl
           <strong>Constantly</strong> evaluate and <em>refactor</em> your CSS.
 
   %slide
     .slide-content
       .middle.tac
-        %p.tsl
+        %p.tsl.twl
           Don’t be afraid to write something <em>specifically</em>, and abstract as you
           %span.db build out the site.
 
