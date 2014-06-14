@@ -148,6 +148,13 @@
       .middle.tac
         = image_tag 'journey-tshirt.png', alt: '', width: '800'
 
+  %slide
+    .slide-content
+      .middle.tac
+        %h1.tcs
+          HTML CSS
+          %span.db JavaScript
+
   %slide.slide--dark(img="#{image_path('hacker.gif')}")
     .slide-content
       .bottom
@@ -181,20 +188,6 @@
       .middle.tac
         = image_tag 'intro-neeson.jpg', alt: 'Liam Neeson', class: 'db mbs mhc ram'
         %h3.h4 <strong>Particular</strong> skills.
-
-  %slide
-    .slide-content
-      .middle.tac
-        %h2.tsh4 Front-end Developer &amp; Designer
-
-  %slide.noTransition
-    .slide-content
-      .middle.tac
-        %h2.tsh4
-          Front-end Developer
-          %span.tcs.tds &amp; Designer
-
-  %slide(img="#{image_path('journey-excited.gif')}")
 
   %slide
     .slide-content
@@ -494,6 +487,11 @@
           %span.db until we change it."
         %p.twb &mdash; Nick Walsh
 
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h1.shadowed Constant Evaluation
+
   %slide
     .slide-content
       .middle
@@ -701,6 +699,30 @@
               // ...
             }
           }
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: sass
+
+          .element
+            // ...
+            &:hover,
+            &:focus,
+            &:active
+              // ....
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: sass
+
+          .list--inline
+
+            .list-item
+              display: inline
 
   %slide.slide--subdue.slide--translateY
     .slide-content
