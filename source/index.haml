@@ -128,43 +128,6 @@
           %li Our course engine
           %li Buildout of individual courses
 
-  %slide.slide--fade(img="#{image_path('journey-journey.jpg')}")
-    .slide-content
-      .middle.tac
-        %h1.shadowed The Journey
-
-  %slide.slide--contain.slide--video(img="#{image_path('journey-band.jpg')}")
-    .slide-content
-
-  %slide.slide--fade.slide--translateY(img="#{image_path('journey-myspace.jpg')}")
-    .slide-content
-      .bottom
-        %h1.shadowed MySpace
-
-  %slide(img="#{image_path('sad-sansa.gif')}")
-
-  %slide.slide--light
-    .slide-content
-      .middle.tac
-        = image_tag 'journey-tshirt.png', alt: '', width: '800'
-
-  %slide
-    .slide-content
-      .middle.tac
-        %h1.tcs
-          HTML CSS
-          %span.db JavaScript
-
-  %slide.slide--dark(img="#{image_path('hacker.gif')}")
-    .slide-content
-      .bottom
-        %h1.shadowed Computer Science
-
-  %slide
-    .slide-content
-      .middle.tac
-        = image_tag 'intro-circles.png', alt: ''
-
   %slide.slide--success
     .slide-content
       .middle.tac
@@ -645,6 +608,34 @@
               <!-- ... -->
             </div>
           </div>
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.h1 Submodules
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2.tsh3.twl
+          Elements that are <strong>scoped</strong>
+          %span.db to a <em>parent</em> module.
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .omnibar-btn {}
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .module-submodule {}
 
   %slide
     .slide-content
@@ -1394,3 +1385,170 @@
     .slide-content
       .middle.tac
         = image_tag 'logo-dribbble.png', alt: 'Dribbble'
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci
+          Structure
+          %span.db &amp; Layout
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Row
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-03.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Cell
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-cell-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-cell-02.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Well
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-well.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Grid
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-grid-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-grid-02.png')}")
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: html
+
+          <div class="row">
+            <div class="cell well">
+              <div class="grid">
+                <!-- ... -->
+              </div>
+            </div>
+          </div>
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci Common Patterns
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci List
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-list-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-list-02.png')}")
+
+  %slide
+    .slide-content
+      %h2.h1.mbxs List Types
+      %ul.tsl
+        %li Inline
+        %li Block
+        %li Object (floated)
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Thumb
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-thumb.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Icon
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-icon-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-icon-02.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Form
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-form.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Card
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-card.png')}")
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+
+  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Bucket
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bucket-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bucket-02.png')}")
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci
+          Unique
+          %span.db Patterns
+
+  %slide
+    .slide-content
+      %h1.mbxs Front-end Audit
+      .grid
+        .grid-box.grid-box--1of4
+          %ul
+            %li Row
+            %li Cell
+            %li Well
+            %li Grid
+            %li List
+        .grid-box.grid-box--1of4
+          %ul
+            %li Thumb
+            %li Icon
+            %li Form
+            %li Card
+            %li Bucket
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p= link_to 'https://github.com/drewbarontini/tmcss-examples', 'https://github.com/drewbarontini/tmcss-examples'
+
