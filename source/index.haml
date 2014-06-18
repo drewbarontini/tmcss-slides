@@ -279,8 +279,8 @@
     .slide-content
       .middle.tac
         %h2.tsh4
-          Breaking your CSS down into <em>smaller chunks</em> will ultimately result in
-          more <em>maintainable code</em>.
+          Breaking your CSS down into <em>smaller chunks</em> will ultimately
+          result in more <em>maintainable code</em>.
 
   %slide
     .slide-content
@@ -826,7 +826,7 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxs
+      .middle.middle--auto
         :code
           # lang: html
 
@@ -835,17 +835,10 @@
               <a href="#">
                 <img src="image.jpg" alt="" />
               </a>
-              <ul>
-                <li>3</li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
+              <!-- ... -->
             </div>
             <h2>
-              <a href="#">
-                <img src="user.jpg" alt="User Name" />
-                User Name
-              </a>
+              <!-- ... -->
             </h2>
           </div>
 
@@ -884,7 +877,7 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxs
+      .middle.middle--auto.tss
         :code
           # lang: html
 
@@ -893,17 +886,10 @@
               <a href="#">
                 <img class="shot-img" src="image.jpg" alt="" />
               </a>
-              <ul class="shot-list">
-                <li>3</li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
+              <!-- ... -->
             </div>
-            <h2 class="shot-user">
-              <a href="#">
-                <img src="user.jpg" alt="User Name" />
-                User Name
-              </a>
+            <h2 class="shot-title">
+              <!-- ... -->
             </h2>
           </div>
 
@@ -934,7 +920,7 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxs
+      .middle.middle--auto.tss
         :code
           # lang: html
 
@@ -943,17 +929,10 @@
               <a href="#">
                 <img class="card-img" src="image.jpg" alt="" />
               </a>
-              <ul class="card-list">
-                <li>3</li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
+              <!-- ... -->
             </div>
-            <h2 class="card-user">
-              <a href="#">
-                <img src="user.jpg" alt="User Name" />
-                User Name
-              </a>
+            <h2 class="card-title">
+              <!-- ... -->
             </h2>
           </div>
 
@@ -980,27 +959,34 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxs
+      .middle.middle--auto
         :code
           # lang: html
 
           <div class="card">
             <div class="card-preview">
-              <a href="#">
-                <img class="card-img" src="image.jpg" alt="" />
-              </a>
-              <ul class="list">
-                <li>3</li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
+              <!-- ... -->
+              <ul class="card-list">
+                <!-- ... -->
               </ul>
             </div>
-            <h2 class="card-user">
-              <a href="#">
-                <img src="user.jpg" alt="User Name" />
-                User Name
-              </a>
-            </h2>
+            <!-- ... -->
+          </div>
+
+  %slide.noTransition
+    .slide-content
+      .middle.middle--auto
+        :code
+          # lang: html
+
+          <div class="card">
+            <div class="card-preview">
+              <!-- ... -->
+              <ul class="list">
+                <!-- ... -->
+              </ul>
+            </div>
+            <!-- ... -->
           </div>
 
   %slide
@@ -1016,28 +1002,14 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxs
+      .middle.middle--auto.tsxl
         :code
-          # lang: html
+          # lang: css
 
-          <div class="card">
-            <a href="#">
-              <img class="thumb thumb--m" src="image.jpg" alt="" />
-            </a>
-            <ul class="list">
-              <li class="list-item">3</li>
-              <li class="list-item"><a href="#">1</a></li>
-              <li class="list-item"><a href="#">2</a></li>
-            </ul>
-          </div>
-          <div class="bucket bucket--flag">
-            <div class="bucket-media">
-              <img class="thumb" src="user.jpg" alt="User Name" />
-            </div>
-            <div class="bucket-content">
-              <h2><a href="#">User Name</a></h2>
-            </div>
-          </div>
+          .bucket { }
+          .card   { }
+          .list   { }
+          .thumb  { }
 
   %slide(img="#{image_path('yes-cage.gif')}")
 
