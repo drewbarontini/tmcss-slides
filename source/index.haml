@@ -1160,7 +1160,7 @@
   %slide
     .slide-content
       .middle.tac
-        %p= link_to 'https://github.com/drewbarontini/front-end-audit', 'https://github.com/drewbarontini/front-end-audit'
+        %p.tsl= link_to 'http://go.drewb.io/front-end-audit', 'http://go.drewb.io/front-end-audit'
 
   %slide
     .slide-content
@@ -1364,44 +1364,82 @@
 
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
 
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
-    .slide-content
-      .middle.tac
-        %h1.shadowed.tci Row
-
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-01.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-02.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-row-04.png')}")
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Cell
+        %h1 Row
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .row    { }
+          .row--a { }
+          .row--b { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-cell-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-cell-02.png')}")
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Well
+        %h1 Cell
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-well.png')}")
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .cell { }
 
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-well-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-well-02.png')}")
 
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Grid
+        %h1 Well
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .well    { }
+          .well--l { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-grid-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-grid-02.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Grid
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .grid { }
+          /* ... */
 
   %slide
     .slide-content
@@ -1423,14 +1461,14 @@
         %h2.h1.shadowed.tci Common Patterns
 
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-list-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-list-02.png')}")
 
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci List
-
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-list-01.png')}")
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-list-02.png')}")
+        %h1 List
 
   %slide
     .slide-content
@@ -1440,52 +1478,105 @@
         %li Block
         %li Object (floated)
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
-      .middle.tac
-        %h1.shadowed.tci Thumb
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
 
+          .list         { }
+          .list--inline { }
+          .list--object { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-thumb.png')}")
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Icon
+        %h1 Thumb
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .thumb { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-icon-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-icon-02.png')}")
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Form
+        %h1 Icon
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .icn { }
+          /* ... */
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-form.png')}")
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Card
+        %h1 Form
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .form       { }
+          .form-field { }
+          .form-label { }
+          .form-input { }
+          /* ... */
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-card.png')}")
 
-  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
-
-  %slide.slide--contain.slide--fade.slide--fade--dark.slide--video(img="#{image_path('example-dribbble.png')}")
+  %slide
     .slide-content
       .middle.tac
-        %h1.shadowed.tci Bucket
+        %h1 Card
 
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .card { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bucket-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bottom.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-bucket-02.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Bucket
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .bucket { }
+          /* ... */
 
   %slide.slide--subdue.slide--translateY
     .slide-content
@@ -1521,5 +1612,5 @@
   %slide
     .slide-content
       .middle.tac
-        %p= link_to 'https://github.com/drewbarontini/tmcss-examples', 'https://github.com/drewbarontini/tmcss-examples'
+        %p.tsl= link_to 'http://go.drewb.io/tmcss-examples', 'http://go.drewb.io/tmcss-examples'
 
