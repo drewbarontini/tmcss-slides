@@ -1212,11 +1212,50 @@
 
   %slide
     .slide-content
-      %h1.h2.mbxs Style Repetition
+      .middle.middle--auto
+        :code
+          # lang: css
+
+          .element {
+            background: #333;
+            color: black;
+            font-size: 85%;
+          }
+
+          .anotherElement {
+            color: black;
+            font-size: 85%;
+          }
+
+  %slide.slide--warning
+    .slide-content
+      .middle.tac
+        %h1.shadowed.tci Keep it DRY!
+
+  %slide
+    .slide-content
+      .middle.middle--auto
+        :code
+          # lang: css
+
+          .element,
+          .anotherElement {
+            color: black;
+            font-size: 85%;
+          }
+
+          .element {
+            background: #333;
+          }
+
+  %slide
+    .slide-content
+      %h1.h2.mbxs Tools
       %ul.tsl
         %li= link_to 'csscss', '#'
         %li= link_to 'csslint', '#'
         %li= link_to 'Style Stats', '#'
+        %li Preprocessor helpers (Sass <code>@extend</code>)
 
   %slide.slide--contain.slide--position--bottom.slide--title(img="#{image_path('clouds.svg')}")
     .slide-content
@@ -1414,8 +1453,6 @@
           # lang: css
 
           .form       { }
-          .form-field { }
-          .form-label { }
           .form-input { }
           /* ... */
 
@@ -1490,3 +1527,11 @@
       .middle.tac
         %p.tsl= link_to 'http://go.drewb.io/tmcss-examples', 'http://go.drewb.io/tmcss-examples'
 
+  %slide
+    .slide-content
+      .middle.tac
+        = image_tag 'logo-digg.png', alt: 'Digg'
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
