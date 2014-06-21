@@ -620,100 +620,6 @@
   %slide.slide--subdue.slide--translateY
     .slide-content
       .bottom
-        %h1.shadowed.tci
-          Limit
-          %span.db Nesting
-
-  %slide.slide--warning
-    .slide-content
-      .middle.tac
-        %p.tsl
-          This tenet applies specifically to CSS preprocessors, like
-          <strong>Sass</strong> and <strong>LESS</strong>, that allow you to
-          nest your selectors.
-
-  %slide.slide--error
-    .slide-content
-      .middle.tac
-        %p.tsh4
-          Although nesting is an attractive
-          %span.db feature, <strong class="bdrbi">be careful</strong> when using it.
-
-  %slide
-    .slide-content
-      .middle.middle--auto
-        :code
-          # lang: scss
-
-          section.content {
-            .header {
-              // ...
-            }
-            .main {
-              // ...
-            }
-            .footer {
-              // ...
-            }
-          }
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: sass
-
-          .element
-            // ...
-            &:hover,
-            &:focus,
-            &:active
-              // ....
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: sass
-
-          .list--inline
-
-            .list-item
-              display: inline
-
-  %slide.slide--subdue.slide--translateY
-    .slide-content
-      .bottom
-        %h1.shadowed.tci
-          %span.db Avoid
-          %span.db Magic
-          Numbers
-
-  %slide
-    .slide-content
-      .middle.middle--auto.tsl
-        :code
-          # lang: css
-
-          .element {
-            position: relative;
-            top: -2px;
-          }
-
-  %slide
-    .slide-content
-      .middle.middle--auto
-        :code
-          # lang: css
-
-          .element {
-            position: relative;
-            top: -2px; /* FIXME: Magic number! */
-          }
-
-  %slide.slide--subdue.slide--translateY
-    .slide-content
-      .bottom
         %h1.shadowed.tci Abstract Structure
 
   %slide
@@ -768,6 +674,36 @@
         %h2.tsh3.twl
           A <em>higher-level module</em> now
           %span.db handles the structure.
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h1.shadowed.tci
+          %span.db Avoid
+          %span.db Magic
+          Numbers
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsl
+        :code
+          # lang: css
+
+          .element {
+            position: relative;
+            top: -2px;
+          }
+
+  %slide
+    .slide-content
+      .middle.middle--auto
+        :code
+          # lang: css
+
+          .element {
+            position: relative;
+            top: -2px; /* FIXME: Magic number! */
+          }
 
   %slide.slide--subdue
     .slide-content
@@ -834,24 +770,6 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tss
-        :code
-          # lang: html
-
-          <div class="shot">
-            <div class="shot-preview">
-              <a href="#">
-                <img class="shot-img" src="image.jpg" alt="" />
-              </a>
-              <!-- ... -->
-            </div>
-            <h2 class="shot-title">
-              <!-- ... -->
-            </h2>
-          </div>
-
-  %slide
-    .slide-content
       .middle.middle--auto.tsl
         :code
           # lang: css
@@ -877,24 +795,6 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tss
-        :code
-          # lang: html
-
-          <div class="card">
-            <div class="card-preview">
-              <a href="#">
-                <img class="card-img" src="image.jpg" alt="" />
-              </a>
-              <!-- ... -->
-            </div>
-            <h2 class="card-title">
-              <!-- ... -->
-            </h2>
-          </div>
-
-  %slide
-    .slide-content
       .middle.middle--auto.tsl
         :code
           # lang: css
@@ -916,35 +816,11 @@
 
   %slide
     .slide-content
-      .middle.middle--auto
+      .middle.middle--auto.tsl
         :code
-          # lang: html
+          # lang: css
 
-          <div class="card">
-            <div class="card-preview">
-              <!-- ... -->
-              <ul class="card-list">
-                <!-- ... -->
-              </ul>
-            </div>
-            <!-- ... -->
-          </div>
-
-  %slide.noTransition
-    .slide-content
-      .middle.middle--auto
-        :code
-          # lang: html
-
-          <div class="card">
-            <div class="card-preview">
-              <!-- ... -->
-              <ul class="list">
-                <!-- ... -->
-              </ul>
-            </div>
-            <!-- ... -->
-          </div>
+          .list { }
 
   %slide
     .slide-content
