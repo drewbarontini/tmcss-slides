@@ -1010,6 +1010,9 @@
           Unique
           %span.db Patterns
 
+  %slide= image_tag 'process-dribbble-07.png', alt: 'Dribbble', width: '100%', height: '100%'
+  %slide= image_tag 'process-dribbble-08.png', alt: 'Dribbble', width: '100%', height: '100%'
+
   %slide
     .slide-content
       .middle.tac
@@ -1498,10 +1501,13 @@
           Unique
           %span.db Patterns
 
-  %slide.slide--subdue
+  %slide
     .slide-content
-      .middle.tac
-        %h2.h1{ style: 'font-size: 800%' } ?
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .header { }
 
   %slide
     .slide-content
@@ -1514,13 +1520,14 @@
             %li Well
             %li Grid
             %li List
+            %li Thumb
         .grid-box.grid-box--1of4
           %ul
-            %li Thumb
             %li Icon
             %li Form
             %li Card
             %li Bucket
+            %li Header
 
   %slide
     .slide-content
@@ -1535,3 +1542,246 @@
   %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci
+          Structure
+          %span.db &amp; Layout
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-row-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-row-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-row-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-row-04.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-row-05.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Row
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .row    { }
+          .row--a { }
+          .row--b { }
+          .row--c { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-cell-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-cell-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-cell-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-cell-04.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Cell
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .cell    { }
+          .cell--l { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-well-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-well-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-well-03.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Well
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .well    { }
+          .well--l { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-grid-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-grid-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-grid-03.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Grid
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .grid { }
+          /* ... */
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci Common Patterns
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-list-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-list-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-list-03.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 List
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .list        { }
+          .list--block { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-icon-01.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-icon-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-icon-03.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Icon
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .icn { }
+          /* ... */
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-02.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-bucket.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Bucket
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .bucket { }
+          /* ... */
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-button.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Button
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .btn { }
+
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-03.png')}")
+  %slide.slide--contain.slide--video(img="#{image_path('example-digg-form.png')}")
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h1 Form
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .form       { }
+          .form-input { }
+
+  %slide
+    .slide-content
+      %h1.mbxs Front-end Audit
+      .grid
+        .grid-box.grid-box--1of4
+          %ul
+            %li Row
+            %li Cell
+            %li Well
+            %li Grid
+            %li List
+        .grid-box.grid-box--1of4
+          %ul
+            %li Icon
+            %li Bucket
+            %li Button
+            %li Form
+
+  %slide.slide--subdue.slide--translateY
+    .slide-content
+      .bottom
+        %h2.h1.shadowed.tci
+          Unique
+          %span.db Patterns
+
+  %slide
+    .slide-content
+      .middle.middle--auto.tsxl
+        :code
+          # lang: css
+
+          .header { }
+          .footer { }
+          .story  { }
+
+  %slide
+    .slide-content
+      .middle.tac
+        %p.tsl= link_to 'http://go.drewb.io/tmcss-examples', 'http://go.drewb.io/tmcss-examples'
+
+  %slide.slide--success
+    .slide-content
+      .middle.tac
+        %h1.shadowed Always Be Evaluating
+
+  %slide(img="#{image_path('thankyou.gif')}")
+    .slide-content
+      .bottom
+        %h1.shadowed.tci Thank You!
