@@ -8,14 +8,17 @@
 
   controller: ($scope, $stateParams, $state, $location) ->
     $scope.slides = []
+    $scope.sectionSlides = []
     $scope.currentSlide = $stateParams.index || 1
+    $scope.currentSectionSlide = 0
     $scope.activeSlide = false
-    $scope.isPreviewing = false
 
     Hotkeys.register Hotkeys.keys.space,   => @nextSlide()
     Hotkeys.register Hotkeys.keys.right,   => @nextSlide()
     Hotkeys.register Hotkeys.keys.left,    => @prevSlide()
-    Hotkeys.register Hotkeys.keys.escape,  => @setPreviewState()
+
+    unless $scope.sectionSlides.length == 0
+      Hotkeys.register Hotkeys.keys.s, => @nextSectionSlide()
 
     @registerSlide = (slide) =>
       $scope.slides.push(slide)
@@ -25,25 +28,41 @@
         $scope.activeSlide = !$scope.activeSlide
       $scope.slides.indexOf(slide) + 1
 
+    @registerSectionSlide = (slide) ->
+      $scope.sectionSlides.push(slide)
+
     @nextSlide = () =>
       unless $scope.currentSlide > $scope.slides.length - 1
         $scope.currentSlide++
-        $state.go('root', { index: $scope.currentSlide })
-        $location.path("/#{$scope.currentSlide}")
-        @updateProgress()
+        @setLocation()
       return
 
     @prevSlide = () =>
       unless $scope.currentSlide <= 1
         $scope.currentSlide--
-        $state.go('root', { index: $scope.currentSlide })
-        $location.path("/#{$scope.currentSlide}")
-        @updateProgress()
+        @setLocation()
       return
 
-    @setPreviewState = () ->
-      $scope.isPreviewing = !$scope.isPreviewing
-      $scope.$apply()
+    @nextSectionSlide = () =>
+      unless $scope.currentSectionSlide == $scope.sectionSlides.length - 1
+        $scope.currentSectionSlide++
+        @setCurrentSectionSlide()
+        @setLocation()
+      else
+        $scope.currentSectionSlide = 0
+        @setCurrentSectionSlide()
+        @setLocation()
+      return
+
+    @setLocation = () =>
+      $state.go('root', { index: $scope.currentSlide })
+      $location.path("/#{$scope.currentSlide}")
+      @updateProgress()
+      return
+
+    @setCurrentSectionSlide = () ->
+      slide = $scope.sectionSlides[$scope.currentSectionSlide]
+      $scope.currentSlide = $scope.slides.indexOf(slide) + 1
 
     @updateProgress = () ->
       Progress.update( parseInt($scope.currentSlide) / $scope.slides.length )
@@ -57,7 +76,7 @@
     @
 
   template: """
-    <div class='slides' ng-transclude ng-class="{ 'is-previewing': isPreviewing }">
+    <div class='slides' ng-transclude>
 
     </div>
   """
