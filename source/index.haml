@@ -439,7 +439,7 @@
           Constant
           %span.db Evaluation
 
-  %slide
+  %slide(color="#ecf0f1")
     .slide-content
       .middle
         = image_tag 'logo-mvcss.svg', alt: 'MVCSS', width: '40%', height: '40%', class: 'db mhc'
@@ -1472,12 +1472,13 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxl
+      .middle.middle--auto.tsl
         :code
           # lang: css
 
-          .form       { }
-          .form-input { }
+          .form               { }
+          .form-input         { }
+          .form-input--search { }
 
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-dribbble-card.png')}")
@@ -1586,14 +1587,14 @@
 
   %slide
     .slide-content
-      .middle.middle--auto.tsxl
+      .middle.middle--auto.tsl
         :code
           # lang: css
 
-          .row    { }
-          .row--a { }
-          .row--b { }
-          .row--c { }
+          .row            { }
+          .row--a         { }
+          .row--b         { }
+          .row--highlight { }
 
   %slide.slide--contain.slide--video(img="#{image_path('example-digg-01.png')}")
   %slide.slide--contain.slide--video(img="#{image_path('example-digg-cell-01.png')}")
